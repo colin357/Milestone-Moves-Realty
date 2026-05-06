@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <!-- Three houses icon -->
+  <g transform="translate(10, 5)">
+    <!-- Left house -->
+    <polygon points="50,45 20,70 80,70" fill="#2BB8D3"/>
+    <rect x="30" y="70" width="40" height="25" fill="#2BB8D3"/>
+    <rect x="45" y="78" width="12" height="17" fill="white"/>
+    <!-- Middle house (taller) -->
+    <polygon points="105,30 70,60 140,60" fill="#2BB8D3"/>
+    <rect x="80" y="60" width="50" height="30" fill="#2BB8D3"/>
+    <rect x="98" y="70" width="14" height="20" fill="white"/>
+    <!-- Right house -->
+    <polygon points="160,45 130,70 190,70" fill="#2BB8D3"/>
+    <rect x="140" y="70" width="40" height="25" fill="#2BB8D3"/>
+    <rect x="155" y="78" width="12" height="17" fill="white"/>
+    <!-- Ground curve -->
+    <ellipse cx="105" cy="95" rx="90" ry="8" fill="none" stroke="#2BB8D3" stroke-width="4"/>
+  </g>
+  <!-- Text -->
+  <text x="220" y="55" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#3D3D3D">Milestone Moves</text>
+  <text x="220" y="80" font-family="Georgia, serif" font-size="16" letter-spacing="4" fill="#3D3D3D">REALTY GROUP</text>
+</svg>
