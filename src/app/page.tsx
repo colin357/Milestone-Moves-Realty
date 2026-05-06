@@ -1,17 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 import Logo from "@/components/Logo";
 
 const cities = [
-  "Apex",
-  "Cary",
-  "Chapel Hill",
-  "Clayton",
-  "Durham",
-  "Garner",
-  "Hillsborough",
-  "Raleigh",
-  "Wake Forest",
-  "Zebulon",
+  { name: "Apex", slug: "apex", image: "/images/cities/apex.jpg" },
+  { name: "Cary", slug: "cary", image: "/images/cities/cary.jpg" },
+  { name: "Chapel Hill", slug: "chapel-hill", image: "/images/cities/chapel-hill.jpg" },
+  { name: "Clayton", slug: "clayton", image: "/images/cities/clayton.jpg" },
+  { name: "Durham", slug: "durham", image: "/images/cities/durham.jpg" },
+  { name: "Garner", slug: "garner", image: "/images/cities/garner.jpg" },
+  { name: "Hillsborough", slug: "hillsborough", image: "/images/cities/hillsborough.jpg" },
+  { name: "Raleigh", slug: "raleigh", image: "/images/cities/raleigh.jpg" },
+  { name: "Wake Forest", slug: "wake-forest", image: "/images/cities/wake-forest.jpg" },
+  { name: "Zebulon", slug: "zebulon", image: "/images/cities/zebulon.jpg" },
 ];
 
 export default function Home() {
@@ -116,12 +117,23 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4">
             {cities.map((city) => (
               <Link
-                key={city}
-                href={`/areas/${city.toLowerCase().replace(/\s+/g, "-")}`}
-                className="relative bg-[#1C2B5E] hover:bg-[#2BB8D3] transition-colors rounded-xl h-36 sm:h-44 flex items-end p-6 group overflow-hidden"
+                key={city.slug}
+                href={`/areas/${city.slug}`}
+                className="relative rounded-xl h-36 sm:h-44 overflow-hidden group"
               >
-                <span className="text-white font-bold text-xl sm:text-2xl tracking-wide z-10">
-                  {city}
+                {/* Background photo */}
+                <Image
+                  src={city.image}
+                  alt={city.name}
+                  fill
+                  sizes="(max-width: 640px) 50vw, 400px"
+                  className="object-cover scale-100 group-hover:scale-105 transition-transform duration-500 blur-[1px] group-hover:blur-0"
+                />
+                {/* Dark gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20 group-hover:from-[#1C2B5E]/80 group-hover:via-[#1C2B5E]/50 group-hover:to-[#2BB8D3]/20 transition-colors duration-300" />
+                {/* City name */}
+                <span className="absolute bottom-0 left-0 right-0 p-5 text-white font-bold text-xl sm:text-2xl tracking-wide z-10 drop-shadow-lg">
+                  {city.name}
                 </span>
               </Link>
             ))}
