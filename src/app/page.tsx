@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/components/Logo";
 
 const cities = [
   { name: "Apex", slug: "apex", image: "/images/cities/apex.jpg" },
@@ -168,7 +167,17 @@ export default function Home() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center py-24">
           <div className="flex justify-center mb-8">
-            <Logo variant="white" className="h-24 w-auto" />
+            <div className="bg-white rounded-2xl px-6 py-3 shadow-lg">
+              <div className="relative h-16 w-[300px]">
+                <Image
+                  src="/images/cropped-logo-with-kw-on-white-1-2048x964.jpg"
+                  alt="Milestone Moves Realty Group"
+                  fill
+                  style={{ objectFit: "contain" }}
+                  priority
+                />
+              </div>
+            </div>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Serving the 55+ Community<br />

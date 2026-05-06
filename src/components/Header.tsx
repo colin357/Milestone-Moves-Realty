@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
-import Logo from "./Logo";
 
 interface DropdownItem {
   label: string;
@@ -65,7 +65,15 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <Logo variant="color" className="h-14 w-auto" />
+            <div className="relative h-14 w-[260px]">
+              <Image
+                src="/images/cropped-logo-with-kw-on-white-1-2048x964.jpg"
+                alt="Milestone Moves Realty Group"
+                fill
+                style={{ objectFit: "contain", objectPosition: "left center" }}
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Nav */}

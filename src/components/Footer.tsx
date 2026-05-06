@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./Logo";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,7 +8,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Logo + tagline */}
           <div className="flex flex-col items-start gap-4">
-            <Logo variant="white" className="h-14 w-auto" />
+            <div className="bg-white rounded-xl px-4 py-2">
+              <div className="relative h-12 w-[220px]">
+                <Image
+                  src="/images/cropped-logo-with-kw-on-white-1-2048x964.jpg"
+                  alt="Milestone Moves Realty Group"
+                  fill
+                  style={{ objectFit: "contain", objectPosition: "left center" }}
+                />
+              </div>
+            </div>
             <p className="text-sm text-gray-300 leading-relaxed">
               Serving the 55+ community with care, clarity &amp; confidence in the Triangle area of North Carolina.
             </p>
