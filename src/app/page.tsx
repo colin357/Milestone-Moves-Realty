@@ -166,19 +166,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#1C2B5E]/90 via-[#1C2B5E]/75 to-[#1C2B5E]/60" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center py-24">
-          <div className="flex justify-center mb-8">
-            <div className="bg-white rounded-2xl px-6 py-3 shadow-lg">
-              <div className="relative h-16 w-[300px]">
-                <Image
-                  src="/images/cropped-logo-with-kw-on-white-1-2048x964.jpg"
-                  alt="Milestone Moves Realty Group"
-                  fill
-                  style={{ objectFit: "contain" }}
-                  priority
-                />
-              </div>
-            </div>
-          </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Serving the 55+ Community<br />
             with <span className="text-[#2BB8D3]">Care, Clarity &amp; Confidence</span>
