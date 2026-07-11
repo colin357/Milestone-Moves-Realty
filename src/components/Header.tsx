@@ -19,6 +19,7 @@ const navItems: NavItem[] = [
   { label: "HOME", href: "/" },
   { label: "MOVING PLAYBOOK", href: "/moving-playbook" },
   { label: "EMPOWERED AGING", href: "/empowered-aging" },
+  { label: "SEMINARS", href: "/seminars" },
   {
     label: "55+ OPTIONS",
     dropdown: [
