@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Meet the Team | Milestone Moves Realty Group",
-  description: "Meet the Milestone Moves Realty Group team — Freda Hamlett (CSHP), Robin, and Heather — your dedicated partners for 55+ real estate in the Triangle, NC.",
+  description: "Meet the Milestone Moves Realty Group team — Freda Hamlett (CSHP), Robin Bodwin, and Heather Walz — your dedicated partners for 55+ real estate in the Triangle, NC.",
 };
 
 const credentials = [
@@ -24,14 +24,14 @@ const team = [
     photo: "/images/freda-about.jpg",
   },
   {
-    name: "Robin",
+    name: "Robin Bodwin",
     title: "Realtor",
     email: "robin@milestonemoves.com",
     phone: "919-746-3604",
-    photo: null,
+    photo: "/images/Robin-bodwin-headshot.jpg",
   },
   {
-    name: "Heather",
+    name: "Heather Walz",
     title: "Realtor",
     email: "heather@milestonemoves.com",
     phone: "919-655-5424",
@@ -66,7 +66,7 @@ export default function MeetTheTeam() {
           {/* Photo */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-2xl max-w-md mx-auto">
-              <Image src="/images/meet-freda.jpg" alt="Freda Hamlett — Milestone Moves Realty Group" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" priority />
+              <Image src="/images/freda-about.jpg" alt="Freda Hamlett — Milestone Moves Realty Group" fill className="object-cover object-top" sizes="(max-width: 768px) 100vw, 50vw" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-[#123A5E]/80 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-white font-bold text-2xl">Freda Hamlett</p>
