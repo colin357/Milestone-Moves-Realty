@@ -62,14 +62,14 @@ export default function IsNowTheBestTimeToSell() {
         make the decision that&apos;s truly right for you.
       </p>
 
-      <h2 className="text-2xl font-bold text-[#1C2B5E] mb-6">Signals to Consider</h2>
+      <h2 className="text-2xl font-bold text-[#123A5E] mb-6">Signals to Consider</h2>
       <div className="grid sm:grid-cols-2 gap-5 mb-12">
         {signals.map((s) => (
-          <div key={s.title} className={`rounded-xl p-5 border-l-4 ${s.good ? "border-[#2BB8D3] bg-[#f0fafd]" : "border-gray-300 bg-gray-50"}`}>
+          <div key={s.title} className={`rounded-xl p-5 border-l-4 ${s.good ? "border-[#0A7387] bg-[#f0fafd]" : "border-gray-300 bg-gray-50"}`}>
             <div className="flex items-center gap-3 mb-2">
               <span className="text-2xl">{s.icon}</span>
-              <h3 className={`font-bold text-base ${s.good ? "text-[#1C2B5E]" : "text-gray-600"}`}>{s.title}</h3>
-              <span className={`ml-auto text-xs font-bold px-2 py-0.5 rounded-full ${s.good ? "bg-[#2BB8D3] text-white" : "bg-gray-200 text-gray-500"}`}>
+              <h3 className={`font-bold text-base ${s.good ? "text-[#123A5E]" : "text-gray-600"}`}>{s.title}</h3>
+              <span className={`ml-auto text-xs font-bold px-2 py-0.5 rounded-full ${s.good ? "bg-[#0A7387] text-white" : "bg-gray-200 text-gray-500"}`}>
                 {s.good ? "FAVORABLE" : "CONSIDER"}
               </span>
             </div>
@@ -78,7 +78,7 @@ export default function IsNowTheBestTimeToSell() {
         ))}
       </div>
 
-      <div className="bg-[#1C2B5E] text-white rounded-2xl p-8 mb-8">
+      <div className="bg-[#123A5E] text-white rounded-2xl p-8 mb-8">
         <h3 className="text-xl font-bold mb-3">The Most Important Factor: Your Readiness</h3>
         <p className="text-gray-200 leading-relaxed mb-4">
           For most 55+ homeowners, the decision to sell isn&apos;t purely financial — it&apos;s about life. If your
@@ -91,15 +91,15 @@ export default function IsNowTheBestTimeToSell() {
         </p>
       </div>
 
-      <div className="bg-[#f0fafd] border border-[#2BB8D3] rounded-xl p-8 text-center">
-        <h3 className="text-xl font-bold text-[#1C2B5E] mb-3">Get a Free Market Assessment</h3>
+      <div className="bg-[#f0fafd] border border-[#0A7387] rounded-xl p-8 text-center">
+        <h3 className="text-xl font-bold text-[#123A5E] mb-3">Get a Free Market Assessment</h3>
         <p className="text-[#3d3d3d] mb-6">
           We&apos;ll pull the latest data for your neighborhood and give you an honest, no-pressure picture of what
           selling looks like for you right now.
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           REQUEST AN ASSESSMENT
         </Link>

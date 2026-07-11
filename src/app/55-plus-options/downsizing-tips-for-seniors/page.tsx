@@ -54,23 +54,23 @@ export default function DownsizingTips() {
       <div className="space-y-6 mb-10">
         {tips.map((tip) => (
           <div key={tip.number} className="flex gap-5 items-start">
-            <div className="flex-shrink-0 w-12 h-12 bg-[#2BB8D3] rounded-full flex items-center justify-center text-white font-bold text-sm">
+            <div className="flex-shrink-0 w-12 h-12 bg-[#0A7387] rounded-full flex items-center justify-center text-white font-bold text-sm">
               {tip.number}
             </div>
             <div>
-              <h3 className="text-lg font-bold text-[#1C2B5E] mb-1">{tip.title}</h3>
+              <h3 className="text-lg font-bold text-[#123A5E] mb-1">{tip.title}</h3>
               <p className="text-[#3d3d3d] leading-relaxed">{tip.body}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="bg-[#1C2B5E] text-white rounded-xl p-8 text-center">
+      <div className="bg-[#123A5E] text-white rounded-xl p-8 text-center">
         <h3 className="text-xl font-bold mb-3">Need a Plan Tailored to Your Situation?</h3>
         <p className="text-gray-200 mb-6">We offer personalized downsizing consultations — no pressure, just guidance.</p>
         <a
           href="/about/contact-us"
-          className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           TALK TO US
         </a>

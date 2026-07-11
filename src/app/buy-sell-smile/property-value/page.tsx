@@ -35,29 +35,29 @@ export default function PropertyValue() {
         position in the current market.
       </p>
 
-      <h2 className="text-2xl font-bold text-[#1C2B5E] mb-6">What Determines Your Home&apos;s Value</h2>
+      <h2 className="text-2xl font-bold text-[#123A5E] mb-6">What Determines Your Home&apos;s Value</h2>
       <div className="space-y-3 mb-12">
         {factors.map((f) => (
           <div key={f.label} className="flex gap-4 items-start bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
             <div className="flex-shrink-0">
               <span className={`text-xs font-bold px-2 py-1 rounded-full whitespace-nowrap ${
-                f.weight === "Very High" ? "bg-[#1C2B5E] text-white" :
-                f.weight === "High" ? "bg-[#2BB8D3] text-white" :
-                f.weight === "Medium" ? "bg-[#f0fafd] text-[#2BB8D3] border border-[#2BB8D3]" :
+                f.weight === "Very High" ? "bg-[#123A5E] text-white" :
+                f.weight === "High" ? "bg-[#0A7387] text-white" :
+                f.weight === "Medium" ? "bg-[#f0fafd] text-[#0A7387] border border-[#0A7387]" :
                 "bg-gray-100 text-gray-500"
               }`}>
                 {f.weight}
               </span>
             </div>
             <div>
-              <h3 className="font-bold text-[#1C2B5E] mb-1">{f.label}</h3>
+              <h3 className="font-bold text-[#123A5E] mb-1">{f.label}</h3>
               <p className="text-[#3d3d3d] text-sm leading-relaxed">{f.desc}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <h2 className="text-2xl font-bold text-[#1C2B5E] mb-4">How to Maximize Your Value Before Selling</h2>
+      <h2 className="text-2xl font-bold text-[#123A5E] mb-4">How to Maximize Your Value Before Selling</h2>
       <div className="grid sm:grid-cols-2 gap-4 mb-10">
         {[
           { tip: "Deep clean and declutter", detail: "Buyers perceive clean homes as better-maintained — and more valuable." },
@@ -68,27 +68,27 @@ export default function PropertyValue() {
           { tip: "Get a pre-listing inspection", detail: "Knowing issues in advance lets you fix or disclose them — reducing buyer negotiation leverage." },
         ].map((item) => (
           <div key={item.tip} className="flex gap-3 items-start bg-[#f0fafd] rounded-xl p-4">
-            <span className="w-5 h-5 bg-[#2BB8D3] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span className="w-5 h-5 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
               </svg>
             </span>
             <div>
-              <p className="font-bold text-[#1C2B5E] text-sm">{item.tip}</p>
+              <p className="font-bold text-[#123A5E] text-sm">{item.tip}</p>
               <p className="text-[#3d3d3d] text-xs leading-relaxed mt-0.5">{item.detail}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="bg-[#1C2B5E] text-white rounded-2xl p-8 text-center">
+      <div className="bg-[#123A5E] text-white rounded-2xl p-8 text-center">
         <h3 className="text-xl font-bold mb-3">Find Out What Your Home Is Worth Today</h3>
         <p className="text-gray-200 mb-6">
           We&apos;ll prepare a complimentary, no-obligation Comparative Market Analysis for your home.
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           GET MY HOME VALUE
         </Link>

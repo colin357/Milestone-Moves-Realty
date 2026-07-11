@@ -9,7 +9,7 @@ export const metadata = {
 const chapters = [
   {
     id: "01",
-    color: "bg-[#2BB8D3]",
+    color: "bg-[#0A7387]",
     title: "Vision & Motivation",
     subtitle: "Start with the why, not the what",
     content: "Before you look at a single listing or call a mover, get clear on why you're making this move and what your next chapter should look like. This isn't just practical — it's deeply personal, and it shapes every decision that follows.",
@@ -23,7 +23,7 @@ const chapters = [
   },
   {
     id: "02",
-    color: "bg-[#1C2B5E]",
+    color: "bg-[#123A5E]",
     title: "Financial Clarity",
     subtitle: "Know your numbers before you start",
     content: "Understanding your financial position removes uncertainty and gives you confidence throughout the entire process. This chapter is about getting a complete, honest picture — what your current home is worth, what you can afford next, and how the two transactions fit together.",
@@ -38,7 +38,7 @@ const chapters = [
   },
   {
     id: "03",
-    color: "bg-[#2BB8D3]",
+    color: "bg-[#0A7387]",
     title: "Declutter & Prepare",
     subtitle: "Lighten your load before the move",
     content: "Decades of living fill a home with things — some treasured, some forgotten. This is your chance to carefully choose what comes with you into your next chapter. Done right, this process feels liberating rather than overwhelming.",
@@ -53,7 +53,7 @@ const chapters = [
   },
   {
     id: "04",
-    color: "bg-[#1C2B5E]",
+    color: "bg-[#123A5E]",
     title: "Home Preparation",
     subtitle: "Present your home at its absolute best",
     content: "A well-prepared home sells faster and for more money. We'll help you identify the targeted updates and repairs that deliver the best return — and connect you with trusted vendors who work efficiently and fairly.",
@@ -69,7 +69,7 @@ const chapters = [
   },
   {
     id: "05",
-    color: "bg-[#2BB8D3]",
+    color: "bg-[#0A7387]",
     title: "Your Home Search",
     subtitle: "Find the place that fits your next chapter",
     content: "Whether you're searching for a 55+ community, a maintenance-free condo, or a smaller single-family home close to family — your search should be informed, intentional, and at your pace.",
@@ -85,7 +85,7 @@ const chapters = [
   },
   {
     id: "06",
-    color: "bg-[#1C2B5E]",
+    color: "bg-[#123A5E]",
     title: "Offers & Contracts",
     subtitle: "Negotiate with confidence",
     content: "This is where having an experienced agent truly matters. We'll craft a competitive offer, guide you through counteroffers, and ensure every contingency is in place to protect you.",
@@ -101,7 +101,7 @@ const chapters = [
   },
   {
     id: "07",
-    color: "bg-[#2BB8D3]",
+    color: "bg-[#0A7387]",
     title: "The Move Itself",
     subtitle: "Logistics, moving day, and settling in",
     content: "The moving day itself is just one moment in a longer transition. Planning it well means the day goes smoothly — and you arrive in your new home ready to begin the next chapter, not exhausted by it.",
@@ -125,7 +125,7 @@ export default function MovingPlaybook() {
         <div className="grid md:grid-cols-2 min-h-[65vh]">
           <div className="relative">
             <Image src="/images/moving-playbook.jpg" alt="The Moving Playbook" fill className="object-cover" sizes="50vw" priority />
-            <div className="absolute inset-0 bg-[#1C2B5E]/60" />
+            <div className="absolute inset-0 bg-[#123A5E]/60" />
             <div className="relative z-10 flex items-end p-10 h-full">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-white">
                 <p className="text-[#2BB8D3] font-bold text-sm tracking-wider mb-1">7 CHAPTERS</p>
@@ -133,7 +133,7 @@ export default function MovingPlaybook() {
               </div>
             </div>
           </div>
-          <div className="bg-[#1C2B5E] flex items-center px-10 py-20 text-white">
+          <div className="bg-[#123A5E] flex items-center px-10 py-20 text-white">
             <div>
               <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Your Complete Guide</p>
               <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
@@ -145,7 +145,7 @@ export default function MovingPlaybook() {
                 deserves a thoughtful, step-by-step plan. This playbook gives you exactly that — seven chapters,
                 actionable checklists, and the clarity to move forward with confidence.
               </p>
-              <Link href="/about/contact-us" className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+              <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
                 TALK TO US ABOUT YOUR MOVE
               </Link>
             </div>
@@ -160,7 +160,7 @@ export default function MovingPlaybook() {
             <a
               key={ch.id}
               href={`#chapter-${ch.id}`}
-              className="flex-shrink-0 px-4 py-2 rounded-full text-xs font-bold tracking-wider border-2 border-[#2BB8D3] text-[#1C2B5E] hover:bg-[#2BB8D3] hover:text-white transition-colors"
+              className="flex-shrink-0 px-4 py-2 rounded-full text-xs font-bold tracking-wider border-2 border-[#0A7387] text-[#123A5E] hover:bg-[#0A7387] hover:text-white transition-colors"
             >
               {ch.id}. {ch.title}
             </a>
@@ -183,11 +183,11 @@ export default function MovingPlaybook() {
               <div>
                 <p className="text-[#3d3d3d] leading-relaxed mb-6 text-lg">{ch.content}</p>
                 <div className="bg-gray-50 rounded-2xl p-6">
-                  <p className="font-bold text-[#1C2B5E] text-sm tracking-wider mb-4 uppercase">Chapter {ch.id} Checklist</p>
+                  <p className="font-bold text-[#123A5E] text-sm tracking-wider mb-4 uppercase">Chapter {ch.id} Checklist</p>
                   <ul className="space-y-3">
                     {ch.checklist.map((item) => (
                       <li key={item} className="flex gap-3 items-start">
-                        <span className="w-5 h-5 border-2 border-[#2BB8D3] rounded flex-shrink-0 mt-0.5" />
+                        <span className="w-5 h-5 border-2 border-[#0A7387] rounded flex-shrink-0 mt-0.5" />
                         <span className="text-[#3d3d3d] text-sm leading-relaxed">{item}</span>
                       </li>
                     ))}
@@ -201,14 +201,14 @@ export default function MovingPlaybook() {
       </div>
 
       {/* Closing CTA */}
-      <section className="bg-[#2BB8D3] py-20 px-4 text-white text-center">
+      <section className="bg-[#0A7387] py-20 px-4 text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Ready to Start Your Playbook?</h2>
           <p className="text-lg opacity-90 mb-8">
             We walk every client through this process — personally, patiently, and at your pace.
             Let&apos;s begin with a free consultation.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#1C2B5E] hover:bg-[#152047] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE YOUR FREE CONSULTATION
           </Link>
         </div>

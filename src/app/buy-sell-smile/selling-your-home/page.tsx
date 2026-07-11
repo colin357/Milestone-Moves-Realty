@@ -31,7 +31,7 @@ export default function SellingYourHome() {
     <div>
       {/* Split Hero */}
       <section className="grid md:grid-cols-2 min-h-[70vh]">
-        <div className="bg-[#1C2B5E] flex items-center px-10 py-20">
+        <div className="bg-[#123A5E] flex items-center px-10 py-20">
           <div>
             <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Sell with Confidence</p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
@@ -42,17 +42,17 @@ export default function SellingYourHome() {
               We combine smart pricing, professional marketing, and compassionate negotiation to get you the best
               outcome — so you can move forward with confidence and peace of mind.
             </p>
-            <Link href="/about/contact-us" className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+            <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
               GET A FREE HOME VALUATION
             </Link>
           </div>
         </div>
         <div className="relative min-h-[400px]">
           <Image src="/images/selling-home.jpg" alt="Beautifully staged home ready to sell" fill className="object-cover" sizes="50vw" priority />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#1C2B5E]/20" />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#123A5E]/20" />
           {/* Floating stat card */}
           <div className="absolute bottom-8 left-8 bg-white rounded-2xl shadow-xl p-5">
-            <p className="text-3xl font-black text-[#1C2B5E]">Top Dollar</p>
+            <p className="text-3xl font-black text-[#123A5E]">Top Dollar</p>
             <p className="text-sm text-[#3d3d3d] mt-1">Our goal on every single listing.</p>
           </div>
         </div>
@@ -63,8 +63,8 @@ export default function SellingYourHome() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="md:col-span-1">
-              <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">The Foundation</p>
-              <h2 className="text-3xl font-bold text-[#1C2B5E] leading-tight">Three Things That Win Every Sale</h2>
+              <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">The Foundation</p>
+              <h2 className="text-3xl font-bold text-[#123A5E] leading-tight">Three Things That Win Every Sale</h2>
               <p className="text-[#3d3d3d] mt-4 leading-relaxed text-sm">
                 After years of working with sellers in the Triangle, we&apos;ve learned that every successful sale comes
                 down to these three things — and we engineer all three on your behalf.
@@ -76,7 +76,7 @@ export default function SellingYourHome() {
                 { number: "02", title: "Right Presentation", desc: "Professional photos, staging guidance, and marketing that makes your home shine above the competition." },
                 { number: "03", title: "Right Exposure", desc: "Maximum reach across every channel — MLS, social media, email, agent network, and open houses." },
               ].map((item) => (
-                <div key={item.number} className="bg-[#1C2B5E] text-white rounded-2xl p-6">
+                <div key={item.number} className="bg-[#123A5E] text-white rounded-2xl p-6">
                   <p className="text-5xl font-black text-white/10 mb-2">{item.number}</p>
                   <h3 className="font-bold text-xl text-[#2BB8D3] mb-2">{item.title}</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">{item.desc}</p>
@@ -91,17 +91,17 @@ export default function SellingYourHome() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">What We Do For Your Listing</p>
-            <h2 className="text-3xl font-bold text-[#1C2B5E]">Marketing That Means Business</h2>
+            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">What We Do For Your Listing</p>
+            <h2 className="text-3xl font-bold text-[#123A5E]">Marketing That Means Business</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-xl mx-auto">
               Every Milestone Moves listing gets the full treatment — because your home deserves more than a phone photo and a Zillow post.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {marketingItems.map((item) => (
-              <div key={item.title} className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow border-b-4 border-[#2BB8D3]">
+              <div key={item.title} className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow border-b-4 border-[#0A7387]">
                 <div className="text-3xl mb-3">{item.icon}</div>
-                <h3 className="font-bold text-[#1C2B5E] mb-2">{item.title}</h3>
+                <h3 className="font-bold text-[#123A5E] mb-2">{item.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -110,7 +110,7 @@ export default function SellingYourHome() {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 px-4 bg-[#1C2B5E] text-white">
+      <section className="py-20 px-4 bg-[#123A5E] text-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">The Selling Timeline</p>
@@ -120,7 +120,7 @@ export default function SellingYourHome() {
             {timeline.map((phase, i) => (
               <div key={phase.phase} className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-[#2BB8D3] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                  <div className="w-8 h-8 bg-[#0A7387] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
                     {i + 1}
                   </div>
                   <div>
@@ -146,14 +146,14 @@ export default function SellingYourHome() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">Before You List</p>
-            <h2 className="text-3xl font-bold text-[#1C2B5E]">How to Prepare Your Home</h2>
+            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Before You List</p>
+            <h2 className="text-3xl font-bold text-[#123A5E]">How to Prepare Your Home</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-xl mx-auto">Small investments before listing consistently deliver outsized returns. Here&apos;s where we focus first.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              { priority: "High ROI", items: ["Fresh neutral paint throughout", "Deep professional cleaning", "Declutter and depersonalize", "Landscaping and mulch"], color: "bg-[#2BB8D3] text-white" },
-              { priority: "Strong ROI", items: ["Kitchen hardware and fixtures", "Bathroom touch-ups", "Power wash driveway and exterior", "Fix leaky faucets and squeaky doors"], color: "bg-[#1C2B5E] text-white" },
+              { priority: "High ROI", items: ["Fresh neutral paint throughout", "Deep professional cleaning", "Declutter and depersonalize", "Landscaping and mulch"], color: "bg-[#0A7387] text-white" },
+              { priority: "Strong ROI", items: ["Kitchen hardware and fixtures", "Bathroom touch-ups", "Power wash driveway and exterior", "Fix leaky faucets and squeaky doors"], color: "bg-[#123A5E] text-white" },
               { priority: "Consider If Time Allows", items: ["Update light fixtures", "Refinish hardwood floors", "Replace worn carpet in main areas", "Touch up deck or patio"], color: "bg-gray-100 text-[#3d3d3d]" },
               { priority: "Rarely Worth the Cost", items: ["Full kitchen remodel", "Adding a bathroom", "Major landscaping overhaul", "Converting a garage"], color: "bg-gray-50 text-[#3d3d3d] border border-gray-200" },
             ].map((group) => (
@@ -174,11 +174,11 @@ export default function SellingYourHome() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#2BB8D3] py-16 px-4 text-white text-center">
+      <section className="bg-[#0A7387] py-16 px-4 text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Ready to Put Your Home on the Market?</h2>
           <p className="text-lg opacity-90 mb-8">Start with a free, no-obligation home valuation and seller consultation.</p>
-          <Link href="/about/contact-us" className="inline-block bg-[#1C2B5E] hover:bg-[#152047] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE YOUR LISTING CONSULTATION
           </Link>
         </div>

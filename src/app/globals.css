@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
+  /* Bright teal — decorative use and accents on dark (navy) backgrounds only.
+     On white it fails WCAG AA (2.4:1), so never use it for text/controls on light. */
   --brand-teal: #2BB8D3;
-  --brand-navy: #1C2B5E;
+  /* Accessible teal — for teal text, buttons, and borders on light backgrounds.
+     5.5:1 on white and with white text, meeting WCAG AA. */
+  --brand-teal-dark: #0A7387;
+  /* Navy — a true blue navy (less purple than the previous #1C2B5E). */
+  --brand-navy: #123A5E;
+  --brand-navy-dark: #0D2942;
   --brand-dark: #3D3D3D;
   --background: #ffffff;
   --foreground: #3d3d3d;
@@ -12,7 +19,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand-teal: var(--brand-teal);
+  --color-brand-teal-dark: var(--brand-teal-dark);
   --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-dark: var(--brand-navy-dark);
   --color-brand-dark: var(--brand-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

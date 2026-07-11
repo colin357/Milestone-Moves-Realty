@@ -78,20 +78,20 @@ export default function OfferIsAccepted() {
           <div key={step.title} className="flex gap-5">
             {/* Timeline marker */}
             <div className="flex flex-col items-center flex-shrink-0">
-              <div className="w-10 h-10 rounded-full bg-[#2BB8D3] text-white font-bold flex items-center justify-center text-sm flex-shrink-0">
+              <div className="w-10 h-10 rounded-full bg-[#0A7387] text-white font-bold flex items-center justify-center text-sm flex-shrink-0">
                 {i + 1}
               </div>
-              {i < steps.length - 1 && <div className="w-0.5 bg-[#2BB8D3]/30 flex-1 mt-1" />}
+              {i < steps.length - 1 && <div className="w-0.5 bg-[#0A7387]/30 flex-1 mt-1" />}
             </div>
             {/* Content */}
             <div className="pb-6 flex-1">
               <div className="flex flex-wrap items-center gap-3 mb-1">
-                <h3 className="font-bold text-[#1C2B5E] text-lg">{step.title}</h3>
-                <span className="text-xs bg-[#1C2B5E] text-white px-2 py-0.5 rounded-full">{step.day}</span>
+                <h3 className="font-bold text-[#123A5E] text-lg">{step.title}</h3>
+                <span className="text-xs bg-[#123A5E] text-white px-2 py-0.5 rounded-full">{step.day}</span>
               </div>
               <p className="text-[#3d3d3d] leading-relaxed text-sm mb-3">{step.desc}</p>
               <div className="flex gap-2 items-start bg-[#f0fafd] rounded-lg p-3">
-                <span className="text-[#2BB8D3] font-bold text-xs flex-shrink-0">PRO TIP:</span>
+                <span className="text-[#0A7387] font-bold text-xs flex-shrink-0">PRO TIP:</span>
                 <p className="text-[#3d3d3d] text-xs leading-relaxed">{step.tip}</p>
               </div>
             </div>
@@ -99,14 +99,14 @@ export default function OfferIsAccepted() {
         ))}
       </div>
 
-      <div className="bg-[#1C2B5E] text-white rounded-2xl p-8 text-center">
+      <div className="bg-[#123A5E] text-white rounded-2xl p-8 text-center">
         <h3 className="text-xl font-bold mb-3">Questions About Your Contract?</h3>
         <p className="text-gray-200 mb-6">
           We&apos;re here to explain every line and walk you through every step. No question is too small.
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           TALK TO US
         </Link>
