@@ -32,6 +32,7 @@ export default function Footer() {
                 { label: "Moving Playbook", href: "/moving-playbook" },
                 { label: "Empowered Aging", href: "/empowered-aging" },
                 { label: "55+ Options", href: "/55-plus-options/simplified-living-communities" },
+                { label: "Seminars", href: "/seminars" },
                 { label: "Meet the Team", href: "/about/meet-the-team" },
                 { label: "Contact Us", href: "/about/contact-us" },
               ].map((link) => (
@@ -55,6 +56,11 @@ export default function Footer() {
               <p className="pt-2">
                 <a href="mailto:info@milestonemovesrealty.com" className="hover:text-[#2BB8D3] transition-colors">
                   info@milestonemovesrealty.com
+                </a>
+              </p>
+              <p>
+                <a href="tel:+19198109551" className="hover:text-[#2BB8D3] transition-colors">
+                  919-810-9551
                 </a>
               </p>
             </address>

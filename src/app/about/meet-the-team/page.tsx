@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Meet the Team | Milestone Moves Realty Group",
-  description: "Meet Freda Hamlett — founder, CSHP, and your dedicated partner for 55+ real estate in the Triangle, NC.",
+  description: "Meet the Milestone Moves Realty Group team — Freda Hamlett (CSHP), Robin, and Heather — your dedicated partners for 55+ real estate in the Triangle, NC.",
 };
 
 const credentials = [
@@ -12,6 +12,31 @@ const credentials = [
   { label: "Service Area", value: "Triangle, NC — Apex, Cary, Raleigh, Durham & Beyond" },
   { label: "Office", value: "1483 Beaver Creek Commons Dr, Apex, NC 27502" },
   { label: "Approach", value: "Education-First. No Rush. No Pressure." },
+];
+
+// Photos to be supplied — cards fall back to an initial monogram until then.
+const team = [
+  {
+    name: "Freda Hamlett",
+    title: "Founder & Lead Agent · CSHP",
+    email: "freda@milestonemoves.com",
+    phone: "919-810-9551",
+    photo: "/images/freda-about.jpg",
+  },
+  {
+    name: "Robin",
+    title: "Realtor",
+    email: "robin@milestonemoves.com",
+    phone: "919-746-3604",
+    photo: null,
+  },
+  {
+    name: "Heather",
+    title: "Realtor",
+    email: "heather@milestonemoves.com",
+    phone: "919-655-5424",
+    photo: null,
+  },
 ];
 
 const values = [
@@ -82,6 +107,60 @@ export default function MeetTheTeam() {
               <p className="font-bold text-sm">{c.value}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Meet the team grid */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Your Local Team</p>
+            <h2 className="text-3xl font-bold text-[#123A5E]">Meet the Milestone Moves Team</h2>
+            <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
+              A dedicated group of Triangle real estate professionals — here to guide you with care, clarity, and confidence.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {team.map((member) => (
+              <div key={member.name} className="bg-white rounded-2xl p-8 text-center shadow-sm">
+                {/* Photo or initial monogram */}
+                {member.photo ? (
+                  <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden shadow-md mb-5">
+                    <Image src={member.photo} alt={member.name} fill className="object-cover object-top" sizes="112px" />
+                  </div>
+                ) : (
+                  <div
+                    className="w-28 h-28 mx-auto rounded-full bg-[#123A5E] flex items-center justify-center shadow-md mb-5"
+                    aria-hidden="true"
+                  >
+                    <span className="text-white font-bold text-4xl">{member.name.charAt(0)}</span>
+                  </div>
+                )}
+                <h3 className="font-bold text-[#123A5E] text-xl">{member.name}</h3>
+                <p className="text-[#0A7387] font-semibold text-sm mb-4">{member.title}</p>
+                <div className="space-y-2 text-sm">
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="flex items-center justify-center gap-2 text-[#0A7387] font-semibold hover:underline break-all"
+                  >
+                    <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    {member.email}
+                  </a>
+                  <a
+                    href={`tel:+1${member.phone.replace(/\D/g, "")}`}
+                    className="flex items-center justify-center gap-2 text-[#3d3d3d] font-semibold hover:text-[#0A7387]"
+                  >
+                    <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    {member.phone}
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
