@@ -67,7 +67,7 @@ export default function SimplifiedLivingCommunities() {
       {/* Hero */}
       <section className="relative min-h-[65vh] flex items-center overflow-hidden">
         <Image src="/images/communities.jpg" alt="Beautiful 55+ community" fill className="object-cover" sizes="100vw" priority />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1C2B5E]/90 to-[#1C2B5E]/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#123A5E]/90 to-[#123A5E]/50" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 w-full">
           <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">55+ Options</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 max-w-2xl leading-tight">
@@ -77,7 +77,7 @@ export default function SimplifiedLivingCommunities() {
             Today&apos;s 55+ communities are active, vibrant, and beautifully designed — built for people who want
             to live more and worry less.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
             FIND YOUR COMMUNITY
           </Link>
         </div>
@@ -86,8 +86,8 @@ export default function SimplifiedLivingCommunities() {
       {/* What's changed */}
       <section className="bg-white py-16 px-4 border-b border-gray-100">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">Not Your Parents&apos; Retirement</p>
-          <h2 className="text-3xl font-bold text-[#1C2B5E] mb-6">Today&apos;s Communities Are Different</h2>
+          <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Not Your Parents&apos; Retirement</p>
+          <h2 className="text-3xl font-bold text-[#123A5E] mb-6">Today&apos;s Communities Are Different</h2>
           <p className="text-[#3d3d3d] leading-relaxed max-w-3xl mx-auto text-lg">
             Modern 55+ communities are nothing like the retirement communities of the past. They&apos;re resort-style
             neighborhoods where residents enjoy maintenance-free living, rich social lives, and amenities tailored to
@@ -102,9 +102,9 @@ export default function SimplifiedLivingCommunities() {
             { old: "One size fits all", new: "Wide variety of options" },
           ].map((item) => (
             <div key={item.new} className="text-center">
-              <p className="text-gray-400 text-sm line-through mb-1">{item.old}</p>
-              <div className="text-[#2BB8D3] text-xl my-1">↓</div>
-              <p className="text-[#1C2B5E] font-bold">{item.new}</p>
+              <p className="text-gray-500 text-sm line-through mb-1">{item.old}</p>
+              <div className="text-[#0A7387] text-xl my-1">↓</div>
+              <p className="text-[#123A5E] font-bold">{item.new}</p>
             </div>
           ))}
         </div>
@@ -114,8 +114,8 @@ export default function SimplifiedLivingCommunities() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">Know Your Options</p>
-            <h2 className="text-3xl font-bold text-[#1C2B5E]">Types of 55+ Communities</h2>
+            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Know Your Options</p>
+            <h2 className="text-3xl font-bold text-[#123A5E]">Types of 55+ Communities</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-xl mx-auto">
               Not all 55+ communities are the same. Here&apos;s a clear breakdown to help you identify what fits your lifestyle and budget.
             </p>
@@ -123,7 +123,7 @@ export default function SimplifiedLivingCommunities() {
           <div className="grid sm:grid-cols-2 gap-6">
             {communityTypes.map((ct) => (
               <div key={ct.type} className="bg-white rounded-2xl shadow-sm overflow-hidden">
-                <div className="bg-[#1C2B5E] text-white p-5 flex items-center gap-4">
+                <div className="bg-[#123A5E] text-white p-5 flex items-center gap-4">
                   <span className="text-3xl">{ct.icon}</span>
                   <div>
                     <h3 className="font-bold text-lg">{ct.type}</h3>
@@ -132,16 +132,16 @@ export default function SimplifiedLivingCommunities() {
                 </div>
                 <div className="p-6">
                   <p className="text-[#3d3d3d] text-sm leading-relaxed mb-4">{ct.desc}</p>
-                  <p className="font-bold text-[#1C2B5E] text-xs uppercase tracking-wider mb-2">Typical Amenities</p>
+                  <p className="font-bold text-[#123A5E] text-xs uppercase tracking-wider mb-2">Typical Amenities</p>
                   <ul className="space-y-1 mb-4">
                     {ct.amenities.map((a) => (
                       <li key={a} className="text-[#3d3d3d] text-sm flex gap-2">
-                        <span className="text-[#2BB8D3]">›</span> {a}
+                        <span className="text-[#0A7387]">›</span> {a}
                       </li>
                     ))}
                   </ul>
                   <div className="bg-[#f0fafd] rounded-xl p-3">
-                    <p className="text-xs text-[#1C2B5E]"><strong>Best for:</strong> {ct.bestFor}</p>
+                    <p className="text-xs text-[#123A5E]"><strong>Best for:</strong> {ct.bestFor}</p>
                   </div>
                 </div>
               </div>
@@ -151,7 +151,7 @@ export default function SimplifiedLivingCommunities() {
       </section>
 
       {/* Triangle communities */}
-      <section className="py-20 px-4 bg-[#1C2B5E] text-white">
+      <section className="py-20 px-4 bg-[#123A5E] text-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">Where to Look</p>
@@ -173,14 +173,14 @@ export default function SimplifiedLivingCommunities() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">Before You Decide</p>
-            <h2 className="text-3xl font-bold text-[#1C2B5E]">8 Questions to Ask Any Community</h2>
+            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Before You Decide</p>
+            <h2 className="text-3xl font-bold text-[#123A5E]">8 Questions to Ask Any Community</h2>
             <p className="text-[#3d3d3d] mt-4">We help you ask the right questions — and understand the answers — before you commit to anything.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             {communityQuestions.map((q, i) => (
               <div key={q} className="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
-                <span className="w-8 h-8 bg-[#2BB8D3] text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                <span className="w-8 h-8 bg-[#0A7387] text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
                   {i + 1}
                 </span>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed">{q}</p>
@@ -191,11 +191,11 @@ export default function SimplifiedLivingCommunities() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#2BB8D3] py-16 px-4 text-white text-center">
+      <section className="bg-[#0A7387] py-16 px-4 text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Let Us Find the Right Community for You</h2>
           <p className="text-lg opacity-90 mb-8">We know the Triangle&apos;s 55+ communities inside and out — and we&apos;ll match you with the one that truly fits.</p>
-          <Link href="/about/contact-us" className="inline-block bg-[#1C2B5E] hover:bg-[#152047] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE A COMMUNITY TOUR
           </Link>
         </div>

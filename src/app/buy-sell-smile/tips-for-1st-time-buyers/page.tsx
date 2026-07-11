@@ -78,14 +78,14 @@ export default function TipsFor1stTimeBuyers() {
         {tips.map((tip) => (
           <div key={tip.number} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
             <div className="flex gap-4 items-start">
-              <div className="w-12 h-12 bg-[#2BB8D3] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+              <div className="w-12 h-12 bg-[#0A7387] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
                 {tip.number}
               </div>
               <div className="flex-1">
-                <h3 className="font-bold text-[#1C2B5E] text-lg mb-2">{tip.title}</h3>
+                <h3 className="font-bold text-[#123A5E] text-lg mb-2">{tip.title}</h3>
                 <p className="text-[#3d3d3d] leading-relaxed text-sm mb-3">{tip.body}</p>
                 <div className="flex gap-2 items-start bg-[#f0fafd] rounded-lg p-3">
-                  <span className="text-[#2BB8D3] font-bold text-xs flex-shrink-0">ACTION:</span>
+                  <span className="text-[#0A7387] font-bold text-xs flex-shrink-0">ACTION:</span>
                   <p className="text-[#3d3d3d] text-xs leading-relaxed">{tip.action}</p>
                 </div>
               </div>
@@ -94,14 +94,14 @@ export default function TipsFor1stTimeBuyers() {
         ))}
       </div>
 
-      <div className="bg-[#1C2B5E] text-white rounded-2xl p-8 text-center">
+      <div className="bg-[#123A5E] text-white rounded-2xl p-8 text-center">
         <h3 className="text-xl font-bold mb-3">Ready to Start Your Search?</h3>
         <p className="text-gray-200 mb-6">
           Schedule a free buyer consultation and let&apos;s map out your path to homeownership — step by step.
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           SCHEDULE A CONSULTATION
         </Link>

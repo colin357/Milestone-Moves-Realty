@@ -60,18 +60,18 @@ export default function DonationLocations() {
       <div className="space-y-4 mb-10">
         {locations.map((loc) => (
           <div key={loc.name} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-            <h3 className="font-bold text-[#1C2B5E] text-lg mb-2">{loc.name}</h3>
+            <h3 className="font-bold text-[#123A5E] text-lg mb-2">{loc.name}</h3>
             <div className="grid sm:grid-cols-3 gap-3 text-sm text-[#3d3d3d]">
               <div>
-                <span className="font-semibold text-[#2BB8D3] block mb-1">Service Area</span>
+                <span className="font-semibold text-[#0A7387] block mb-1">Service Area</span>
                 {loc.areas}
               </div>
               <div>
-                <span className="font-semibold text-[#2BB8D3] block mb-1">Accepts</span>
+                <span className="font-semibold text-[#0A7387] block mb-1">Accepts</span>
                 {loc.accepts}
               </div>
               <div>
-                <span className="font-semibold text-[#2BB8D3] block mb-1">Notes</span>
+                <span className="font-semibold text-[#0A7387] block mb-1">Notes</span>
                 {loc.notes}
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function DonationLocations() {
         ))}
       </div>
 
-      <div className="bg-[#1C2B5E] text-white rounded-xl p-6 text-center">
+      <div className="bg-[#123A5E] text-white rounded-xl p-6 text-center">
         <p className="mb-2 font-bold text-lg">Have questions about where to donate specific items?</p>
         <p className="text-gray-200 text-sm">
           Our team has helped hundreds of Triangle families find the right home for their belongings.

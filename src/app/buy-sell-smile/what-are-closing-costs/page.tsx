@@ -45,7 +45,7 @@ export default function WhatAreClosingCosts() {
       </p>
 
       {/* Buyer costs */}
-      <h2 className="text-2xl font-bold text-[#1C2B5E] mb-2">Buyer Closing Costs</h2>
+      <h2 className="text-2xl font-bold text-[#123A5E] mb-2">Buyer Closing Costs</h2>
       <p className="text-[#3d3d3d] mb-5 text-sm">
         Buyers receive a <strong>Loan Estimate</strong> within 3 days of applying and a <strong>Closing Disclosure</strong> at
         least 3 days before closing — both itemize these costs so there are no surprises.
@@ -54,8 +54,8 @@ export default function WhatAreClosingCosts() {
         {buyerCosts.map((c) => (
           <div key={c.item} className="flex flex-col sm:flex-row gap-2 sm:gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
             <div className="sm:w-48 flex-shrink-0">
-              <p className="font-bold text-[#1C2B5E] text-sm">{c.item}</p>
-              <p className="text-[#2BB8D3] text-xs font-semibold">{c.amount}</p>
+              <p className="font-bold text-[#123A5E] text-sm">{c.item}</p>
+              <p className="text-[#0A7387] text-xs font-semibold">{c.amount}</p>
             </div>
             <p className="text-[#3d3d3d] text-sm leading-relaxed">{c.desc}</p>
           </div>
@@ -63,24 +63,24 @@ export default function WhatAreClosingCosts() {
       </div>
 
       {/* Seller costs */}
-      <h2 className="text-2xl font-bold text-[#1C2B5E] mb-2">Seller Closing Costs</h2>
+      <h2 className="text-2xl font-bold text-[#123A5E] mb-2">Seller Closing Costs</h2>
       <p className="text-[#3d3d3d] mb-5 text-sm">
         Most seller costs come directly out of the sale proceeds, so there&apos;s rarely a need to bring cash to closing.
       </p>
       <div className="space-y-3 mb-12">
         {sellerCosts.map((c) => (
-          <div key={c.item} className="flex flex-col sm:flex-row gap-2 sm:gap-4 bg-[#f0fafd] border border-[#2BB8D3]/30 rounded-xl p-4">
+          <div key={c.item} className="flex flex-col sm:flex-row gap-2 sm:gap-4 bg-[#f0fafd] border border-[#0A7387]/30 rounded-xl p-4">
             <div className="sm:w-48 flex-shrink-0">
-              <p className="font-bold text-[#1C2B5E] text-sm">{c.item}</p>
-              <p className="text-[#2BB8D3] text-xs font-semibold">{c.amount}</p>
+              <p className="font-bold text-[#123A5E] text-sm">{c.item}</p>
+              <p className="text-[#0A7387] text-xs font-semibold">{c.amount}</p>
             </div>
             <p className="text-[#3d3d3d] text-sm leading-relaxed">{c.desc}</p>
           </div>
         ))}
       </div>
 
-      <div className="bg-[#f0fafd] border border-[#2BB8D3] rounded-xl p-5 mb-8">
-        <p className="font-bold text-[#1C2B5E] mb-2">💡 A Note on NC Closings</p>
+      <div className="bg-[#f0fafd] border border-[#0A7387] rounded-xl p-5 mb-8">
+        <p className="font-bold text-[#123A5E] mb-2">💡 A Note on NC Closings</p>
         <p className="text-[#3d3d3d] text-sm leading-relaxed">
           North Carolina is an attorney-closing state, meaning a licensed real estate attorney must conduct the
           closing and prepare all closing documents. This is actually a consumer protection — your attorney reviews
@@ -88,14 +88,14 @@ export default function WhatAreClosingCosts() {
         </p>
       </div>
 
-      <div className="bg-[#1C2B5E] text-white rounded-2xl p-8 text-center">
+      <div className="bg-[#123A5E] text-white rounded-2xl p-8 text-center">
         <h3 className="text-xl font-bold mb-3">Want a Custom Closing Cost Estimate?</h3>
         <p className="text-gray-200 mb-6">
           We&apos;ll prepare a detailed estimate based on your specific situation — buyer or seller, price range, and timeline.
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           GET AN ESTIMATE
         </Link>

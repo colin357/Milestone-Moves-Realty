@@ -18,7 +18,7 @@ export default function PageLayout({
   subtitle,
   breadcrumbs,
   children,
-  heroColor = "#1C2B5E",
+  heroColor = "#123A5E",
 }: PageLayoutProps) {
   return (
     <div>

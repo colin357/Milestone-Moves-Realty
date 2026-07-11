@@ -43,15 +43,15 @@ export default function RealEstateTerms() {
       <div className="space-y-4">
         {terms.map((item) => (
           <div key={item.term} className="border-b border-gray-100 pb-4">
-            <h3 className="font-bold text-[#1C2B5E] mb-1">{item.term}</h3>
+            <h3 className="font-bold text-[#123A5E] mb-1">{item.term}</h3>
             <p className="text-[#3d3d3d] text-sm leading-relaxed">{item.def}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-10 bg-[#f0fafd] border border-[#2BB8D3] rounded-xl p-6 text-center">
+      <div className="mt-10 bg-[#f0fafd] border border-[#0A7387] rounded-xl p-6 text-center">
         <p className="text-[#3d3d3d] mb-4">Have a term you don&apos;t see here? Just ask us.</p>
-        <a href="/about/contact-us" className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
+        <a href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
           ASK A QUESTION
         </a>
       </div>

@@ -19,7 +19,7 @@ export default function WhatIsACshp() {
         better.
       </p>
 
-      <h2 className="text-2xl font-bold text-[#1C2B5E] mb-4">What a CSHP Learns</h2>
+      <h2 className="text-2xl font-bold text-[#123A5E] mb-4">What a CSHP Learns</h2>
       <p className="text-[#3d3d3d] leading-relaxed mb-4">
         To earn the CSHP designation, a real estate professional must study and demonstrate competency in:
       </p>
@@ -32,7 +32,7 @@ export default function WhatIsACshp() {
         <li>Compassionate communication and patience-centered service</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-[#1C2B5E] mb-4">Why It Matters for You</h2>
+      <h2 className="text-2xl font-bold text-[#123A5E] mb-4">Why It Matters for You</h2>
       <div className="grid sm:grid-cols-2 gap-4 mb-8">
         {[
           { title: "Specialized Knowledge", desc: "A CSHP understands the full landscape of senior housing options — not just what's on the MLS." },
@@ -40,19 +40,19 @@ export default function WhatIsACshp() {
           { title: "Trusted Network", desc: "Connected to senior care professionals, move managers, attorneys, and financial advisors." },
           { title: "No Pressure", desc: "A CSHP is trained to educate first and facilitate decisions — not rush them." },
         ].map((item) => (
-          <div key={item.title} className="bg-[#f0fafd] border-l-4 border-[#2BB8D3] p-5 rounded-r-xl">
-            <h3 className="font-bold text-[#1C2B5E] mb-2">{item.title}</h3>
+          <div key={item.title} className="bg-[#f0fafd] border-l-4 border-[#0A7387] p-5 rounded-r-xl">
+            <h3 className="font-bold text-[#123A5E] mb-2">{item.title}</h3>
             <p className="text-[#3d3d3d] text-sm">{item.desc}</p>
           </div>
         ))}
       </div>
 
-      <div className="bg-[#1C2B5E] text-white rounded-xl p-8 text-center">
+      <div className="bg-[#123A5E] text-white rounded-xl p-8 text-center">
         <h3 className="text-xl font-bold mb-3">Work With a CSHP Today</h3>
         <p className="text-gray-200 mb-6">
           Freda Hamlett is a proud Certified Senior Housing Professional serving the Triangle, NC area.
         </p>
-        <Link href="/about/contact-us" className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
+        <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
           CONTACT FREDA
         </Link>
       </div>

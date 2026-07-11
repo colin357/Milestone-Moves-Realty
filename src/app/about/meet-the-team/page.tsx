@@ -36,20 +36,20 @@ export default function MeetTheTeam() {
   return (
     <div>
       {/* Hero — full editorial style */}
-      <section className="bg-[#1C2B5E] py-20 px-4">
+      <section className="bg-[#123A5E] py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Photo */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-2xl max-w-md mx-auto">
               <Image src="/images/meet-freda.jpg" alt="Freda Hamlett — Milestone Moves Realty Group" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" priority />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1C2B5E]/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#123A5E]/80 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-white font-bold text-2xl">Freda Hamlett</p>
                 <p className="text-[#2BB8D3] font-semibold">Founder &amp; Lead Agent</p>
               </div>
             </div>
             {/* Floating CSHP badge */}
-            <div className="absolute -bottom-4 -right-4 bg-[#2BB8D3] text-white rounded-2xl px-5 py-3 shadow-xl text-center hidden sm:block">
+            <div className="absolute -bottom-4 -right-4 bg-[#0A7387] text-white rounded-2xl px-5 py-3 shadow-xl text-center hidden sm:block">
               <p className="font-black text-xl">CSHP</p>
               <p className="text-xs font-semibold opacity-90">Certified</p>
             </div>
@@ -74,7 +74,7 @@ export default function MeetTheTeam() {
       </section>
 
       {/* Credentials table */}
-      <section className="bg-[#2BB8D3] py-10 px-4">
+      <section className="bg-[#0A7387] py-10 px-4">
         <div className="max-w-5xl mx-auto grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {credentials.map((c) => (
             <div key={c.label} className="text-white">
@@ -88,8 +88,8 @@ export default function MeetTheTeam() {
       {/* Full bio */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">The Full Story</p>
-          <h2 className="text-3xl font-bold text-[#1C2B5E] mb-8">About Freda</h2>
+          <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">The Full Story</p>
+          <h2 className="text-3xl font-bold text-[#123A5E] mb-8">About Freda</h2>
           <div className="space-y-5 text-[#3d3d3d] leading-relaxed text-lg">
             <p>
               Freda Hamlett is more than a real estate agent — she&apos;s an advocate, an educator, and a trusted
@@ -125,14 +125,14 @@ export default function MeetTheTeam() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">How Freda Works</p>
-            <h2 className="text-3xl font-bold text-[#1C2B5E]">The Values Behind Every Interaction</h2>
+            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">How Freda Works</p>
+            <h2 className="text-3xl font-bold text-[#123A5E]">The Values Behind Every Interaction</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v) => (
               <div key={v.title} className="bg-white rounded-2xl p-7 shadow-sm text-center">
                 <div className="text-5xl mb-4">{v.icon}</div>
-                <h3 className="font-bold text-[#1C2B5E] text-xl mb-3">{v.title}</h3>
+                <h3 className="font-bold text-[#123A5E] text-xl mb-3">{v.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
@@ -141,7 +141,7 @@ export default function MeetTheTeam() {
       </section>
 
       {/* Services list */}
-      <section className="py-20 px-4 bg-[#1C2B5E] text-white">
+      <section className="py-20 px-4 bg-[#123A5E] text-white">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -152,14 +152,14 @@ export default function MeetTheTeam() {
                 approach to every client relationship — because a successful move involves more than finding the right
                 home.
               </p>
-              <Link href="/about/contact-us" className="inline-block mt-8 bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+              <Link href="/about/contact-us" className="inline-block mt-8 bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
                 SCHEDULE A CONSULTATION
               </Link>
             </div>
             <ul className="space-y-3">
               {serviceHighlights.map((s) => (
                 <li key={s} className="flex gap-3 items-start">
-                  <span className="w-5 h-5 bg-[#2BB8D3] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="w-5 h-5 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </span>
                   <span className="text-gray-200 text-sm">{s}</span>
@@ -171,15 +171,15 @@ export default function MeetTheTeam() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#2BB8D3] py-16 px-4 text-white text-center">
+      <section className="bg-[#0A7387] py-16 px-4 text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Ready to Work with Freda?</h2>
           <p className="text-lg opacity-90 mb-8">Start with a free, no-pressure consultation — and see why so many Triangle families trust Milestone Moves.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/about/contact-us" className="inline-block bg-[#1C2B5E] hover:bg-[#152047] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+            <Link href="/about/contact-us" className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
               CONTACT FREDA
             </Link>
-            <Link href="/about/what-is-a-cshp" className="inline-block border-2 border-white hover:bg-white hover:text-[#2BB8D3] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+            <Link href="/about/what-is-a-cshp" className="inline-block border-2 border-white hover:bg-white hover:text-[#0A7387] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
               WHAT IS A CSHP?
             </Link>
           </div>

@@ -40,11 +40,11 @@ export default function ReferralPartners() {
       <div className="grid sm:grid-cols-2 gap-6 mb-10">
         {partnerCategories.map((cat) => (
           <div key={cat.category} className="border border-gray-200 rounded-xl p-5 shadow-sm">
-            <h3 className="font-bold text-[#1C2B5E] text-lg mb-3 border-b border-[#2BB8D3] pb-2">{cat.category}</h3>
+            <h3 className="font-bold text-[#123A5E] text-lg mb-3 border-b border-[#0A7387] pb-2">{cat.category}</h3>
             <ul className="space-y-2">
               {cat.partners.map((p) => (
                 <li key={p} className="flex items-center gap-2 text-[#3d3d3d] text-sm">
-                  <span className="w-2 h-2 bg-[#2BB8D3] rounded-full flex-shrink-0" />
+                  <span className="w-2 h-2 bg-[#0A7387] rounded-full flex-shrink-0" />
                   {p}
                 </li>
               ))}
@@ -53,12 +53,12 @@ export default function ReferralPartners() {
         ))}
       </div>
 
-      <div className="bg-[#1C2B5E] text-white rounded-xl p-8 text-center">
+      <div className="bg-[#123A5E] text-white rounded-xl p-8 text-center">
         <h3 className="text-xl font-bold mb-3">Are You a Professional Serving Seniors?</h3>
         <p className="text-gray-200 mb-6">
           We&apos;re always looking to expand our network with mission-aligned professionals. Let&apos;s connect.
         </p>
-        <a href="/about/contact-us" className="inline-block bg-[#2BB8D3] hover:bg-[#1fa3bd] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
+        <a href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
           GET IN TOUCH
         </a>
       </div>

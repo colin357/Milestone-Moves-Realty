@@ -87,7 +87,7 @@ export default function Header() {
               >
                 {item.dropdown ? (
                   <button
-                    className="flex items-center gap-1 px-3 py-2 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#2BB8D3] transition-colors"
+                    className="flex items-center gap-1 px-3 py-2 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#0A7387] transition-colors"
                     onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                   >
                     {item.label}
@@ -102,20 +102,20 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href!}
-                    className="px-3 py-2 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#2BB8D3] transition-colors block"
+                    className="px-3 py-2 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#0A7387] transition-colors block"
                   >
                     {item.label}
                   </Link>
                 )}
 
                 {item.dropdown && openDropdown === item.label && (
-                  <div className="animate-dropdown absolute top-full left-0 bg-white shadow-xl border-t-2 border-[#2BB8D3] min-w-[280px] py-2 z-50 rounded-b-lg">
+                  <div className="animate-dropdown absolute top-full left-0 bg-white shadow-xl border-t-2 border-[#0A7387] min-w-[280px] py-2 z-50 rounded-b-lg">
                     {item.dropdown.map((sub) => (
                       <Link
                         key={sub.href}
                         href={sub.href}
                         onClick={() => setOpenDropdown(null)}
-                        className="block px-5 py-3 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#2BB8D3] hover:bg-gray-50 transition-colors"
+                        className="block px-5 py-3 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#0A7387] hover:bg-gray-50 transition-colors"
                       >
                         {sub.label}
                       </Link>
@@ -169,7 +169,7 @@ export default function Header() {
                         <Link
                           key={sub.href}
                           href={sub.href}
-                          className="block py-2 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#2BB8D3]"
+                          className="block py-2 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#0A7387]"
                           onClick={() => setMobileOpen(false)}
                         >
                           {sub.label}
@@ -181,7 +181,7 @@ export default function Header() {
               ) : (
                 <Link
                   href={item.href!}
-                  className="block py-3 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#2BB8D3]"
+                  className="block py-3 text-xs font-bold text-[#3d3d3d] tracking-wider hover:text-[#0A7387]"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
