@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Meet the Team | Milestone Moves Realty Group",
-  description: "Meet the Milestone Moves Realty Group team — Freda Hamlett (CSHP), Robin, and Heather — your dedicated partners for 55+ real estate in the Triangle, NC.",
+  description: "Meet the Milestone Moves Realty Group team — Freda Hamlett (CSHP), Robin Bodwin, and Heather Walz — your dedicated partners for 55+ real estate in the Triangle, NC.",
 };
 
 const credentials = [
@@ -24,14 +24,14 @@ const team = [
     photo: "/images/freda-about.jpg",
   },
   {
-    name: "Robin",
+    name: "Robin Bodwin",
     title: "Realtor",
     email: "robin@milestonemoves.com",
     phone: "919-746-3604",
-    photo: null,
+    photo: "/images/Robin-bodwin-headshot.jpg",
   },
   {
-    name: "Heather",
+    name: "Heather Walz",
     title: "Realtor",
     email: "heather@milestonemoves.com",
     phone: "919-655-5424",
