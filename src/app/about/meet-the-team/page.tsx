@@ -66,7 +66,7 @@ export default function MeetTheTeam() {
           {/* Photo */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-2xl max-w-md mx-auto">
-              <Image src="/images/meet-freda.jpg" alt="Freda Hamlett — Milestone Moves Realty Group" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" priority />
+              <Image src="/images/freda-about.jpg" alt="Freda Hamlett — Milestone Moves Realty Group" fill className="object-cover object-top" sizes="(max-width: 768px) 100vw, 50vw" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-[#123A5E]/80 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-white font-bold text-2xl">Freda Hamlett</p>
