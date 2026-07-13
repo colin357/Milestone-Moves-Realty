@@ -76,7 +76,7 @@ export default function EmpoweredAging() {
         <Image src="/images/empowered-aging.jpg" alt="Active seniors living their best life" fill className="object-cover object-top" sizes="100vw" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#123A5E] via-[#123A5E]/40 to-transparent" />
         <div className="relative z-10 max-w-5xl mx-auto px-6 pb-16 w-full">
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">A Philosophy of Living</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">A Philosophy of Living</p>
           <h1 className="text-5xl sm:text-6xl font-black text-white leading-tight mb-6 max-w-3xl">
             Empowered<br />Aging
           </h1>
@@ -87,7 +87,7 @@ export default function EmpoweredAging() {
       </section>
 
       {/* Pull quote */}
-      <section className="bg-[#0A7387] py-14 px-4 text-white text-center">
+      <section className="bg-[#123A5E] py-14 px-4 text-white text-center">
         <div className="max-w-3xl mx-auto">
           <p className="text-2xl sm:text-3xl font-bold leading-relaxed italic">
             &ldquo;The goal isn&apos;t just a longer life. It&apos;s a fuller one.&rdquo;
@@ -100,7 +100,7 @@ export default function EmpoweredAging() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">What We Mean By It</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">What We Mean By It</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6 leading-tight">
               Aging Empowered Means Living<br />On Your Terms
             </h2>
@@ -127,7 +127,7 @@ export default function EmpoweredAging() {
             ].map((item) => (
               <div key={item.label} className="bg-gray-50 rounded-xl p-5">
                 <div className="flex gap-3 items-center mb-2">
-                  <span className="w-6 h-6 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="w-6 h-6 bg-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </span>
                   <p className="font-bold text-[#123A5E] text-sm">{item.label}</p>
@@ -143,7 +143,7 @@ export default function EmpoweredAging() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">The Foundation</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">The Foundation</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">Six Pillars of Empowered Aging</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-xl mx-auto">The dimensions of life that your housing directly shapes — and that we help you optimize.</p>
           </div>
@@ -153,7 +153,7 @@ export default function EmpoweredAging() {
                 <div className="text-4xl mb-4">{p.icon}</div>
                 <h3 className="font-bold text-[#123A5E] text-xl mb-3">{p.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed flex-1 mb-5">{p.desc}</p>
-                <Link href={p.link} className="text-[#0A7387] font-bold text-sm hover:underline">
+                <Link href={p.link} className="text-[#123A5E] font-bold text-sm hover:underline">
                   {p.linkLabel} →
                 </Link>
               </div>
@@ -166,7 +166,7 @@ export default function EmpoweredAging() {
       <section className="py-20 px-4 bg-[#123A5E] text-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">A Moment to Reflect</p>
+            <p className="text-white font-bold tracking-widest text-sm mb-3 uppercase">A Moment to Reflect</p>
             <h2 className="text-3xl font-bold">Questions Worth Asking Yourself</h2>
             <p className="text-gray-300 mt-4 max-w-xl mx-auto">These aren&apos;t easy questions — but they&apos;re the ones that lead to the best decisions.</p>
           </div>
@@ -174,7 +174,7 @@ export default function EmpoweredAging() {
             {questions.map((item, i) => (
               <div key={item.q} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
                 <div className="flex gap-4 items-start">
-                  <span className="text-[#2BB8D3] font-black text-2xl flex-shrink-0 leading-none">{i + 1}.</span>
+                  <span className="text-white font-black text-2xl flex-shrink-0 leading-none">{i + 1}.</span>
                   <div>
                     <p className="font-bold text-white text-lg mb-2">{item.q}</p>
                     <p className="text-gray-300 text-sm leading-relaxed">{item.context}</p>
@@ -184,7 +184,7 @@ export default function EmpoweredAging() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+            <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
               LET&apos;S TALK THROUGH THEM TOGETHER
             </Link>
           </div>
@@ -195,15 +195,15 @@ export default function EmpoweredAging() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Go Deeper</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Go Deeper</p>
             <h2 className="text-3xl font-bold text-[#123A5E]">Resources for Your Journey</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {resources.map((r) => (
-              <Link key={r.title} href={r.href} className="group bg-gray-50 hover:bg-[#f0fafd] border border-gray-200 hover:border-[#0A7387] rounded-2xl p-6 transition-all">
-                <h3 className="font-bold text-[#123A5E] text-lg mb-2 group-hover:text-[#0A7387] transition-colors">{r.title}</h3>
+              <Link key={r.title} href={r.href} className="group bg-gray-50 hover:bg-[#f3f4f6] border border-gray-200 hover:border-[#123A5E] rounded-2xl p-6 transition-all">
+                <h3 className="font-bold text-[#123A5E] text-lg mb-2 group-hover:text-[#123A5E] transition-colors">{r.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed mb-4">{r.desc}</p>
-                <span className="text-[#0A7387] text-sm font-bold">Read More →</span>
+                <span className="text-[#123A5E] text-sm font-bold">Read More →</span>
               </Link>
             ))}
           </div>
@@ -211,11 +211,11 @@ export default function EmpoweredAging() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#0A7387] py-16 px-4 text-white text-center">
+      <section className="bg-[#123A5E] py-16 px-4 text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Ready to Live on Your Terms?</h2>
           <p className="text-lg opacity-90 mb-8">Start with a free, no-pressure conversation about what empowered aging looks like for you.</p>
-          <Link href="/about/contact-us" className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE A FREE CONSULTATION
           </Link>
         </div>

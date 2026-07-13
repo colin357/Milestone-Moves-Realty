@@ -19,7 +19,7 @@ export default function ContactUs() {
 
           <div className="space-y-6">
             <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -32,21 +32,21 @@ export default function ContactUs() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
               <div>
                 <p className="font-bold text-[#123A5E]">Email</p>
-                <a href="mailto:info@milestonemovesrealty.com" className="text-[#0A7387] hover:underline">
+                <a href="mailto:info@milestonemovesrealty.com" className="text-[#123A5E] hover:underline">
                   info@milestonemovesrealty.com
                 </a>
               </div>
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="w-10 h-10 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
@@ -56,15 +56,15 @@ export default function ContactUs() {
                 <ul className="text-[#3d3d3d] space-y-1 mt-1">
                   <li>
                     Freda Hamlett ·{" "}
-                    <a href="tel:+19198109551" className="text-[#0A7387] font-semibold hover:underline">919-810-9551</a>
+                    <a href="tel:+19198109551" className="text-[#123A5E] font-semibold hover:underline">919-810-9551</a>
                   </li>
                   <li>
                     Robin ·{" "}
-                    <a href="tel:+19197463604" className="text-[#0A7387] font-semibold hover:underline">919-746-3604</a>
+                    <a href="tel:+19197463604" className="text-[#123A5E] font-semibold hover:underline">919-746-3604</a>
                   </li>
                   <li>
                     Heather ·{" "}
-                    <a href="tel:+19196555424" className="text-[#0A7387] font-semibold hover:underline">919-655-5424</a>
+                    <a href="tel:+19196555424" className="text-[#123A5E] font-semibold hover:underline">919-655-5424</a>
                   </li>
                 </ul>
               </div>
@@ -88,7 +88,7 @@ export default function ContactUs() {
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">Full Name *</label>
               <input
                 type="text"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#123A5E] focus:ring-1 focus:ring-[#123A5E]"
                 placeholder="Your name"
               />
             </div>
@@ -96,7 +96,7 @@ export default function ContactUs() {
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">Email Address *</label>
               <input
                 type="email"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#123A5E] focus:ring-1 focus:ring-[#123A5E]"
                 placeholder="your@email.com"
               />
             </div>
@@ -104,13 +104,13 @@ export default function ContactUs() {
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">Phone Number</label>
               <input
                 type="tel"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#123A5E] focus:ring-1 focus:ring-[#123A5E]"
                 placeholder="(555) 000-0000"
               />
             </div>
             <div>
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">How Can We Help?</label>
-              <select className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]">
+              <select className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#123A5E] focus:ring-1 focus:ring-[#123A5E]">
                 <option value="">Select a topic...</option>
                 <option>Buying a Home</option>
                 <option>Selling My Home</option>
@@ -123,13 +123,13 @@ export default function ContactUs() {
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">Message *</label>
               <textarea
                 rows={5}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#123A5E] focus:ring-1 focus:ring-[#123A5E]"
                 placeholder="Tell us a bit about your situation..."
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-[#0A7387] hover:bg-[#086475] text-white font-bold py-4 rounded-full transition-colors text-sm tracking-wider"
+              className="w-full bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold py-4 rounded-full transition-colors text-sm tracking-wider"
             >
               SEND MESSAGE
             </button>

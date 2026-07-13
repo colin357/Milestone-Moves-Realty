@@ -9,7 +9,7 @@ export const metadata = {
 
 const boxes = [
   { label: "KEEP", icon: "💙", color: "#123A5E", desc: "Items you love, use, and will bring into your new home." },
-  { label: "DONATE / GIVE", icon: "🎁", color: "#0A7387", desc: "Items still useful to others — family, friends, or local charities." },
+  { label: "DONATE / GIVE", icon: "🎁", color: "#123A5E", desc: "Items still useful to others — family, friends, or local charities." },
   { label: "LET GO", icon: "♻️", color: "#6b7280", desc: "Items that are worn, expired, or no longer serve a purpose." },
 ];
 
@@ -67,7 +67,7 @@ export default function DeclutteringMadeEasy() {
             <span className="mx-2">/</span>
             <span>Decluttering Made Easy</span>
           </nav>
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">One Step at a Time</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">One Step at a Time</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight max-w-3xl">Decluttering Made Easy</h1>
           <p className="text-gray-200 text-lg max-w-2xl leading-relaxed mb-8">
             Decades of living fill a home with memories — and a lot of stuff. The good news: decluttering doesn&apos;t
@@ -75,7 +75,7 @@ export default function DeclutteringMadeEasy() {
           </p>
           <Link
             href="/about/contact-us"
-            className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider"
+            className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider"
           >
             GET GUIDANCE ON YOUR MOVE
           </Link>
@@ -86,7 +86,7 @@ export default function DeclutteringMadeEasy() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Start Simple</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Start Simple</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">The Three-Box Method</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
               For every room, grab three boxes and give each item a home. No overthinking — just three clear choices.
@@ -108,7 +108,7 @@ export default function DeclutteringMadeEasy() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">A Clear Plan</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">A Clear Plan</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">Room-by-Room Checklist</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
               Not sure where to begin in each space? These are the usual suspects worth a second look.
@@ -116,7 +116,7 @@ export default function DeclutteringMadeEasy() {
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {rooms.map((section) => (
-              <div key={section.room} className="bg-white rounded-2xl p-7 shadow-sm border-t-4 border-[#0A7387]">
+              <div key={section.room} className="bg-white rounded-2xl p-7 shadow-sm border-t-4 border-[#123A5E]">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl" aria-hidden="true">{section.icon}</span>
                   <h3 className="font-bold text-[#123A5E] text-xl">{section.room}</h3>
@@ -124,7 +124,7 @@ export default function DeclutteringMadeEasy() {
                 <ul className="space-y-2">
                   {section.items.map((item) => (
                     <li key={item} className="flex gap-3 items-start text-[#3d3d3d] text-sm">
-                      <span className="text-[#0A7387] mt-0.5 flex-shrink-0" aria-hidden="true">›</span>
+                      <span className="text-[#123A5E] mt-0.5 flex-shrink-0" aria-hidden="true">›</span>
                       {item}
                     </li>
                   ))}
@@ -139,7 +139,7 @@ export default function DeclutteringMadeEasy() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Pace Yourself</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Pace Yourself</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">A Six-Week Decluttering Rhythm</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
               Plan for 1–2 focused hours a day over several weeks rather than one overwhelming weekend. Slow and steady
@@ -149,13 +149,13 @@ export default function DeclutteringMadeEasy() {
           <div className="space-y-4">
             {schedule.map((step, i) => (
               <div key={step.when} className="flex gap-5 items-start bg-gray-50 rounded-2xl p-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#0A7387] rounded-full flex items-center justify-center text-white font-bold">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#123A5E] rounded-full flex items-center justify-center text-white font-bold">
                   {i + 1}
                 </div>
                 <div>
                   <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">
                     <h3 className="font-bold text-[#123A5E] text-lg">{step.focus}</h3>
-                    <span className="text-[#0A7387] text-sm font-semibold">{step.when}</span>
+                    <span className="text-[#123A5E] text-sm font-semibold">{step.when}</span>
                   </div>
                   <p className="text-[#3d3d3d] text-sm leading-relaxed">{step.detail}</p>
                 </div>
@@ -169,7 +169,7 @@ export default function DeclutteringMadeEasy() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Let It Go With Purpose</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Let It Go With Purpose</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">What to Do With What You Release</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
               Letting go feels a lot easier when your belongings go somewhere they&apos;ll be valued.
@@ -182,7 +182,7 @@ export default function DeclutteringMadeEasy() {
                 <h3 className="font-bold text-[#123A5E] text-lg mb-2">{opt.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed flex-1">{opt.desc}</p>
                 {opt.href && opt.cta && (
-                  <Link href={opt.href} className="inline-block mt-4 text-[#0A7387] text-sm font-bold hover:underline">
+                  <Link href={opt.href} className="inline-block mt-4 text-[#123A5E] text-sm font-bold hover:underline">
                     {opt.cta} →
                   </Link>
                 )}
@@ -195,19 +195,19 @@ export default function DeclutteringMadeEasy() {
       {/* Tip + CTA */}
       <section className="bg-[#123A5E] py-16 px-4 text-white">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">Ready When You Are</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-3 uppercase">Ready When You Are</p>
           <h2 className="text-3xl font-bold mb-4">Decluttering Is the First Step of a Bigger Journey</h2>
           <p className="text-lg text-gray-200 mb-8">
             When you&apos;re ready to think about what comes next, we&apos;re here to help you plan the whole move —
             patiently, and at your pace. Explore our{" "}
-            <Link href="/55-plus-options/downsizing-tips-for-seniors" className="text-[#2BB8D3] font-semibold hover:underline">
+            <Link href="/55-plus-options/downsizing-tips-for-seniors" className="text-white font-semibold hover:underline">
               downsizing tips
             </Link>{" "}
             or reach out anytime.
           </p>
           <Link
             href="/about/contact-us"
-            className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider"
+            className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider"
           >
             TALK TO MILESTONE MOVES
           </Link>

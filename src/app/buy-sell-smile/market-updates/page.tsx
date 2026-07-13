@@ -48,20 +48,20 @@ export default function MarketUpdates() {
         </div>
         <div className="absolute inset-0 bg-[#123A5E]/70" />
         <div className="relative z-10 max-w-5xl mx-auto text-center text-white">
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Triangle Real Estate</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">Triangle Real Estate</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Market Updates &amp; Insights</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed mb-10">
             Understanding the market is the first step to making a smart real estate decision.
             Here&apos;s what&apos;s happening across the Triangle — and what it means for you.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
             GET A PERSONALIZED MARKET REPORT
           </Link>
         </div>
       </section>
 
       {/* Current conditions banner */}
-      <section className="bg-[#0A7387] py-6 px-4">
+      <section className="bg-[#123A5E] py-6 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-6 text-white text-center">
           <div className="flex items-center gap-2">
             <span className="text-2xl">🏠</span>
@@ -102,7 +102,7 @@ export default function MarketUpdates() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Why the Triangle</p>
+              <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Why the Triangle</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6 leading-tight">
                 One of America&apos;s Most Resilient Real Estate Markets
               </h2>
@@ -120,7 +120,7 @@ export default function MarketUpdates() {
             <div className="grid grid-cols-2 gap-4">
               {whyTriangle.map((item) => (
                 <div key={item.label} className="bg-[#123A5E] text-white rounded-2xl p-6">
-                  <p className="text-4xl font-black text-[#2BB8D3] mb-1">{item.stat}</p>
+                  <p className="text-4xl font-black text-white mb-1">{item.stat}</p>
                   <p className="font-bold mb-2">{item.label}</p>
                   <p className="text-gray-300 text-xs leading-relaxed">{item.detail}</p>
                 </div>
@@ -134,7 +134,7 @@ export default function MarketUpdates() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Area by Area</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Area by Area</p>
             <h2 className="text-3xl font-bold text-[#123A5E]">Neighborhood Market Snapshots</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-xl mx-auto text-sm">
               Conditions vary significantly from one area to the next. Here&apos;s a high-level view of key Triangle markets.
@@ -142,16 +142,16 @@ export default function MarketUpdates() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {neighborhoods.map((n) => (
-              <div key={n.area} className="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-[#0A7387]">
+              <div key={n.area} className="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-[#123A5E]">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="font-bold text-[#123A5E] text-xl">{n.area}</h3>
                   <span className={`text-xs font-bold px-2 py-1 rounded-full ${
-                    n.tag === "Seller's Market" ? "bg-[#0A7387] text-white" :
+                    n.tag === "Seller's Market" ? "bg-[#123A5E] text-white" :
                     n.tag === "Rising" ? "bg-[#123A5E] text-white" :
                     "bg-gray-100 text-gray-600"
                   }`}>{n.tag}</span>
                 </div>
-                <p className="text-[#0A7387] font-bold text-lg mb-2">{n.trend}</p>
+                <p className="text-[#123A5E] font-bold text-lg mb-2">{n.trend}</p>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed">{n.detail}</p>
               </div>
             ))}
@@ -164,19 +164,19 @@ export default function MarketUpdates() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">What This Means For You</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">What This Means For You</p>
             <h2 className="text-3xl font-bold text-[#123A5E]">How to Navigate Today&apos;s Market</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#f0fafd] border border-[#0A7387] rounded-2xl p-8">
+            <div className="bg-[#f3f4f6] border border-[#123A5E] rounded-2xl p-8">
               <h3 className="font-bold text-[#123A5E] text-xl mb-6 flex items-center gap-3">
-                <span className="w-10 h-10 bg-[#0A7387] text-white rounded-full flex items-center justify-center text-lg">🔍</span>
+                <span className="w-10 h-10 bg-[#123A5E] text-white rounded-full flex items-center justify-center text-lg">🔍</span>
                 If You&apos;re Buying
               </h3>
               <ul className="space-y-3">
                 {buyerTips.map((tip) => (
                   <li key={tip} className="flex gap-3 items-start text-sm text-[#3d3d3d]">
-                    <span className="w-5 h-5 bg-[#0A7387] text-white rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
+                    <span className="w-5 h-5 bg-[#123A5E] text-white rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
                     {tip}
                   </li>
                 ))}
@@ -184,13 +184,13 @@ export default function MarketUpdates() {
             </div>
             <div className="bg-[#123A5E] rounded-2xl p-8">
               <h3 className="font-bold text-white text-xl mb-6 flex items-center gap-3">
-                <span className="w-10 h-10 bg-[#0A7387] text-white rounded-full flex items-center justify-center text-lg">🏷️</span>
+                <span className="w-10 h-10 bg-white text-[#123A5E] rounded-full flex items-center justify-center text-lg">🏷️</span>
                 If You&apos;re Selling
               </h3>
               <ul className="space-y-3">
                 {sellerTips.map((tip) => (
                   <li key={tip} className="flex gap-3 items-start text-sm text-gray-300">
-                    <span className="w-5 h-5 bg-[#0A7387] text-white rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
+                    <span className="w-5 h-5 bg-white text-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
                     {tip}
                   </li>
                 ))}
@@ -211,7 +211,7 @@ export default function MarketUpdates() {
             We&apos;ll pull the latest sales data, active competition, and pricing trends for your specific neighborhood —
             and walk you through what it means in plain language.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             REQUEST MY REPORT
           </Link>
         </div>

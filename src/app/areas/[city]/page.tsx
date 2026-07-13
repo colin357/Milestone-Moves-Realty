@@ -91,7 +91,7 @@ export default async function CityPage({ params }: PageProps) {
       <ul className="space-y-3 mb-10">
         {data.highlights.map((h) => (
           <li key={h} className="flex items-start gap-3">
-            <span className="w-6 h-6 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span className="w-6 h-6 bg-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
               </svg>
@@ -106,7 +106,7 @@ export default async function CityPage({ params }: PageProps) {
         <p className="text-gray-200 mb-6">
           Let our team help you explore homes and communities in {data.name} that fit your lifestyle and goals.
         </p>
-        <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
+        <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
           CONTACT US
         </Link>
       </div>

@@ -65,11 +65,11 @@ export default function IsNowTheBestTimeToSell() {
       <h2 className="text-2xl font-bold text-[#123A5E] mb-6">Signals to Consider</h2>
       <div className="grid sm:grid-cols-2 gap-5 mb-12">
         {signals.map((s) => (
-          <div key={s.title} className={`rounded-xl p-5 border-l-4 ${s.good ? "border-[#0A7387] bg-[#f0fafd]" : "border-gray-300 bg-gray-50"}`}>
+          <div key={s.title} className={`rounded-xl p-5 border-l-4 ${s.good ? "border-[#123A5E] bg-[#f3f4f6]" : "border-gray-300 bg-gray-50"}`}>
             <div className="flex items-center gap-3 mb-2">
               <span className="text-2xl">{s.icon}</span>
               <h3 className={`font-bold text-base ${s.good ? "text-[#123A5E]" : "text-gray-600"}`}>{s.title}</h3>
-              <span className={`ml-auto text-xs font-bold px-2 py-0.5 rounded-full ${s.good ? "bg-[#0A7387] text-white" : "bg-gray-200 text-gray-500"}`}>
+              <span className={`ml-auto text-xs font-bold px-2 py-0.5 rounded-full ${s.good ? "bg-[#123A5E] text-white" : "bg-gray-200 text-gray-500"}`}>
                 {s.good ? "FAVORABLE" : "CONSIDER"}
               </span>
             </div>
@@ -91,7 +91,7 @@ export default function IsNowTheBestTimeToSell() {
         </p>
       </div>
 
-      <div className="bg-[#f0fafd] border border-[#0A7387] rounded-xl p-8 text-center">
+      <div className="bg-[#f3f4f6] border border-[#123A5E] rounded-xl p-8 text-center">
         <h3 className="text-xl font-bold text-[#123A5E] mb-3">Get a Free Market Assessment</h3>
         <p className="text-[#3d3d3d] mb-6">
           We&apos;ll pull the latest data for your neighborhood and give you an honest, no-pressure picture of what
@@ -99,7 +99,7 @@ export default function IsNowTheBestTimeToSell() {
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           REQUEST AN ASSESSMENT
         </Link>

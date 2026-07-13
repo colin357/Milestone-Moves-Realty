@@ -40,7 +40,7 @@ export default function WhatIsACshp() {
           { title: "Trusted Network", desc: "Connected to senior care professionals, move managers, attorneys, and financial advisors." },
           { title: "No Pressure", desc: "A CSHP is trained to educate first and facilitate decisions — not rush them." },
         ].map((item) => (
-          <div key={item.title} className="bg-[#f0fafd] border-l-4 border-[#0A7387] p-5 rounded-r-xl">
+          <div key={item.title} className="bg-[#f3f4f6] border-l-4 border-[#123A5E] p-5 rounded-r-xl">
             <h3 className="font-bold text-[#123A5E] mb-2">{item.title}</h3>
             <p className="text-[#3d3d3d] text-sm">{item.desc}</p>
           </div>
@@ -52,7 +52,7 @@ export default function WhatIsACshp() {
         <p className="text-gray-200 mb-6">
           Freda Hamlett is a proud Certified Senior Housing Professional serving the Triangle, NC area.
         </p>
-        <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
+        <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
           CONTACT FREDA
         </Link>
       </div>

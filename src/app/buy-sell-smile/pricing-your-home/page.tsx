@@ -38,7 +38,7 @@ export default function PricingYourHome() {
             icon: "🎯",
             desc: "Priced in line with comparable sales. Attracts serious buyers, typically sells within a predictable timeframe. Our most common recommendation.",
             ideal: "Most market conditions",
-            color: "border-[#0A7387]",
+            color: "border-[#123A5E]",
           },
           {
             strategy: "Slightly Below Market",
@@ -91,7 +91,7 @@ export default function PricingYourHome() {
           "Your timeline — faster sale vs. maximum price",
         ].map((item) => (
           <li key={item} className="flex gap-3 items-start">
-            <span className="w-5 h-5 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span className="w-5 h-5 bg-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
               </svg>
@@ -108,7 +108,7 @@ export default function PricingYourHome() {
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           SCHEDULE A CONSULTATION
         </Link>

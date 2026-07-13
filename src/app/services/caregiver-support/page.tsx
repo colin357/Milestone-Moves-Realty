@@ -57,13 +57,13 @@ export default function CaregiverSupport() {
             <span className="mx-2">/</span>
             <span>Caregiver Support</span>
           </nav>
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Caregiver Support</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">Caregiver Support</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight max-w-3xl">Support for the People Doing the Heavy Lifting</h1>
           <p className="text-gray-200 text-lg max-w-2xl leading-relaxed mb-8">
             If you&apos;re helping aging parents navigate housing, caregiving, and major life transitions, you&apos;re
             carrying more than most people realize. You don&apos;t have to carry it alone.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE A CAREGIVER CONSULTATION
           </Link>
         </div>
@@ -72,7 +72,7 @@ export default function CaregiverSupport() {
       {/* What you're juggling */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">We See You</p>
+          <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">We See You</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6">All of This, All at Once</h2>
           <p className="text-[#3d3d3d] leading-relaxed text-lg mb-8">
             Caregiving often begins gradually and becomes overwhelming before families even realize how much they&apos;re
@@ -80,7 +80,7 @@ export default function CaregiverSupport() {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {juggling.map((j) => (
-              <span key={j} className="bg-[#f0fafd] text-[#0A7387] font-semibold text-sm px-4 py-2 rounded-full">{j}</span>
+              <span key={j} className="bg-[#f3f4f6] text-[#123A5E] font-semibold text-sm px-4 py-2 rounded-full">{j}</span>
             ))}
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function CaregiverSupport() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">You Don&apos;t Have to Do It Alone</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">You Don&apos;t Have to Do It Alone</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">How We Help Caregivers</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,7 +109,7 @@ export default function CaregiverSupport() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">The Hardest Part</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">The Hardest Part</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6 leading-tight">The Emotional Balancing Act</h2>
             <p className="text-[#3d3d3d] leading-relaxed mb-4">
               Most adult children are trying to hold two goals at once: <strong>protecting their parents</strong> and{" "}
@@ -121,7 +121,7 @@ export default function CaregiverSupport() {
           </div>
           <ul className="space-y-3">
             {guilt.map((g) => (
-              <li key={g} className="flex gap-3 items-start bg-[#f0fafd] border-l-4 border-[#0A7387] rounded-r-xl p-4">
+              <li key={g} className="flex gap-3 items-start bg-[#f3f4f6] border-l-4 border-[#123A5E] rounded-r-xl p-4">
                 <span className="text-[#3d3d3d]">{g}</span>
               </li>
             ))}
@@ -132,14 +132,14 @@ export default function CaregiverSupport() {
       {/* Common challenges */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">What We Help Navigate</p>
+          <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">What We Help Navigate</p>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#123A5E] mb-8">Common Caregiver Challenges</h2>
           <div className="flex flex-wrap justify-center gap-3">
             {challenges.map((c) => (
               <Link
                 key={c}
                 href="/about/contact-us"
-                className="bg-white text-[#123A5E] font-semibold text-sm px-5 py-3 rounded-full shadow-sm hover:shadow-md hover:text-[#0A7387] transition-all"
+                className="bg-white text-[#123A5E] font-semibold text-sm px-5 py-3 rounded-full shadow-sm hover:shadow-md hover:text-[#123A5E] transition-all"
               >
                 {c}
               </Link>
@@ -156,7 +156,7 @@ export default function CaregiverSupport() {
             A roadmap. A calm voice. Someone who understands both the emotional and practical side of what you&apos;re
             carrying. Let&apos;s talk.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE A CAREGIVER CONSULTATION
           </Link>
         </div>

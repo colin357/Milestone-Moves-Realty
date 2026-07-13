@@ -49,9 +49,9 @@ export default function RealEstateTerms() {
         ))}
       </div>
 
-      <div className="mt-10 bg-[#f0fafd] border border-[#0A7387] rounded-xl p-6 text-center">
+      <div className="mt-10 bg-[#f3f4f6] border border-[#123A5E] rounded-xl p-6 text-center">
         <p className="text-[#3d3d3d] mb-4">Have a term you don&apos;t see here? Just ask us.</p>
-        <a href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
+        <a href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
           ASK A QUESTION
         </a>
       </div>

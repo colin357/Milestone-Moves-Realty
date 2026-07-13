@@ -49,13 +49,13 @@ export default function AgingInPlace() {
             <span className="mx-2">/</span>
             <span>Aging in Place</span>
           </nav>
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Aging in Place</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">Aging in Place</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight max-w-3xl">Stay Home Safely and Confidently</h1>
           <p className="text-gray-200 text-lg max-w-2xl leading-relaxed mb-8">
             For many older adults, home means independence, comfort, and community. Remaining there may absolutely be the
             right choice — the key is planning ahead.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
             EXPLORE AGING IN PLACE OPTIONS
           </Link>
         </div>
@@ -64,7 +64,7 @@ export default function AgingInPlace() {
       {/* Philosophy */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">A Thoughtful Approach</p>
+          <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">A Thoughtful Approach</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6">Aging in Place Isn&apos;t About Standing Still</h2>
           <p className="text-[#3d3d3d] leading-relaxed text-lg">
             Successful aging in place takes thoughtful preparation. Our goal is never to pressure anyone into moving —
@@ -79,7 +79,7 @@ export default function AgingInPlace() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">What We Help Evaluate</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">What We Help Evaluate</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">A Home That Fits the Years Ahead</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -98,12 +98,12 @@ export default function AgingInPlace() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Areas of Focus</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Areas of Focus</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#123A5E] mb-6">Where We Concentrate</h2>
             <ul className="space-y-3">
               {focusAreas.map((f) => (
                 <li key={f} className="flex gap-3 items-start bg-gray-50 rounded-xl p-4">
-                  <span className="w-6 h-6 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="w-6 h-6 bg-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
@@ -114,7 +114,7 @@ export default function AgingInPlace() {
             </ul>
           </div>
           <div>
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Trusted Resources</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Trusted Resources</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#123A5E] mb-6">The Right People, When You Need Them</h2>
             <p className="text-[#3d3d3d] leading-relaxed mb-6">
               When appropriate, we connect you with professionals who specialize in helping people stay home safely:
@@ -122,7 +122,7 @@ export default function AgingInPlace() {
             <ul className="space-y-2">
               {resources.map((r) => (
                 <li key={r} className="flex gap-3 items-start text-[#3d3d3d]">
-                  <span className="text-[#0A7387] mt-0.5 flex-shrink-0" aria-hidden="true">›</span>
+                  <span className="text-[#123A5E] mt-0.5 flex-shrink-0" aria-hidden="true">›</span>
                   {r}
                 </li>
               ))}
@@ -141,10 +141,10 @@ export default function AgingInPlace() {
               { title: "Caregiver Support", desc: "Guidance and coordination for the family members doing the heavy lifting.", href: "/services/caregiver-support" },
               { title: "Downsizing Tips", desc: "Practical, compassionate help lightening the load — whether you move or not.", href: "/55-plus-options/downsizing-tips-for-seniors" },
             ].map((s) => (
-              <Link key={s.href} href={s.href} className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-transparent hover:border-[#0A7387] transition-all">
-                <h3 className="font-bold text-[#123A5E] text-lg mb-2 group-hover:text-[#0A7387] transition-colors">{s.title}</h3>
+              <Link key={s.href} href={s.href} className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-transparent hover:border-[#123A5E] transition-all">
+                <h3 className="font-bold text-[#123A5E] text-lg mb-2 group-hover:text-[#123A5E] transition-colors">{s.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed">{s.desc}</p>
-                <span className="inline-block mt-4 text-[#0A7387] text-sm font-bold">Learn More →</span>
+                <span className="inline-block mt-4 text-[#123A5E] text-sm font-bold">Learn More →</span>
               </Link>
             ))}
           </div>
@@ -158,7 +158,7 @@ export default function AgingInPlace() {
           <p className="text-lg text-gray-200 mb-8">
             Let&apos;s talk about what it would take to stay home safely and comfortably — no pressure, just a clear look at your options.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE A CONVERSATION
           </Link>
         </div>

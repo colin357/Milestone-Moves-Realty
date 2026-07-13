@@ -168,7 +168,7 @@ export default function Home() {
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center py-24">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Serving the 55+ Community<br />
-            with <span className="text-[#2BB8D3]">Care, Clarity &amp; Confidence</span>
+            with <span className="text-white">Care, Clarity &amp; Confidence</span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-10">
             Specializing in helping adults 55 and better navigate life&apos;s most important housing
@@ -177,7 +177,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/contact-us"
-              className="bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider shadow-lg"
+              className="bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider shadow-lg"
             >
               GET IN TOUCH
             </Link>
@@ -192,7 +192,7 @@ export default function Home() {
       </section>
 
       {/* ── STAT STRIP ───────────────────────────────────────────── */}
-      <section className="bg-[#0A7387] text-white py-8 px-4">
+      <section className="bg-[#123A5E] text-white py-8 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
           {[
             { stat: "55+", label: "Specialized Market" },
@@ -212,7 +212,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Welcome to Milestone Moves</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Welcome to Milestone Moves</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6 leading-tight">
               More Than a Move —<br />It&apos;s a New Beginning
             </h2>
@@ -236,7 +236,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/empowered-aging"
-                className="inline-block border-2 border-[#0A7387] text-[#0A7387] hover:bg-[#0A7387] hover:text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center"
+                className="inline-block border-2 border-[#123A5E] text-[#123A5E] hover:bg-[#123A5E] hover:text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center"
               >
                 EMPOWERED AGING
               </Link>
@@ -267,7 +267,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">What We Offer</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">What We Offer</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">How We Can Help You</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -275,14 +275,14 @@ export default function Home() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-transparent hover:border-[#0A7387] transition-all"
+                className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-transparent hover:border-[#123A5E] transition-all"
               >
-                <div className="w-14 h-14 bg-[#f0fafd] text-[#0A7387] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#0A7387] group-hover:text-white transition-colors">
+                <div className="w-14 h-14 bg-[#f3f4f6] text-[#123A5E] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#123A5E] group-hover:text-white transition-colors">
                   {service.icon}
                 </div>
                 <h3 className="font-bold text-[#123A5E] text-lg mb-2">{service.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed">{service.description}</p>
-                <span className="inline-block mt-4 text-[#0A7387] text-sm font-bold group-hover:underline">
+                <span className="inline-block mt-4 text-[#123A5E] text-sm font-bold group-hover:underline">
                   Learn More →
                 </span>
               </Link>
@@ -295,7 +295,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-[#123A5E] text-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">The Process</p>
+            <p className="text-white font-bold tracking-widest text-sm mb-3 uppercase">The Process</p>
             <h2 className="text-3xl sm:text-4xl font-bold">How It Works</h2>
             <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
               We&apos;ve refined a proven process that removes the uncertainty and stress from your transition — one step at a time.
@@ -304,12 +304,12 @@ export default function Home() {
 
           <div className="relative">
             {/* Connecting line (desktop) */}
-            <div className="hidden md:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-[#2BB8D3]/30" />
+            <div className="hidden md:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-white/30" />
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               {steps.map((step, i) => (
                 <div key={step.number} className="relative flex flex-col items-center text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#0A7387] flex items-center justify-center text-white font-bold text-lg mb-4 z-10 flex-shrink-0 shadow-lg">
+                  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-[#123A5E] font-bold text-lg mb-4 z-10 flex-shrink-0 shadow-lg">
                     {i + 1}
                   </div>
                   <h3 className="font-bold text-white text-base mb-2">{step.title}</h3>
@@ -322,7 +322,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/moving-playbook"
-              className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider"
+              className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider"
             >
               READ THE FULL PLAYBOOK
             </Link>
@@ -344,13 +344,13 @@ export default function Home() {
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#123A5E]/90 to-transparent p-6">
               <p className="text-white font-bold text-xl">Freda Hamlett</p>
-              <p className="text-[#2BB8D3] text-sm font-semibold">Founder &amp; Lead Agent | CSHP</p>
+              <p className="text-white text-sm font-semibold">Founder &amp; Lead Agent | CSHP</p>
             </div>
           </div>
 
           {/* Bio */}
           <div>
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Meet Your Partner</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Meet Your Partner</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6 leading-tight">
               Dedicated to Your<br />Next Chapter
             </h2>
@@ -366,7 +366,7 @@ export default function Home() {
               what you need in a home, but what you need for your life.
             </p>
 
-            <blockquote className="border-l-4 border-[#0A7387] pl-5 mb-8">
+            <blockquote className="border-l-4 border-[#123A5E] pl-5 mb-8">
               <p className="text-[#123A5E] italic text-lg leading-relaxed">
                 &ldquo;Your next chapter deserves the right partner. I am committed to being that partner for you.&rdquo;
               </p>
@@ -394,7 +394,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Client Stories</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Client Stories</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">What Our Clients Say</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -403,7 +403,7 @@ export default function Home() {
                 {/* Stars */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-[#0A7387]" fill="currentColor" viewBox="0 0 20 20">
+                    <svg key={i} className="w-5 h-5 text-[#123A5E]" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
@@ -423,7 +423,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Where We Work</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Where We Work</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">Explore the Triangle</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-xl mx-auto">
               We serve communities across the greater Raleigh-Durham-Chapel Hill area. Click any city to learn more.
@@ -443,7 +443,7 @@ export default function Home() {
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
                   className="object-cover scale-100 group-hover:scale-105 transition-transform duration-500 blur-[1px] group-hover:blur-0"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20 group-hover:from-[#123A5E]/80 group-hover:via-[#123A5E]/50 group-hover:to-[#2BB8D3]/20 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20 group-hover:from-[#123A5E]/80 group-hover:via-[#123A5E]/50 group-hover:to-[#123A5E]/20 transition-colors duration-300" />
                 <span className="absolute bottom-0 left-0 right-0 p-4 text-white font-bold text-lg sm:text-xl tracking-wide z-10 drop-shadow-lg">
                   {city.name}
                 </span>
@@ -458,10 +458,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
-              <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Resources & Insights</p>
+              <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Resources & Insights</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">From the Blog</h2>
             </div>
-            <Link href="/about/blog" className="text-[#0A7387] font-bold text-sm hover:underline whitespace-nowrap">
+            <Link href="/about/blog" className="text-[#123A5E] font-bold text-sm hover:underline whitespace-nowrap">
               VIEW ALL POSTS →
             </Link>
           </div>
@@ -472,17 +472,17 @@ export default function Home() {
                 href={post.href}
                 className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="bg-[#123A5E] h-3 group-hover:bg-[#0A7387] transition-colors" />
+                <div className="bg-[#123A5E] h-3 group-hover:bg-[#123A5E] transition-colors" />
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="bg-[#f0fafd] text-[#0A7387] text-xs font-bold px-3 py-1 rounded-full">{post.tag}</span>
+                    <span className="bg-[#f3f4f6] text-[#123A5E] text-xs font-bold px-3 py-1 rounded-full">{post.tag}</span>
                     <span className="text-gray-500 text-xs">{post.date}</span>
                   </div>
-                  <h3 className="font-bold text-[#123A5E] text-lg mb-3 leading-snug group-hover:text-[#0A7387] transition-colors">
+                  <h3 className="font-bold text-[#123A5E] text-lg mb-3 leading-snug group-hover:text-[#123A5E] transition-colors">
                     {post.title}
                   </h3>
                   <p className="text-[#3d3d3d] text-sm leading-relaxed">{post.excerpt}</p>
-                  <span className="inline-block mt-4 text-[#0A7387] text-sm font-bold">Read More →</span>
+                  <span className="inline-block mt-4 text-[#123A5E] text-sm font-bold">Read More →</span>
                 </div>
               </Link>
             ))}
@@ -501,7 +501,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-[#123A5E]/85" />
         <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Let&apos;s Get Started</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">Let&apos;s Get Started</p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-5">
             Your Next Chapter Starts<br />with a Conversation
           </h2>
@@ -511,7 +511,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/contact-us"
-              className="bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider shadow-lg"
+              className="bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider shadow-lg"
             >
               CONTACT US TODAY
             </Link>

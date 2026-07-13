@@ -67,13 +67,13 @@ export default function WhoWeHelp() {
             <span className="mx-2">/</span>
             <span>Who We Help</span>
           </nav>
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Specialized Support</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">Specialized Support</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight max-w-3xl">Support for Life&apos;s Major Transitions</h1>
           <p className="text-gray-200 text-lg max-w-2xl leading-relaxed mb-8">
             Every client&apos;s story is different, but many come to us feeling overwhelmed or unsure where to begin. Our
             role is to provide guidance, education, and a step-by-step plan that makes the process feel manageable again.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
             FIND YOUR PATH FORWARD
           </Link>
         </div>
@@ -83,7 +83,7 @@ export default function WhoWeHelp() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Who We Serve</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Who We Serve</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">You&apos;ll Recognize Yourself Here</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -92,7 +92,7 @@ export default function WhoWeHelp() {
                 <div className="text-4xl mb-4" aria-hidden="true">{a.icon}</div>
                 <h3 className="font-bold text-[#123A5E] text-lg mb-2">{a.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed flex-1">{a.desc}</p>
-                <Link href={a.href} className="inline-block mt-4 text-[#0A7387] text-sm font-bold hover:underline">
+                <Link href={a.href} className="inline-block mt-4 text-[#123A5E] text-sm font-bold hover:underline">
                   {a.cta} →
                 </Link>
               </div>
@@ -104,13 +104,13 @@ export default function WhoWeHelp() {
       {/* Professionals band */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">We Also Collaborate With</p>
+          <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">We Also Collaborate With</p>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#123A5E] mb-6">Professionals Serving Older Adults</h2>
           <p className="text-[#3d3d3d] leading-relaxed mb-6">
             We work closely with estate attorneys, financial advisors, senior living communities, care managers, home
             care agencies, organizers, and contractors — because the best outcomes happen when trusted professionals work together.
           </p>
-          <Link href="/about/referral-partners" className="inline-block text-[#0A7387] font-bold hover:underline">
+          <Link href="/about/referral-partners" className="inline-block text-[#123A5E] font-bold hover:underline">
             Meet Our Referral Partners →
           </Link>
         </div>
@@ -124,7 +124,7 @@ export default function WhoWeHelp() {
             Planning ahead, responding to a crisis, downsizing, caregiving, or simply gathering information — our goal is
             always the same: clarity, trusted guidance, and compassionate support at every stage.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE A CONVERSATION
           </Link>
         </div>

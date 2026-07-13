@@ -48,21 +48,21 @@ export default function Blog() {
         {posts.map((post) => (
           <article key={post.slug} className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <div className="flex items-center gap-3 mb-3">
-              <span className="bg-[#0A7387] text-white text-xs font-bold px-3 py-1 rounded-full">{post.tag}</span>
+              <span className="bg-[#123A5E] text-white text-xs font-bold px-3 py-1 rounded-full">{post.tag}</span>
               <span className="text-gray-500 text-sm">{post.date}</span>
             </div>
             <h2 className="text-xl font-bold text-[#123A5E] mb-2">{post.title}</h2>
             <p className="text-[#3d3d3d] text-sm leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-            <Link href={`/about/blog/${post.slug}`} className="text-[#0A7387] font-bold text-sm hover:underline">
+            <Link href={`/about/blog/${post.slug}`} className="text-[#123A5E] font-bold text-sm hover:underline">
               Read More →
             </Link>
           </article>
         ))}
       </div>
 
-      <div className="bg-[#f0fafd] border border-[#0A7387] rounded-xl p-6 text-center">
+      <div className="bg-[#f3f4f6] border border-[#123A5E] rounded-xl p-6 text-center">
         <p className="text-[#3d3d3d] mb-4">Want personalized guidance? We&apos;re just a conversation away.</p>
-        <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
+        <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider">
           CONTACT US
         </Link>
       </div>

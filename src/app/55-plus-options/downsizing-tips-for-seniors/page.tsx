@@ -108,7 +108,7 @@ export default function DownsizingTips() {
             <span className="mx-2">/</span>
             <span>Downsizing Tips for Seniors</span>
           </nav>
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Downsizing With Confidence</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">Downsizing With Confidence</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight max-w-3xl">Downsizing Tips for Seniors</h1>
           <p className="text-gray-200 text-lg max-w-2xl leading-relaxed mb-8">
             Downsizing is one of the most emotionally complex parts of a move — but with the right mindset and a
@@ -116,7 +116,7 @@ export default function DownsizingTips() {
           </p>
           <Link
             href="/about/contact-us"
-            className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider"
+            className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider"
           >
             TALK TO US ABOUT DOWNSIZING
           </Link>
@@ -124,7 +124,7 @@ export default function DownsizingTips() {
       </section>
 
       {/* Reassurance strip */}
-      <section className="bg-[#0A7387] py-8 px-4 text-white">
+      <section className="bg-[#123A5E] py-8 px-4 text-white">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
           {[
             { stat: "At Your Pace", label: "No rushing, ever" },
@@ -143,7 +143,7 @@ export default function DownsizingTips() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Where to Begin</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Where to Begin</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">Our Top Downsizing Tips</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
               Six principles, refined over years of helping Triangle families move forward with less stuff and more peace of mind.
@@ -154,7 +154,7 @@ export default function DownsizingTips() {
               <div key={tip.number} className="bg-gray-50 rounded-2xl p-7 shadow-sm flex flex-col">
                 <div className="flex items-center gap-4 mb-4">
                   <span className="text-3xl" aria-hidden="true">{tip.icon}</span>
-                  <span className="text-[#0A7387]/40 font-black text-3xl leading-none">{tip.number}</span>
+                  <span className="text-[#123A5E]/40 font-black text-3xl leading-none">{tip.number}</span>
                 </div>
                 <h3 className="font-bold text-[#123A5E] text-lg mb-2">{tip.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed">{tip.body}</p>
@@ -168,7 +168,7 @@ export default function DownsizingTips() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Is It Time?</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Is It Time?</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6 leading-tight">
               Signs It May Be Time to Downsize
             </h2>
@@ -180,7 +180,7 @@ export default function DownsizingTips() {
           <ul className="space-y-3">
             {signs.map((sign) => (
               <li key={sign} className="flex gap-3 items-start bg-white rounded-xl p-4 shadow-sm">
-                <span className="w-6 h-6 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span className="w-6 h-6 bg-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
@@ -196,12 +196,12 @@ export default function DownsizingTips() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Learn From Others</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Learn From Others</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">Common Mistakes to Avoid</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {mistakes.map((m) => (
-              <div key={m.title} className="bg-[#f0fafd] border-l-4 border-[#0A7387] rounded-r-2xl p-6">
+              <div key={m.title} className="bg-[#f3f4f6] border-l-4 border-[#123A5E] rounded-r-2xl p-6">
                 <h3 className="font-bold text-[#123A5E] text-lg mb-2">{m.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed">{m.body}</p>
               </div>
@@ -214,7 +214,7 @@ export default function DownsizingTips() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Keep Going</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Keep Going</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">You Don&apos;t Have to Do It Alone</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
               Downsizing touches on decluttering, donating, and moving all at once. Here&apos;s where to turn next.
@@ -225,11 +225,11 @@ export default function DownsizingTips() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-transparent hover:border-[#0A7387] transition-all flex flex-col"
+                className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-transparent hover:border-[#123A5E] transition-all flex flex-col"
               >
-                <h3 className="font-bold text-[#123A5E] text-lg mb-2 group-hover:text-[#0A7387] transition-colors">{link.title}</h3>
+                <h3 className="font-bold text-[#123A5E] text-lg mb-2 group-hover:text-[#123A5E] transition-colors">{link.title}</h3>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed flex-1">{link.desc}</p>
-                <span className="inline-block mt-4 text-[#0A7387] text-sm font-bold">Learn More →</span>
+                <span className="inline-block mt-4 text-[#123A5E] text-sm font-bold">Learn More →</span>
               </Link>
             ))}
           </div>
@@ -245,7 +245,7 @@ export default function DownsizingTips() {
           </p>
           <Link
             href="/about/contact-us"
-            className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider"
+            className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider"
           >
             SCHEDULE A FREE CONSULTATION
           </Link>

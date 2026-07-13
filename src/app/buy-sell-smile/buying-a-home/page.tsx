@@ -34,7 +34,7 @@ export default function BuyingAHome() {
         <Image src="/images/buying-home.jpg" alt="Finding your next home" fill className="object-cover" sizes="100vw" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-[#123A5E]/95 via-[#123A5E]/80 to-transparent" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 w-full">
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Buy-Sell-Smile</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">Buy-Sell-Smile</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 max-w-xl leading-tight">
             Find the Home Your Next Chapter Deserves
           </h1>
@@ -42,7 +42,7 @@ export default function BuyingAHome() {
             Expert buyer representation — from first conversation to keys in hand — with an agent who puts your life first.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/about/contact-us" className="bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+            <Link href="/about/contact-us" className="bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
               START YOUR SEARCH
             </Link>
             <Link href="/55-plus-options/simplified-living-communities" className="border-2 border-white hover:bg-white hover:text-[#123A5E] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
@@ -53,7 +53,7 @@ export default function BuyingAHome() {
       </section>
 
       {/* Stats strip */}
-      <section className="bg-[#0A7387] py-8 px-4">
+      <section className="bg-[#123A5E] py-8 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-white">
           {[
             { stat: "8", label: "Steps to Closing" },
@@ -73,7 +73,7 @@ export default function BuyingAHome() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Our Buyer Process</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Our Buyer Process</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">Eight Steps. Zero Surprises.</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
               Every step is designed to keep you informed, protected, and confident — from your first search to the day you get your keys.
@@ -81,8 +81,8 @@ export default function BuyingAHome() {
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {steps.map((step) => (
-              <div key={step.n} className="flex gap-5 items-start bg-gray-50 rounded-2xl p-6 hover:bg-[#f0fafd] transition-colors group">
-                <span className="text-4xl font-black text-[#0A7387]/20 group-hover:text-[#0A7387]/40 transition-colors leading-none flex-shrink-0 w-12">
+              <div key={step.n} className="flex gap-5 items-start bg-gray-50 rounded-2xl p-6 hover:bg-[#f3f4f6] transition-colors group">
+                <span className="text-4xl font-black text-[#123A5E]/20 group-hover:text-[#123A5E]/40 transition-colors leading-none flex-shrink-0 w-12">
                   {step.n}
                 </span>
                 <div>
@@ -99,7 +99,7 @@ export default function BuyingAHome() {
       <section className="py-20 px-4 bg-[#123A5E] text-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">Buyer Readiness</p>
+            <p className="text-white font-bold tracking-widest text-sm mb-3 uppercase">Buyer Readiness</p>
             <h2 className="text-3xl sm:text-4xl font-bold">Are You Ready to Buy?</h2>
             <p className="text-gray-300 mt-4 max-w-xl mx-auto">
               Check off where you stand. If any of these are missing, we&apos;ll help you get there.
@@ -117,9 +117,9 @@ export default function BuyingAHome() {
               { ready: false, item: "I don't know exactly what closing costs I'll need" },
             ].map((c) => (
               <div key={c.item} className={`flex gap-3 items-center rounded-xl p-4 ${c.ready ? "bg-white/10" : "bg-white/5 border border-white/10"}`}>
-                <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 ${c.ready ? "bg-[#0A7387]" : "border-2 border-white/30"}`}>
+                <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 ${c.ready ? "bg-white" : "border-2 border-white/30"}`}>
                   {c.ready && (
-                    <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3.5 h-3.5 text-[#123A5E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   )}
@@ -138,14 +138,14 @@ export default function BuyingAHome() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Common Questions</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Common Questions</p>
             <h2 className="text-3xl font-bold text-[#123A5E]">Buyer FAQ</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
               <div key={faq.q} className="bg-white rounded-2xl overflow-hidden shadow-sm">
                 <div className="flex gap-4 p-6">
-                  <div className="w-8 h-8 bg-[#0A7387] text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">Q</div>
+                  <div className="w-8 h-8 bg-[#123A5E] text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">Q</div>
                   <div>
                     <p className="font-bold text-[#123A5E] mb-2">{faq.q}</p>
                     <p className="text-[#3d3d3d] text-sm leading-relaxed">{faq.a}</p>
@@ -158,11 +158,11 @@ export default function BuyingAHome() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#0A7387] py-16 px-4 text-white text-center">
+      <section className="bg-[#123A5E] py-16 px-4 text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Ready to Find Your Next Home?</h2>
           <p className="text-lg opacity-90 mb-8">Let&apos;s start with a conversation — no pressure, no commitment.</p>
-          <Link href="/about/contact-us" className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE A FREE CONSULTATION
           </Link>
         </div>

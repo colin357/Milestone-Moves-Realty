@@ -25,7 +25,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-[#2BB8D3] font-bold tracking-wider text-sm mb-4">QUICK LINKS</h3>
+            <h3 className="text-white font-bold tracking-wider text-sm mb-4">QUICK LINKS</h3>
             <ul className="space-y-2">
               {[
                 { label: "Home", href: "/" },
@@ -37,7 +37,7 @@ export default function Footer() {
                 { label: "Contact Us", href: "/about/contact-us" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-gray-300 hover:text-[#2BB8D3] transition-colors">
+                  <Link href={link.href} className="text-sm text-gray-300 hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -47,19 +47,19 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-[#2BB8D3] font-bold tracking-wider text-sm mb-4">CONTACT US</h3>
+            <h3 className="text-white font-bold tracking-wider text-sm mb-4">CONTACT US</h3>
             <address className="not-italic text-sm text-gray-300 space-y-2">
               <p>Freda Hamlett</p>
               <p>Milestone Moves Realty Group</p>
               <p>1483 Beaver Creek Commons Dr</p>
               <p>Apex, NC 27502</p>
               <p className="pt-2">
-                <a href="mailto:info@milestonemovesrealty.com" className="hover:text-[#2BB8D3] transition-colors">
+                <a href="mailto:info@milestonemovesrealty.com" className="hover:text-white transition-colors">
                   info@milestonemovesrealty.com
                 </a>
               </p>
               <p>
-                <a href="tel:+19198109551" className="hover:text-[#2BB8D3] transition-colors">
+                <a href="tel:+19198109551" className="hover:text-white transition-colors">
                   919-810-9551
                 </a>
               </p>

@@ -69,7 +69,7 @@ export default function SimplifiedLivingCommunities() {
         <Image src="/images/communities.jpg" alt="Beautiful 55+ community" fill className="object-cover" sizes="100vw" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-[#123A5E]/90 to-[#123A5E]/50" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 w-full">
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">55+ Options</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">55+ Options</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 max-w-2xl leading-tight">
             Simplified Living.<br />Maximum Joy.
           </h1>
@@ -77,7 +77,7 @@ export default function SimplifiedLivingCommunities() {
             Today&apos;s 55+ communities are active, vibrant, and beautifully designed — built for people who want
             to live more and worry less.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
             FIND YOUR COMMUNITY
           </Link>
         </div>
@@ -86,7 +86,7 @@ export default function SimplifiedLivingCommunities() {
       {/* What's changed */}
       <section className="bg-white py-16 px-4 border-b border-gray-100">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Not Your Parents&apos; Retirement</p>
+          <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Not Your Parents&apos; Retirement</p>
           <h2 className="text-3xl font-bold text-[#123A5E] mb-6">Today&apos;s Communities Are Different</h2>
           <p className="text-[#3d3d3d] leading-relaxed max-w-3xl mx-auto text-lg">
             Modern 55+ communities are nothing like the retirement communities of the past. They&apos;re resort-style
@@ -103,7 +103,7 @@ export default function SimplifiedLivingCommunities() {
           ].map((item) => (
             <div key={item.new} className="text-center">
               <p className="text-gray-500 text-sm line-through mb-1">{item.old}</p>
-              <div className="text-[#0A7387] text-xl my-1">↓</div>
+              <div className="text-[#123A5E] text-xl my-1">↓</div>
               <p className="text-[#123A5E] font-bold">{item.new}</p>
             </div>
           ))}
@@ -114,7 +114,7 @@ export default function SimplifiedLivingCommunities() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Know Your Options</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Know Your Options</p>
             <h2 className="text-3xl font-bold text-[#123A5E]">Types of 55+ Communities</h2>
             <p className="text-[#3d3d3d] mt-4 max-w-xl mx-auto">
               Not all 55+ communities are the same. Here&apos;s a clear breakdown to help you identify what fits your lifestyle and budget.
@@ -127,7 +127,7 @@ export default function SimplifiedLivingCommunities() {
                   <span className="text-3xl">{ct.icon}</span>
                   <div>
                     <h3 className="font-bold text-lg">{ct.type}</h3>
-                    <p className="text-[#2BB8D3] text-xs font-bold">{ct.priceRange} price range</p>
+                    <p className="text-white text-xs font-bold">{ct.priceRange} price range</p>
                   </div>
                 </div>
                 <div className="p-6">
@@ -136,11 +136,11 @@ export default function SimplifiedLivingCommunities() {
                   <ul className="space-y-1 mb-4">
                     {ct.amenities.map((a) => (
                       <li key={a} className="text-[#3d3d3d] text-sm flex gap-2">
-                        <span className="text-[#0A7387]">›</span> {a}
+                        <span className="text-[#123A5E]">›</span> {a}
                       </li>
                     ))}
                   </ul>
-                  <div className="bg-[#f0fafd] rounded-xl p-3">
+                  <div className="bg-[#f3f4f6] rounded-xl p-3">
                     <p className="text-xs text-[#123A5E]"><strong>Best for:</strong> {ct.bestFor}</p>
                   </div>
                 </div>
@@ -154,13 +154,13 @@ export default function SimplifiedLivingCommunities() {
       <section className="py-20 px-4 bg-[#123A5E] text-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-3 uppercase">Where to Look</p>
+            <p className="text-white font-bold tracking-widest text-sm mb-3 uppercase">Where to Look</p>
             <h2 className="text-3xl font-bold">55+ Communities Across the Triangle</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {triangleCommunities.map((c) => (
               <div key={c.area} className="bg-white/10 border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-colors">
-                <h3 className="font-bold text-[#2BB8D3] text-xl mb-2">{c.area}</h3>
+                <h3 className="font-bold text-white text-xl mb-2">{c.area}</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">{c.note}</p>
               </div>
             ))}
@@ -173,14 +173,14 @@ export default function SimplifiedLivingCommunities() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">Before You Decide</p>
+            <p className="text-[#123A5E] font-bold tracking-widest text-sm mb-3 uppercase">Before You Decide</p>
             <h2 className="text-3xl font-bold text-[#123A5E]">8 Questions to Ask Any Community</h2>
             <p className="text-[#3d3d3d] mt-4">We help you ask the right questions — and understand the answers — before you commit to anything.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             {communityQuestions.map((q, i) => (
               <div key={q} className="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
-                <span className="w-8 h-8 bg-[#0A7387] text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                <span className="w-8 h-8 bg-[#123A5E] text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
                   {i + 1}
                 </span>
                 <p className="text-[#3d3d3d] text-sm leading-relaxed">{q}</p>
@@ -191,11 +191,11 @@ export default function SimplifiedLivingCommunities() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#0A7387] py-16 px-4 text-white text-center">
+      <section className="bg-[#123A5E] py-16 px-4 text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Let Us Find the Right Community for You</h2>
           <p className="text-lg opacity-90 mb-8">We know the Triangle&apos;s 55+ communities inside and out — and we&apos;ll match you with the one that truly fits.</p>
-          <Link href="/about/contact-us" className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE A COMMUNITY TOUR
           </Link>
         </div>

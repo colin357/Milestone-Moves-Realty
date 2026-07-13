@@ -55,7 +55,7 @@ export default function WhatAreClosingCosts() {
           <div key={c.item} className="flex flex-col sm:flex-row gap-2 sm:gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
             <div className="sm:w-48 flex-shrink-0">
               <p className="font-bold text-[#123A5E] text-sm">{c.item}</p>
-              <p className="text-[#0A7387] text-xs font-semibold">{c.amount}</p>
+              <p className="text-[#123A5E] text-xs font-semibold">{c.amount}</p>
             </div>
             <p className="text-[#3d3d3d] text-sm leading-relaxed">{c.desc}</p>
           </div>
@@ -69,17 +69,17 @@ export default function WhatAreClosingCosts() {
       </p>
       <div className="space-y-3 mb-12">
         {sellerCosts.map((c) => (
-          <div key={c.item} className="flex flex-col sm:flex-row gap-2 sm:gap-4 bg-[#f0fafd] border border-[#0A7387]/30 rounded-xl p-4">
+          <div key={c.item} className="flex flex-col sm:flex-row gap-2 sm:gap-4 bg-[#f3f4f6] border border-[#123A5E]/30 rounded-xl p-4">
             <div className="sm:w-48 flex-shrink-0">
               <p className="font-bold text-[#123A5E] text-sm">{c.item}</p>
-              <p className="text-[#0A7387] text-xs font-semibold">{c.amount}</p>
+              <p className="text-[#123A5E] text-xs font-semibold">{c.amount}</p>
             </div>
             <p className="text-[#3d3d3d] text-sm leading-relaxed">{c.desc}</p>
           </div>
         ))}
       </div>
 
-      <div className="bg-[#f0fafd] border border-[#0A7387] rounded-xl p-5 mb-8">
+      <div className="bg-[#f3f4f6] border border-[#123A5E] rounded-xl p-5 mb-8">
         <p className="font-bold text-[#123A5E] mb-2">💡 A Note on NC Closings</p>
         <p className="text-[#3d3d3d] text-sm leading-relaxed">
           North Carolina is an attorney-closing state, meaning a licensed real estate attorney must conduct the
@@ -95,7 +95,7 @@ export default function WhatAreClosingCosts() {
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           GET AN ESTIMATE
         </Link>

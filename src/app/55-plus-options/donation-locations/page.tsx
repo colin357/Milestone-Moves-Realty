@@ -63,15 +63,15 @@ export default function DonationLocations() {
             <h3 className="font-bold text-[#123A5E] text-lg mb-2">{loc.name}</h3>
             <div className="grid sm:grid-cols-3 gap-3 text-sm text-[#3d3d3d]">
               <div>
-                <span className="font-semibold text-[#0A7387] block mb-1">Service Area</span>
+                <span className="font-semibold text-[#123A5E] block mb-1">Service Area</span>
                 {loc.areas}
               </div>
               <div>
-                <span className="font-semibold text-[#0A7387] block mb-1">Accepts</span>
+                <span className="font-semibold text-[#123A5E] block mb-1">Accepts</span>
                 {loc.accepts}
               </div>
               <div>
-                <span className="font-semibold text-[#0A7387] block mb-1">Notes</span>
+                <span className="font-semibold text-[#123A5E] block mb-1">Notes</span>
                 {loc.notes}
               </div>
             </div>

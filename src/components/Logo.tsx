@@ -4,7 +4,7 @@ interface LogoProps {
 }
 
 export default function Logo({ variant = "color", className = "" }: LogoProps) {
-  const houseColor = variant === "white" ? "#ffffff" : "#2BB8D3";
+  const houseColor = variant === "white" ? "#ffffff" : "#123A5E";
   const textColor = variant === "white" ? "#ffffff" : "#3D3D3D";
   const subtextColor = variant === "white" ? "#e2e8f0" : "#3D3D3D";
 

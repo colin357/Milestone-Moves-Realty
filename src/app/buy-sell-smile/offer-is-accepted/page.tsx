@@ -78,10 +78,10 @@ export default function OfferIsAccepted() {
           <div key={step.title} className="flex gap-5">
             {/* Timeline marker */}
             <div className="flex flex-col items-center flex-shrink-0">
-              <div className="w-10 h-10 rounded-full bg-[#0A7387] text-white font-bold flex items-center justify-center text-sm flex-shrink-0">
+              <div className="w-10 h-10 rounded-full bg-[#123A5E] text-white font-bold flex items-center justify-center text-sm flex-shrink-0">
                 {i + 1}
               </div>
-              {i < steps.length - 1 && <div className="w-0.5 bg-[#0A7387]/30 flex-1 mt-1" />}
+              {i < steps.length - 1 && <div className="w-0.5 bg-[#123A5E]/30 flex-1 mt-1" />}
             </div>
             {/* Content */}
             <div className="pb-6 flex-1">
@@ -90,8 +90,8 @@ export default function OfferIsAccepted() {
                 <span className="text-xs bg-[#123A5E] text-white px-2 py-0.5 rounded-full">{step.day}</span>
               </div>
               <p className="text-[#3d3d3d] leading-relaxed text-sm mb-3">{step.desc}</p>
-              <div className="flex gap-2 items-start bg-[#f0fafd] rounded-lg p-3">
-                <span className="text-[#0A7387] font-bold text-xs flex-shrink-0">PRO TIP:</span>
+              <div className="flex gap-2 items-start bg-[#f3f4f6] rounded-lg p-3">
+                <span className="text-[#123A5E] font-bold text-xs flex-shrink-0">PRO TIP:</span>
                 <p className="text-[#3d3d3d] text-xs leading-relaxed">{step.tip}</p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function OfferIsAccepted() {
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           TALK TO US
         </Link>

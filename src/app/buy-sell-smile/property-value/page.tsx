@@ -42,8 +42,8 @@ export default function PropertyValue() {
             <div className="flex-shrink-0">
               <span className={`text-xs font-bold px-2 py-1 rounded-full whitespace-nowrap ${
                 f.weight === "Very High" ? "bg-[#123A5E] text-white" :
-                f.weight === "High" ? "bg-[#0A7387] text-white" :
-                f.weight === "Medium" ? "bg-[#f0fafd] text-[#0A7387] border border-[#0A7387]" :
+                f.weight === "High" ? "bg-[#123A5E] text-white" :
+                f.weight === "Medium" ? "bg-[#f3f4f6] text-[#123A5E] border border-[#123A5E]" :
                 "bg-gray-100 text-gray-500"
               }`}>
                 {f.weight}
@@ -67,8 +67,8 @@ export default function PropertyValue() {
           { tip: "Stage key rooms", detail: "Living room, primary bedroom, and kitchen staging have the highest impact on buyer impression." },
           { tip: "Get a pre-listing inspection", detail: "Knowing issues in advance lets you fix or disclose them — reducing buyer negotiation leverage." },
         ].map((item) => (
-          <div key={item.tip} className="flex gap-3 items-start bg-[#f0fafd] rounded-xl p-4">
-            <span className="w-5 h-5 bg-[#0A7387] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+          <div key={item.tip} className="flex gap-3 items-start bg-[#f3f4f6] rounded-xl p-4">
+            <span className="w-5 h-5 bg-[#123A5E] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
               </svg>
@@ -88,7 +88,7 @@ export default function PropertyValue() {
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           GET MY HOME VALUE
         </Link>

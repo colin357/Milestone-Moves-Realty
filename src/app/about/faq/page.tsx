@@ -59,7 +59,7 @@ export default function FAQ() {
             <span className="mx-2">/</span>
             <span>FAQ</span>
           </nav>
-          <p className="text-[#2BB8D3] font-bold tracking-widest text-sm mb-4 uppercase">Questions We Hear Every Day</p>
+          <p className="text-white font-bold tracking-widest text-sm mb-4 uppercase">Questions We Hear Every Day</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight max-w-3xl">Frequently Asked Questions</h1>
           <p className="text-gray-200 text-lg max-w-2xl leading-relaxed">
             Most people come to us with more questions than answers — that&apos;s completely normal. Here are the ones we
@@ -75,7 +75,7 @@ export default function FAQ() {
             <details key={item.q} className="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
               <summary className="flex items-center justify-between gap-4 cursor-pointer list-none p-6 font-bold text-[#123A5E] text-lg">
                 {item.q}
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#0A7387] text-white flex items-center justify-center transition-transform group-open:rotate-45" aria-hidden="true">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#123A5E] text-white flex items-center justify-center transition-transform group-open:rotate-45" aria-hidden="true">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
                   </svg>
@@ -90,13 +90,13 @@ export default function FAQ() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#0A7387] py-16 px-4 text-white text-center">
+      <section className="bg-[#123A5E] py-16 px-4 text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Still Have Questions?</h2>
           <p className="text-lg opacity-90 mb-8">
             Sometimes the first step is simply a conversation with someone who understands the process. No pressure, no obligation.
           </p>
-          <Link href="/about/contact-us" className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
+          <Link href="/about/contact-us" className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider">
             SCHEDULE A CONVERSATION
           </Link>
         </div>

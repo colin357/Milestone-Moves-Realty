@@ -78,14 +78,14 @@ export default function TipsFor1stTimeBuyers() {
         {tips.map((tip) => (
           <div key={tip.number} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
             <div className="flex gap-4 items-start">
-              <div className="w-12 h-12 bg-[#0A7387] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+              <div className="w-12 h-12 bg-[#123A5E] rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
                 {tip.number}
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-[#123A5E] text-lg mb-2">{tip.title}</h3>
                 <p className="text-[#3d3d3d] leading-relaxed text-sm mb-3">{tip.body}</p>
-                <div className="flex gap-2 items-start bg-[#f0fafd] rounded-lg p-3">
-                  <span className="text-[#0A7387] font-bold text-xs flex-shrink-0">ACTION:</span>
+                <div className="flex gap-2 items-start bg-[#f3f4f6] rounded-lg p-3">
+                  <span className="text-[#123A5E] font-bold text-xs flex-shrink-0">ACTION:</span>
                   <p className="text-[#3d3d3d] text-xs leading-relaxed">{tip.action}</p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default function TipsFor1stTimeBuyers() {
         </p>
         <Link
           href="/about/contact-us"
-          className="inline-block bg-[#0A7387] hover:bg-[#086475] text-white font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
+          className="inline-block bg-white hover:bg-gray-100 text-[#123A5E] font-bold px-8 py-3 rounded-full transition-colors text-sm tracking-wider"
         >
           SCHEDULE A CONSULTATION
         </Link>

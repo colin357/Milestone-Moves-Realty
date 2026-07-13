@@ -51,11 +51,11 @@ export default function SeniorDiscounts() {
       <div className="grid sm:grid-cols-2 gap-6 mb-8">
         {discountCategories.map((cat) => (
           <div key={cat.category} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-            <h3 className="font-bold text-[#123A5E] text-lg mb-3 border-b border-[#0A7387] pb-2">{cat.category}</h3>
+            <h3 className="font-bold text-[#123A5E] text-lg mb-3 border-b border-[#123A5E] pb-2">{cat.category}</h3>
             <ul className="space-y-1">
               {cat.examples.map((ex) => (
                 <li key={ex} className="text-sm text-[#3d3d3d] flex items-start gap-2">
-                  <span className="text-[#0A7387] mt-1">•</span>
+                  <span className="text-[#123A5E] mt-1">•</span>
                   {ex}
                 </li>
               ))}
@@ -64,7 +64,7 @@ export default function SeniorDiscounts() {
         ))}
       </div>
 
-      <div className="bg-[#f0fafd] border border-[#0A7387] rounded-xl p-6 text-center">
+      <div className="bg-[#f3f4f6] border border-[#123A5E] rounded-xl p-6 text-center">
         <p className="text-[#3d3d3d] text-sm">
           Discount availability and eligibility may vary. We recommend verifying current offers directly with each
           business or program. This list is provided as a helpful starting point, not a guarantee.
