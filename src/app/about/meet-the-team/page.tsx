@@ -7,8 +7,8 @@ export const metadata = {
 };
 
 const credentials = [
-  { label: "Designation", value: "Certified Senior Housing Professional (CSHP)" },
-  { label: "Specialty", value: "55+ Housing Transitions & Active Adult Communities" },
+  { label: "Certifications", value: "CSHP · SRES · CAPS" },
+  { label: "Specialty", value: "Later-Life Transitions, Downsizing & Aging in Place" },
   { label: "Service Area", value: "Triangle, NC — Apex, Cary, Raleigh, Durham & Beyond" },
   { label: "Office", value: "1483 Beaver Creek Commons Dr, Apex, NC 27502" },
   { label: "Approach", value: "Education-First. No Rush. No Pressure." },
@@ -18,7 +18,7 @@ const credentials = [
 const team = [
   {
     name: "Freda Hamlett",
-    title: "Founder & Lead Agent · CSHP",
+    title: "Founder & Lead Agent · CSHP, SRES, CAPS",
     email: "freda@milestonemoves.com",
     phone: "919-810-9551",
     photo: "/images/freda-about.jpg",
@@ -171,30 +171,44 @@ export default function MeetTheTeam() {
           <h2 className="text-3xl font-bold text-[#123A5E] mb-8">About Freda</h2>
           <div className="space-y-5 text-[#3d3d3d] leading-relaxed text-lg">
             <p>
-              Freda Hamlett is more than a real estate agent — she&apos;s an advocate, an educator, and a trusted
-              advisor for adults 55 and better navigating one of life&apos;s most significant transitions.
+              Freda never expected this work to become her calling. Like many women, her life unfolded in chapters —
+              motherhood, business ownership, caregiving, and reinvention. She graduated from Syracuse University with a
+              degree in Interior Design and a six-week-old daughter in her arms, later raised two children, owned and
+              operated a craft store, and worked alongside her CPA handling bookkeeping and business operations. Each
+              chapter taught her something about organization, problem-solving, and how deeply personal people&apos;s
+              homes and belongings really are.
             </p>
             <p>
-              As a <strong>Certified Senior Housing Professional (CSHP)</strong>, Freda has completed specialized
-              training focused on the unique physical, emotional, and financial needs of older adults. She brings
-              this expertise to every client conversation — ensuring each person she serves feels heard, informed,
-              and supported throughout the entire process.
+              But the chapter that changed everything wasn&apos;t professional — it was personal.
             </p>
             <p>
-              Based in Apex, NC, Freda has deep roots in the Triangle community and extensive knowledge of its
-              neighborhoods, 55+ communities, and senior resources. She serves clients across Wake, Durham, and
-              Orange counties — from Raleigh to Chapel Hill, Wake Forest to Zebulon.
+              Her mother was diagnosed with pancreatic cancer while serving as her father&apos;s primary caregiver.
+              Almost overnight, Freda found herself navigating medical appointments, caregiving, housing questions,
+              paperwork, support services, and the emotional weight of helping the people she loved through an
+              overwhelming season. She remembers thinking: <em>&ldquo;If this is difficult for me — and I&apos;m
+              educated, resourceful, and organized — how must it feel for older adults who are frightened, grieving, or
+              trying to manage all of this alone?&rdquo;</em> That realization changed the direction of her life.
             </p>
             <p>
-              Freda&apos;s approach is fundamentally different from a traditional real estate agent. She doesn&apos;t
-              just help people buy and sell homes — she helps them plan meaningful transitions. She coordinates with
-              families, financial advisors, elder law attorneys, and senior care professionals to ensure every aspect
-              of the move is handled with care and competence.
+              When Freda entered real estate, she did it differently. Rather than chasing transactions, she spent years
+              learning everything she could about aging, senior housing, caregiving, accessibility, and the emotional
+              side of moving later in life. Today she is a <strong>Certified Senior Housing Professional (CSHP)</strong>,
+              a <strong>Seniors Real Estate Specialist (SRES)</strong>, and a <strong>Certified Aging in Place
+              Specialist (CAPS)</strong> — but more importantly, she brings lived experience to every conversation.
             </p>
             <p>
-              Most importantly, Freda listens. She understands that for many of her clients, this move carries deep
-              emotional weight — decades of memories, family history, and identity tied up in a home. She honors
-              that weight while helping clients look forward with clarity and confidence.
+              For more than a decade, Freda has become known not simply as a real estate agent, but as a guide through
+              one of life&apos;s most emotional transitions. She teaches educational seminars across the Triangle every
+              month, and through Milestone Moves Realty Group and her Empowered Aging programs, she helps older adults
+              and families understand what comes next — whether that means aging in place safely, downsizing
+              thoughtfully, moving to a senior living community, or simply starting difficult conversations before a
+              crisis happens.
+            </p>
+            <p>
+              What she discovered through all of it is that downsizing is never really about the stuff. It&apos;s about
+              identity, memories, grief, independence, and hope. Her role isn&apos;t to pressure anyone to move — in
+              fact, sometimes the best decision is staying exactly where they are, with the right support in place. Her
+              job is to help people slow down, gather information, and move forward with clarity instead of chaos.
             </p>
           </div>
         </div>

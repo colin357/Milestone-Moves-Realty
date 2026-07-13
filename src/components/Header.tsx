@@ -17,6 +17,15 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "HOME", href: "/" },
+  {
+    label: "SERVICES",
+    dropdown: [
+      { label: "AGING IN PLACE", href: "/services/aging-in-place" },
+      { label: "SENIOR LIVING TRANSITIONS", href: "/services/senior-living-transitions" },
+      { label: "CAREGIVER SUPPORT", href: "/services/caregiver-support" },
+      { label: "DOWNSIZING TIPS", href: "/55-plus-options/downsizing-tips-for-seniors" },
+    ],
+  },
   { label: "MOVING PLAYBOOK", href: "/moving-playbook" },
   { label: "EMPOWERED AGING", href: "/empowered-aging" },
   { label: "SEMINARS", href: "/seminars" },
@@ -45,6 +54,8 @@ const navItems: NavItem[] = [
     label: "ABOUT",
     dropdown: [
       { label: "MEET THE TEAM", href: "/about/meet-the-team" },
+      { label: "WHO WE HELP", href: "/who-we-help" },
+      { label: "FAQ", href: "/about/faq" },
       { label: "BLOG", href: "/about/blog" },
       { label: "CONTACT US", href: "/about/contact-us" },
       { label: "REFERRAL PARTNERS", href: "/about/referral-partners" },
