@@ -444,7 +444,7 @@ export default function Home() {
                   className="object-cover scale-100 group-hover:scale-105 transition-transform duration-500 blur-[1px] group-hover:blur-0"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20 group-hover:from-[#123A5E]/80 group-hover:via-[#123A5E]/50 group-hover:to-[#2BB8D3]/20 transition-colors duration-300" />
-                <span className="absolute bottom-0 left-0 right-0 p-4 text-white font-bold text-base tracking-wide z-10 drop-shadow-lg">
+                <span className="absolute bottom-0 left-0 right-0 p-4 text-white font-bold text-lg sm:text-xl tracking-wide z-10 drop-shadow-lg">
                   {city.name}
                 </span>
               </Link>
