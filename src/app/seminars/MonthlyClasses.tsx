@@ -5,24 +5,43 @@ import { useEffect, useState } from "react";
 const CARY_CENTER_URL = "https://www.carync.gov/recreation-enjoyment/facilities/senior-center";
 const CARY_REGISTER_URL = "https://www.carync.gov/register";
 const FUQUAY_PROGRAMS_URL = "https://www.fuquay-varina.org/311/Programs";
+const RALEIGH_ACTIVE_ADULT_URL = "https://raleighnc.gov/parks-and-recreation/services/active-adult-program";
+const APEX_LOCATION_URL = "https://www.google.com/maps/search/?api=1&query=1483+Beaver+Creek+Commons+Drive+Apex+NC+27502";
+const HOLLY_SPRINGS_URL = "https://www.hollyspringsnc.gov/Directory/Home/DepartmentListing?DID=30";
 
 type ClassInfo = { title: string; date: string; time: string; location: string; locationUrl: string; registerUrl: string };
 
 const months: { name: string; monthIndex: number; sessions: ClassInfo[] }[] = [
   { name: "September", monthIndex: 8, sessions: [
+    { title: "Senior Center Class", date: "Tuesday, September 1, 2026", time: "10:00 AM – 11:30 AM", location: "Five Points Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
     { title: "Senior Center Class", date: "Wednesday, September 2, 2026", time: "10:00 AM – 11:30 AM", location: "Fuquay-Varina Senior Center", locationUrl: FUQUAY_PROGRAMS_URL, registerUrl: FUQUAY_PROGRAMS_URL },
+    { title: "Senior Center Class", date: "Tuesday, September 8, 2026", time: "10:00 AM – 11:30 AM", location: "Anne Gordon Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
+    { title: "Senior Center Class", date: "Friday, September 11, 2026", time: "10:00 AM – 11:30 AM", location: "Apex Senior Center, 1483 Beaver Creek Commons Drive", locationUrl: APEX_LOCATION_URL, registerUrl: APEX_LOCATION_URL },
+    { title: "Senior Center Class", date: "Friday, September 11, 2026", time: "1:00 PM – 2:30 PM", location: "W.E. Hunt Recreation Center, Holly Springs", locationUrl: HOLLY_SPRINGS_URL, registerUrl: HOLLY_SPRINGS_URL },
   ] },
   { name: "October", monthIndex: 9, sessions: [
     { title: "Senior Center Class", date: "Friday, October 2, 2026", time: "9:30 AM – 11:00 AM", location: "Cary Senior Center", locationUrl: CARY_CENTER_URL, registerUrl: CARY_REGISTER_URL },
+    { title: "Senior Center Class", date: "Tuesday, October 6, 2026", time: "10:00 AM – 11:30 AM", location: "Five Points Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
     { title: "Senior Center Class", date: "Wednesday, October 7, 2026", time: "10:00 AM – 11:30 AM", location: "Fuquay-Varina Senior Center", locationUrl: FUQUAY_PROGRAMS_URL, registerUrl: FUQUAY_PROGRAMS_URL },
+    { title: "Senior Center Class", date: "Friday, October 9, 2026", time: "10:00 AM – 11:30 AM", location: "Apex Senior Center, 1483 Beaver Creek Commons Drive", locationUrl: APEX_LOCATION_URL, registerUrl: APEX_LOCATION_URL },
+    { title: "Senior Center Class", date: "Friday, October 9, 2026", time: "1:00 PM – 2:30 PM", location: "W.E. Hunt Recreation Center, Holly Springs", locationUrl: HOLLY_SPRINGS_URL, registerUrl: HOLLY_SPRINGS_URL },
+    { title: "Senior Center Class", date: "Tuesday, October 13, 2026", time: "10:00 AM – 11:30 AM", location: "Anne Gordon Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
   ] },
   { name: "November", monthIndex: 10, sessions: [
+    { title: "Senior Center Class", date: "Tuesday, November 3, 2026", time: "10:00 AM – 11:30 AM", location: "Five Points Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
     { title: "Senior Center Class", date: "Wednesday, November 4, 2026", time: "10:00 AM – 11:30 AM", location: "Fuquay-Varina Senior Center", locationUrl: FUQUAY_PROGRAMS_URL, registerUrl: FUQUAY_PROGRAMS_URL },
     { title: "Senior Center Class", date: "Friday, November 6, 2026", time: "9:30 AM – 11:00 AM", location: "Cary Senior Center", locationUrl: CARY_CENTER_URL, registerUrl: CARY_REGISTER_URL },
+    { title: "Senior Center Class", date: "Tuesday, November 10, 2026", time: "10:00 AM – 11:30 AM", location: "Anne Gordon Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
+    { title: "Senior Center Class", date: "Friday, November 13, 2026", time: "10:00 AM – 11:30 AM", location: "Apex Senior Center, 1483 Beaver Creek Commons Drive", locationUrl: APEX_LOCATION_URL, registerUrl: APEX_LOCATION_URL },
+    { title: "Senior Center Class", date: "Friday, November 13, 2026", time: "1:00 PM – 2:30 PM", location: "W.E. Hunt Recreation Center, Holly Springs", locationUrl: HOLLY_SPRINGS_URL, registerUrl: HOLLY_SPRINGS_URL },
   ] },
   { name: "December", monthIndex: 11, sessions: [
+    { title: "Senior Center Class", date: "Tuesday, December 1, 2026", time: "10:00 AM – 11:30 AM", location: "Five Points Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
     { title: "Senior Center Class", date: "Wednesday, December 2, 2026", time: "10:00 AM – 11:30 AM", location: "Fuquay-Varina Senior Center", locationUrl: FUQUAY_PROGRAMS_URL, registerUrl: FUQUAY_PROGRAMS_URL },
     { title: "Senior Center Class", date: "Friday, December 4, 2026", time: "9:30 AM – 11:00 AM", location: "Cary Senior Center", locationUrl: CARY_CENTER_URL, registerUrl: CARY_REGISTER_URL },
+    { title: "Senior Center Class", date: "Tuesday, December 8, 2026", time: "10:00 AM – 11:30 AM", location: "Anne Gordon Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
+    { title: "Senior Center Class", date: "Friday, December 11, 2026", time: "10:00 AM – 11:30 AM", location: "Apex Senior Center, 1483 Beaver Creek Commons Drive", locationUrl: APEX_LOCATION_URL, registerUrl: APEX_LOCATION_URL },
+    { title: "Senior Center Class", date: "Friday, December 11, 2026", time: "1:00 PM – 2:30 PM", location: "W.E. Hunt Recreation Center, Holly Springs", locationUrl: HOLLY_SPRINGS_URL, registerUrl: HOLLY_SPRINGS_URL },
   ] },
 ];
 
