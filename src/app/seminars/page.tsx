@@ -18,19 +18,6 @@ export default function Seminars() {
         </div>
       </section>
 
-      <section className="bg-[#f0fafd] px-4 py-16">
-        <div className="mx-auto grid max-w-6xl items-center gap-8 rounded-3xl bg-white p-8 shadow-sm md:grid-cols-[1.25fr_0.75fr] sm:p-10">
-          <div>
-            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-[#0A7387]">Featured Seminar</p>
-            <h2 className="text-3xl font-bold leading-tight text-[#123A5E]">Living, Dying &amp; Leaving a Legacy</h2>
-            <p className="mt-4 max-w-2xl leading-relaxed text-[#3d3d3d]">Explore five practical conversations, a one-binder roadmap, and small next steps that help you live well, plan wisely, and leave the people you love less guessing and more peace.</p>
-          </div>
-          <div className="md:text-right">
-            <Link href="/seminars/living-dying-leaving-a-legacy" className="inline-block rounded-full bg-[#0A7387] px-8 py-3 text-sm font-bold tracking-wider text-white transition-colors hover:bg-[#086475]">EXPLORE THE SEMINAR</Link>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
