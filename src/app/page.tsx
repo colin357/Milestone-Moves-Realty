@@ -81,27 +81,27 @@ const steps = [
   {
     number: "01",
     title: "Free Consultation",
-    description: "We start by listening — to your goals, timeline, concerns, and vision for your next chapter. No pressure, just conversation.",
+    description: "We listen to your goals, concerns, and timeline. No pressure, just a conversation about what matters to you.",
   },
   {
     number: "02",
-    title: "Education & Planning",
-    description: "We walk you through all your options and create a personalized plan that fits your goals, budget, and timeline.",
+    title: "Explore Options & Plan",
+    description: "We help you understand your housing choices and build a personalized plan for your next chapter.",
   },
   {
     number: "03",
-    title: "Prepare & List",
-    description: "We help you prepare your home for sale, connect you with trusted vendors, and handle every marketing detail.",
+    title: "Find & Move",
+    description: "We help you find the right next home and coordinate your move first, whenever your circumstances allow.",
   },
   {
     number: "04",
-    title: "Find Your Next Home",
-    description: "We search with you, tour communities and homes, and negotiate confidently to get you the best outcome.",
+    title: "Prepare & Sell",
+    description: "Once you've moved, we coordinate the remaining cleanout, repairs, and preparation, then market and sell your former home.",
   },
   {
     number: "05",
-    title: "Close & Celebrate",
-    description: "From contract to keys, we manage every detail so closing day feels like the new beginning it truly is.",
+    title: "Settle Into Your Next Chapter",
+    description: "We help wrap up the remaining details so you can focus on making your new place feel like home.",
   },
 ];
 
