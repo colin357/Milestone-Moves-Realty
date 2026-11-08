@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const CARY_CENTER_URL = "https://www.carync.gov/recreation-enjoyment/facilities/senior-center";
 const CARY_REGISTER_URL = "https://www.carync.gov/register";
@@ -34,7 +34,7 @@ const months: MonthInfo[] = [
     { title: "Senior Center Class", date: "Tuesday, September 1, 2026", time: "10:00 AM – 11:30 AM", location: "Five Points Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
     { title: "Senior Center Class", date: "Wednesday, September 2, 2026", time: "10:00 AM – 11:30 AM", location: "Fuquay-Varina Senior Center", locationUrl: FUQUAY_PROGRAMS_URL, registerUrl: FUQUAY_PROGRAMS_URL },
     { title: "Senior Center Class", date: "Tuesday, September 8, 2026", time: "10:00 AM – 11:30 AM", location: "Anne Gordon Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
-    { title: "Senior Center Class", date: "Friday, September 11, 2026", time: "10:00 AM – 11:30 AM", location: "Apex Senior Center, 1483 Beaver Creek Commons Drive", locationUrl: APEX_LOCATION_URL, registerUrl: APEX_LOCATION_URL },
+    { title: "Senior Center Class", date: "Friday, September 11, 2026", time: "10:00 AM – 11:30 AM", location: "Milestone Moves Office, 1483 Beaver Creek Commons Drive, Apex", locationUrl: APEX_LOCATION_URL, registerUrl: APEX_LOCATION_URL },
     { title: "Senior Center Class", date: "Friday, September 11, 2026", time: "1:00 PM – 2:30 PM", location: "W.E. Hunt Recreation Center, Holly Springs", locationUrl: HOLLY_SPRINGS_URL, registerUrl: HOLLY_SPRINGS_URL },
   ], followingMonthSession: octoberCarySession },
   { name: "October", monthIndex: 9, topic: "One Move, Many Futures: Understanding Continuing Care Retirement Communities", description: "We’ll break down the structure, contracts, and levels of care so you can make informed decisions with confidence.", sessions: [
@@ -64,21 +64,22 @@ const months: MonthInfo[] = [
 ];
 
 export default function MonthlyClasses() {
+  // Only show sessions that have not yet happened. Past months disappear automatically.
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const upcomingMonths = months
+    .map((month) => ({
+      ...month,
+      sessions: month.sessions.filter((session) => new Date(session.date + " 12:00:00") >= today),
+    }))
+    .filter((month) => month.sessions.length > 0);
   const [selected, setSelected] = useState(0);
-
-  useEffect(() => {
-    const currentMonth = new Date().getMonth();
-    const nextMonth = months.findIndex((month) => month.monthIndex >= currentMonth);
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- intentional client-only sync to next scheduled month
-    setSelected(nextMonth === -1 ? months.length - 1 : nextMonth);
-  }, []);
-
-  const active = months[selected];
+  const active = upcomingMonths[selected];
 
   return (
     <div className="mx-auto max-w-4xl">
       <div className="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-4" role="group" aria-label="Choose a month">
-        {months.map((month, index) => {
+        {upcomingMonths.map((month, index) => {
           const isActive = index === selected;
           return (
             <button key={month.name} type="button" onClick={() => setSelected(index)} aria-pressed={isActive}
@@ -89,7 +90,8 @@ export default function MonthlyClasses() {
         })}
       </div>
 
-      <div key={selected} className="grid gap-6 animate-dropdown">
+      {!active && <p className="mb-10 text-center text-[#123A5E]">New class dates are being finalized. Contact Freda for upcoming workshops and registration details.</p>}
+      {active && <div key={selected} className="grid gap-6 animate-dropdown">
         <section className="rounded-2xl border border-[#d7a900] bg-[#fffaf0] p-6 shadow-sm sm:p-8" aria-labelledby={`topic-${active.name.toLowerCase()}`}>
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[#8a6500]">{active.name} class topic</p>
           <h3 id={`topic-${active.name.toLowerCase()}`} className="text-2xl font-bold leading-snug text-[#123A5E] sm:text-3xl">{active.topic}</h3>
@@ -132,7 +134,7 @@ export default function MonthlyClasses() {
             </article>
           </div>
         )}
-      </div>
+      </div>}
 
       <div className="mt-10 rounded-2xl border border-[#0A7387] bg-[#f0fafd] p-6 text-center">
         <p className="text-[#3d3d3d]"><strong className="text-[#123A5E]">Having trouble registering?</strong>{" "}Please contact Freda — she&apos;s happy to help you reserve a seat.</p>
