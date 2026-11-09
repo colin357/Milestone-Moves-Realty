@@ -166,11 +166,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#123A5E]/90 via-[#123A5E]/75 to-[#123A5E]/60" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center py-24">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="font-bold mb-6 leading-tight">
             <span className="block text-xl sm:text-2xl md:text-3xl font-semibold tracking-wide mb-3">
-              Serving the 55+ Community
+              Serving the 55+ Community with
             </span>
-            <span className="block">with <span className="text-[#00A8F0]">Care, Clarity &amp; Confidence</span></span>
+            <span className="block whitespace-nowrap text-[clamp(1.125rem,4.5vw,3rem)] tracking-tight text-[#00A8F0]">
+              Care, Clarity &amp; Confidence
+            </span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-10">
             Specializing in helping adults 55 and better navigate life&apos;s most important housing
