@@ -50,7 +50,7 @@ const months: MonthInfo[] = [
     { title: "Senior Center Class", date: "Wednesday, November 4, 2026", time: "10:00 AM – 11:30 AM", location: "Fuquay-Varina Senior Center", locationUrl: FUQUAY_PROGRAMS_URL, registerUrl: FUQUAY_PROGRAMS_URL },
     { title: "Senior Center Class", date: "Friday, November 6, 2026", time: "9:30 AM – 11:00 AM", location: "Cary Senior Center", locationUrl: CARY_CENTER_URL, registerUrl: CARY_REGISTER_URL },
     { title: "Senior Center Class", date: "Tuesday, November 10, 2026", time: "10:00 AM – 11:30 AM", location: "Anne Gordon Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
-    { title: "Apex Office Class", date: "Friday, November 13, 2026", time: "10:00 AM – 11:30 AM", location: "Keller Williams Legacy Office, 1483 Beaver Creek Commons Drive, Apex, NC", locationUrl: APEX_LOCATION_URL, registerUrl: APEX_LOCATION_URL },
+    { title: "Apex Office Class", date: "Friday, November 13, 2026", time: "10:00 AM – 11:30 AM", location: "Keller Williams Legacy Office, 1483 Beaver Creek Commons Drive, Apex, NC", locationUrl: APEX_LOCATION_URL, registerUrl: "https://cmuia9ng4000jv7deul9rq0dx.zapier.app/" },
     { title: "Senior Center Class", date: "Friday, November 13, 2026", time: "1:00 PM – 2:30 PM", location: "W.E. Hunt Recreation Center, Holly Springs", locationUrl: HOLLY_SPRINGS_URL, registerUrl: HOLLY_SPRINGS_URL },
   ] },
   { name: "December", monthIndex: 11, topic: "What Happens to All the Stuff? The Truth About Estate Sales", description: "Get a behind-the-scenes look at how estate sales work, what sells, what doesn’t, and how to avoid surprises.", sessions: [
@@ -58,7 +58,7 @@ const months: MonthInfo[] = [
     { title: "Senior Center Class", date: "Wednesday, December 2, 2026", time: "10:00 AM – 11:30 AM", location: "Fuquay-Varina Senior Center", locationUrl: FUQUAY_PROGRAMS_URL, registerUrl: FUQUAY_PROGRAMS_URL },
     { title: "Senior Center Class", date: "Friday, December 4, 2026", time: "9:30 AM – 11:00 AM", location: "Cary Senior Center", locationUrl: CARY_CENTER_URL, registerUrl: CARY_REGISTER_URL },
     { title: "Senior Center Class", date: "Tuesday, December 8, 2026", time: "10:00 AM – 11:30 AM", location: "Anne Gordon Center for Active Adults, Raleigh", locationUrl: RALEIGH_ACTIVE_ADULT_URL, registerUrl: RALEIGH_ACTIVE_ADULT_URL },
-    { title: "Apex Office Class", date: "Friday, December 11, 2026", time: "10:00 AM – 11:30 AM", location: "Keller Williams Legacy Office, 1483 Beaver Creek Commons Drive, Apex, NC", locationUrl: APEX_LOCATION_URL, registerUrl: APEX_LOCATION_URL },
+    { title: "Apex Office Class", date: "Friday, December 11, 2026", time: "10:00 AM – 11:30 AM", location: "Keller Williams Legacy Office, 1483 Beaver Creek Commons Drive, Apex, NC", locationUrl: APEX_LOCATION_URL, registerUrl: "https://cmuia9ng4000jv7deul9rq0dx.zapier.app/" },
     { title: "Senior Center Class", date: "Friday, December 11, 2026", time: "1:00 PM – 2:30 PM", location: "W.E. Hunt Recreation Center, Holly Springs", locationUrl: HOLLY_SPRINGS_URL, registerUrl: HOLLY_SPRINGS_URL },
   ] },
 ];
