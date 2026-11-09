@@ -167,10 +167,10 @@ export default function Home() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center py-24">
           <h1 className="font-bold mb-6 leading-tight">
-            <span className="block text-xl sm:text-2xl md:text-3xl font-semibold tracking-wide mb-3">
+            <span className="block text-lg sm:text-2xl md:text-3xl font-semibold tracking-wide mb-3">
               Serving the 55+ Community with
             </span>
-            <span className="block whitespace-nowrap text-[clamp(1.125rem,4.5vw,3rem)] tracking-tight text-[#00A8F0]">
+            <span className="block whitespace-nowrap text-[clamp(1.4rem,5.9vw,3.75rem)] tracking-tight text-[#00A8F0]">
               Care, Clarity &amp; Confidence
             </span>
           </h1>
