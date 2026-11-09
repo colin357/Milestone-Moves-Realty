@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  /* Bright teal — decorative use and accents on dark (navy) backgrounds only.
-     On white it fails WCAG AA (2.4:1), so never use it for text/controls on light. */
-  --brand-teal: #2BB8D3;
-  /* Accessible teal — for teal text, buttons, and borders on light backgrounds.
-     5.5:1 on white and with white text, meeting WCAG AA. */
-  --brand-teal-dark: #0A7387;
+  /* Milestone Moves Caribbean blue, matched to the approved VIP invitation.
+     The vivid color is for accents and large display text, not white-background body text. */
+  --brand-caribbean-blue: #00A8F0;
+  /* Accessible deeper blue for white-text buttons, normal-size links, and controls. */
+  --brand-caribbean-blue-dark: #006F9C;
+  /* Backward-compatible aliases for older components pending page-by-page review. */
+  --brand-teal: var(--brand-caribbean-blue);
+  --brand-teal-dark: var(--brand-caribbean-blue-dark);
+  /* Neutral gray supports the blue and navy instead of competing with them. */
+  --brand-gray-light: #F1F3F5;
   /* Navy — a true blue navy (less purple than the previous #1C2B5E). */
   --brand-navy: #123A5E;
   --brand-navy-dark: #0D2942;
@@ -18,6 +22,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-caribbean-blue: var(--brand-caribbean-blue);
+  --color-brand-caribbean-blue-dark: var(--brand-caribbean-blue-dark);
+  --color-brand-gray-light: var(--brand-gray-light);
   --color-brand-teal: var(--brand-teal);
   --color-brand-teal-dark: var(--brand-teal-dark);
   --color-brand-navy: var(--brand-navy);
