@@ -1,6 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
 
+// Distinct Pexels lifestyle photographs, used under the Pexels License.
+// Stock subjects are illustrative and are not presented as Milestone Moves clients.
+// https://www.pexels.com/license/
+const lifestylePhotos = {
+  hero: "https://images.pexels.com/photos/8806089/pexels-photo-8806089.jpeg",
+  welcome: "https://images.pexels.com/photos/7232037/pexels-photo-7232037.jpeg",
+  communities: "https://images.pexels.com/photos/20210675/pexels-photo-20210675.jpeg",
+  planning: "https://images.pexels.com/photos/8815837/pexels-photo-8815837.jpeg",
+  family: "https://images.pexels.com/photos/6148866/pexels-photo-6148866.jpeg",
+  journey: "https://images.pexels.com/photos/32842395/pexels-photo-32842395.jpeg",
+  community: "https://images.pexels.com/photos/36838819/pexels-photo-36838819.jpeg",
+  closing: "https://images.pexels.com/photos/8139243/pexels-photo-8139243.jpeg",
+};
+
 const cities = [
   { name: "Apex", slug: "apex", image: "/images/cities/apex.jpg" },
   { name: "Cary", slug: "cary", image: "/images/cities/cary.jpg" },
@@ -155,11 +169,11 @@ export default function Home() {
       <section className="relative min-h-[85vh] flex items-center justify-center text-white overflow-hidden">
         {/* Background photo */}
         <Image
-          src="/images/hero-bg.jpg"
-          alt="Beautiful neighborhood home"
+          src={lifestylePhotos.hero}
+          alt="Older couple enjoying time together outside their home"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-center"
           sizes="100vw"
         />
         {/* Overlay */}
@@ -175,8 +189,8 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-10">
-            Specializing in helping adults 55 and better navigate life&apos;s most important housing
-            transitions — with expertise, compassion, and an education-first approach.
+            Helping older adults and their families plan meaningful moves,
+            find the right next home, and enjoy what comes next.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -213,128 +227,121 @@ export default function Home() {
       </section>
 
       {/* ── INTRO / ABOUT ────────────────────────────────────────── */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <section className="py-16 sm:py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <p className="text-[#006F9C] font-bold tracking-widest text-sm mb-3 uppercase">Welcome to Milestone Moves</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6 leading-tight">
-              More Than a Move —<br />It&apos;s a New Beginning
+              More Than a Move.<br />It&apos;s a New Beginning.
             </h2>
-            <p className="text-[#3d3d3d] leading-relaxed mb-5">
-              At <strong>Milestone Moves Realty Group</strong>, we specialize in helping adults 55 and better navigate
-              one of life&apos;s most important transitions. We understand that this move is about far more than real
-              estate — it&apos;s about lifestyle, comfort, health, financial peace of mind, and staying connected to
-              the people and activities you love.
+            <p className="text-[#3d3d3d] text-lg leading-relaxed mb-5">
+              A later-in-life move is about more than a house. It&apos;s about the people you love,
+              the life you want, and feeling confident about what&apos;s next.
             </p>
             <p className="text-[#3d3d3d] leading-relaxed mb-8">
-              That&apos;s why our approach begins with <strong>education</strong>. We take the time to listen, answer
-              questions, explain options, and create a personalized plan that fits your goals, your timeline, and your
-              future. We don&apos;t rush decisions and we don&apos;t treat clients like transactions.
+              We help you explore your options, create a plan, and coordinate the details at your pace.
+              Whenever possible, we help you move first, then prepare and sell your former home.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/about/meet-the-team"
-                className="inline-block bg-[#006F9C] hover:bg-[#005578] text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center"
-              >
+              <Link href="/about/meet-the-team" className="inline-block bg-[#006F9C] hover:bg-[#005578] text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center">
                 MEET THE TEAM
               </Link>
-              <Link
-                href="/empowered-aging"
-                className="inline-block border-2 border-[#006F9C] text-[#006F9C] hover:bg-[#006F9C] hover:text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center"
-              >
+              <Link href="/empowered-aging" className="inline-block border-2 border-[#006F9C] text-[#006F9C] hover:bg-[#006F9C] hover:text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center">
                 EMPOWERED AGING
               </Link>
             </div>
           </div>
-
-          {/* Feature callouts */}
-          <div className="grid grid-cols-1 gap-4">
-            {[
-              { icon: "🎓", title: "Education First", desc: "We inform before we act — because confident clients make the best decisions." },
-              { icon: "🤝", title: "Compassionate Guidance", desc: "We walk beside you through every step, at your pace, on your timeline." },
-              { icon: "🏘️", title: "Community Expertise", desc: "Deep knowledge of 55+ and active adult communities across the Triangle." },
-              { icon: "🔗", title: "Trusted Network", desc: "Connections to senior care, legal, financial, and moving professionals." },
-            ].map((f) => (
-              <div key={f.title} className="flex gap-4 items-start bg-gray-50 rounded-xl p-5">
-                <span className="text-3xl flex-shrink-0">{f.icon}</span>
-                <div>
-                  <h3 className="font-bold text-[#123A5E] mb-1">{f.title}</h3>
-                  <p className="text-[#3d3d3d] text-sm leading-relaxed">{f.desc}</p>
-                </div>
-              </div>
-            ))}
+          <div className="relative">
+            <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg">
+              <Image src={lifestylePhotos.welcome} alt="Older woman and adult family member sharing a joyful moment together" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+            </div>
+            <div className="absolute -bottom-4 left-4 sm:left-8 right-4 sm:right-8 bg-white/95 shadow-lg rounded-xl p-5 border-l-4 border-[#00A8F0]">
+              <p className="text-[#123A5E] font-semibold text-lg">Your plans. Your pace. Your next chapter.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── SERVICES ─────────────────────────────────────────────── */}
-      <section className="py-20 px-4 bg-gray-50">
+            {/* ── SERVICES ─────────────────────────────────────────────── */}
+      <section className="py-16 sm:py-20 px-4 bg-[#F1F3F5]">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <p className="text-[#006F9C] font-bold tracking-widest text-sm mb-3 uppercase">What We Offer</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">How We Can Help You</h2>
+            <p className="text-[#3d3d3d] mt-3 max-w-2xl mx-auto">Practical help for the decisions, details, and possibilities ahead.</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) => (
-              <Link
-                key={service.title}
-                href={service.href}
-                className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-transparent hover:border-[#00A8F0] transition-all"
-              >
-                <div className="w-14 h-14 bg-[#00A8F0] text-[#123A5E] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#006F9C] group-hover:text-white transition-colors">
-                  {service.icon}
+          <div className="grid md:grid-cols-3 gap-6">
+            {services.slice(0, 3).map((service, i) => (
+              <Link key={service.title} href={service.href} className="group block">
+                <div className="relative h-64 sm:h-72 overflow-hidden rounded-2xl mb-5 shadow-sm">
+                  <Image
+                    src={[lifestylePhotos.communities, lifestylePhotos.planning, lifestylePhotos.family][i]}
+                    alt={[
+                      "Older adult enjoying life in a comfortable home",
+                      "Older adult discussing plans with a professional",
+                      "Older couple and family member spending time together",
+                    ][i]}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
-                <h3 className="font-bold text-[#123A5E] text-lg mb-2">{service.title}</h3>
-                <p className="text-[#3d3d3d] text-sm leading-relaxed">{service.description}</p>
-                <span className="inline-block mt-4 text-[#006F9C] text-sm font-bold group-hover:underline">
-                  Learn More →
-                </span>
+                <h3 className="font-bold text-[#123A5E] text-xl mb-2 group-hover:text-[#006F9C]">{service.title}</h3>
+                <p className="text-[#3d3d3d] leading-relaxed text-base mb-2">{service.description}</p>
+                <span className="text-[#006F9C] font-bold text-sm group-hover:underline">Explore this service →</span>
+              </Link>
+            ))}
+          </div>
+          <div className="grid md:grid-cols-3 gap-4 mt-10 pt-8 border-t border-[#CBD5E1]">
+            {services.slice(3).map((service) => (
+              <Link key={service.title} href={service.href} className="group flex items-start gap-3 p-3 rounded-xl hover:bg-white/75 transition-colors">
+                <span className="text-[#006F9C] mt-1 flex-shrink-0">{service.icon}</span>
+                <div>
+                  <h3 className="font-bold text-[#123A5E] group-hover:text-[#006F9C]">{service.title} →</h3>
+                  <p className="text-[#3d3d3d] text-sm leading-relaxed mt-1">{service.description}</p>
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── HOW IT WORKS ─────────────────────────────────────────── */}
-      <section className="py-20 px-4 bg-[#F1F3F5] text-[#123A5E]">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
+            {/* ── HOW IT WORKS ─────────────────────────────────────────── */}
+      <section className="py-16 sm:py-20 px-4 bg-white text-[#123A5E]">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-10">
             <p className="text-[#006F9C] font-bold tracking-widest text-sm mb-3 uppercase">The Process</p>
             <h2 className="text-3xl sm:text-4xl font-bold">How It Works</h2>
-            <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
-              We&apos;ve refined a proven process that removes the uncertainty and stress from your transition — one step at a time.
-            </p>
+            <p className="text-[#3d3d3d] mt-4 max-w-2xl">A clear plan, thoughtful coordination, and a helping hand through each stage.</p>
           </div>
-
-          <div className="relative">
-            {/* Connecting line (desktop) */}
-            <div className="hidden md:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-[#00A8F0]/50" />
-
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div className="grid lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] gap-8 lg:gap-12 items-center">
+            <div className="relative min-h-[430px] lg:min-h-[590px] rounded-[2rem] overflow-hidden shadow-md">
+              <Image src={lifestylePhotos.journey} alt="Family sharing a relaxed, cheerful moment at home" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
+              <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-[#123A5E]/85 via-[#123A5E]/40 to-transparent">
+                <p className="text-white text-xl font-semibold">We guide you. You set the pace.</p>
+              </div>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-x-7 gap-y-6">
               {steps.map((step, i) => (
-                <div key={step.number} className="relative flex flex-col items-center text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#00A8F0] flex items-center justify-center text-[#123A5E] font-bold text-lg mb-4 z-10 flex-shrink-0 shadow-md">
-                    {i + 1}
+                <div key={step.number} className="border-t-2 border-[#E2E8F0] pt-4">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="w-11 h-11 rounded-full bg-[#00A8F0] flex items-center justify-center text-[#123A5E] font-bold text-lg flex-shrink-0">{i + 1}</span>
+                    <h3 className="font-bold text-[#123A5E] text-lg leading-snug">{step.title}</h3>
                   </div>
-                  <h3 className="font-bold text-[#123A5E] text-base mb-2">{step.title}</h3>
-                  <p className="text-[#3d3d3d] text-sm leading-relaxed">{step.description}</p>
+                  <p className="text-[#3d3d3d] text-base leading-relaxed">{step.description}</p>
                 </div>
               ))}
+              <div className="sm:col-span-2 pt-2">
+                <Link href="/moving-playbook" className="inline-block bg-[#006F9C] hover:bg-[#005578] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+                  READ THE FULL PLAYBOOK
+                </Link>
+              </div>
             </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Link
-              href="/moving-playbook"
-              className="inline-block bg-[#006F9C] hover:bg-[#005578] text-white font-bold px-10 py-4 rounded-full transition-colors text-sm tracking-wider"
-            >
-              READ THE FULL PLAYBOOK
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* ── MEET FREDA ───────────────────────────────────────────── */}
+            {/* ── MEET FREDA ───────────────────────────────────────────── */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Photo */}
@@ -394,36 +401,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── HUMAN MOMENT / EMPOWERED AGING ─────────────────────── */}
+      <section className="bg-[#F1F3F5] px-4 py-14 sm:py-20">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+          <div className="relative h-[340px] sm:h-[420px] overflow-hidden rounded-[2rem] shadow-md">
+            <Image src={lifestylePhotos.community} alt="Older friends sharing laughter and companionship" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+          </div>
+          <div>
+            <p className="text-[#006F9C] font-bold tracking-widest text-sm uppercase mb-3">Empowered Aging</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] leading-tight mb-5">A Good Move Opens the Door to More Living.</h2>
+            <p className="text-[#3d3d3d] text-lg leading-relaxed mb-7">
+              New friendships, fresh routines, and more room for what matters.
+              Our educational programs help you plan ahead so you can enjoy the years ahead.
+            </p>
+            <Link href="/empowered-aging" className="inline-block bg-[#006F9C] hover:bg-[#005578] text-white font-bold px-8 py-4 rounded-full transition-colors text-sm tracking-wider">
+              EXPLORE EMPOWERED AGING
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── TESTIMONIALS ─────────────────────────────────────────── */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-16 sm:py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <p className="text-[#006F9C] font-bold tracking-widest text-sm mb-3 uppercase">Client Stories</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">What Our Clients Say</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((t) => (
-              <div key={t.name} className="bg-white rounded-2xl p-7 shadow-sm flex flex-col">
-                {/* Stars */}
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-[#00A8F0]" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
+              <blockquote key={t.name} className="border-t-4 border-[#00A8F0] pt-6 flex flex-col">
                 <p className="text-[#3d3d3d] leading-relaxed italic flex-1">&ldquo;{t.quote}&rdquo;</p>
-                <div className="mt-5 pt-5 border-t border-gray-100">
+                <div className="mt-5 pt-4 border-t border-gray-200">
                   <p className="font-bold text-[#123A5E]">{t.name}</p>
-                  <p className="text-sm text-gray-500">{t.location}</p>
+                  <p className="text-sm text-gray-600">{t.location}</p>
                 </div>
-              </div>
+              </blockquote>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── EXPLORE THE TRIANGLE ─────────────────────────────────── */}
+            {/* ── EXPLORE THE TRIANGLE ─────────────────────────────────── */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -497,13 +516,13 @@ export default function Home() {
       {/* ── FINAL CTA ────────────────────────────────────────────── */}
       <section className="relative py-24 px-4 text-white overflow-hidden">
         <Image
-          src="/images/hero-bg.jpg"
+          src={lifestylePhotos.closing}
           alt=""
           fill
-          className="object-cover"
+          className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[#123A5E]/85" />
+        <div className="absolute inset-0 bg-[#123A5E]/78" />
         <div className="relative z-10 max-w-3xl mx-auto text-center">
           <p className="text-[#5DCCF8] font-bold tracking-widest text-sm mb-4 uppercase">Let&apos;s Get Started</p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-5">
