@@ -234,7 +234,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/about/meet-the-team"
-                className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center"
+                className="inline-block bg-[#006F9C] hover:bg-[#005578] text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center"
               >
                 MEET THE TEAM
               </Link>
@@ -279,9 +279,9 @@ export default function Home() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-transparent hover:border-[#006F9C] transition-all"
+                className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-transparent hover:border-[#00A8F0] transition-all"
               >
-                <div className="w-14 h-14 bg-[#EAF7FD] text-[#006F9C] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#006F9C] group-hover:text-white transition-colors">
+                <div className="w-14 h-14 bg-[#00A8F0] text-[#123A5E] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#006F9C] group-hover:text-white transition-colors">
                   {service.icon}
                 </div>
                 <h3 className="font-bold text-[#123A5E] text-lg mb-2">{service.title}</h3>
@@ -296,28 +296,28 @@ export default function Home() {
       </section>
 
       {/* ── HOW IT WORKS ─────────────────────────────────────────── */}
-      <section className="py-20 px-4 bg-[#123A5E] text-white">
+      <section className="py-20 px-4 bg-[#F1F3F5] text-[#123A5E]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-[#5DCCF8] font-bold tracking-widest text-sm mb-3 uppercase">The Process</p>
+            <p className="text-[#006F9C] font-bold tracking-widest text-sm mb-3 uppercase">The Process</p>
             <h2 className="text-3xl sm:text-4xl font-bold">How It Works</h2>
-            <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-[#3d3d3d] mt-4 max-w-2xl mx-auto">
               We&apos;ve refined a proven process that removes the uncertainty and stress from your transition — one step at a time.
             </p>
           </div>
 
           <div className="relative">
             {/* Connecting line (desktop) */}
-            <div className="hidden md:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-[#00A8F0]/30" />
+            <div className="hidden md:block absolute top-8 left-[10%] right-[10%] h-0.5 bg-[#00A8F0]/50" />
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               {steps.map((step, i) => (
                 <div key={step.number} className="relative flex flex-col items-center text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#006F9C] flex items-center justify-center text-white font-bold text-lg mb-4 z-10 flex-shrink-0 shadow-lg">
+                  <div className="w-16 h-16 rounded-full bg-[#00A8F0] flex items-center justify-center text-[#123A5E] font-bold text-lg mb-4 z-10 flex-shrink-0 shadow-md">
                     {i + 1}
                   </div>
-                  <h3 className="font-bold text-white text-base mb-2">{step.title}</h3>
-                  <p className="text-gray-300 text-xs leading-relaxed">{step.description}</p>
+                  <h3 className="font-bold text-[#123A5E] text-base mb-2">{step.title}</h3>
+                  <p className="text-[#3d3d3d] text-sm leading-relaxed">{step.description}</p>
                 </div>
               ))}
             </div>
@@ -379,7 +379,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/about/meet-the-team"
-                className="inline-block bg-[#123A5E] hover:bg-[#0D2942] text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center"
+                className="inline-block bg-[#006F9C] hover:bg-[#005578] text-white font-bold px-7 py-3 rounded-full transition-colors text-sm tracking-wider text-center"
               >
                 LEARN MORE ABOUT FREDA
               </Link>
@@ -407,7 +407,7 @@ export default function Home() {
                 {/* Stars */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-[#006F9C]" fill="currentColor" viewBox="0 0 20 20">
+                    <svg key={i} className="w-5 h-5 text-[#00A8F0]" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
@@ -476,7 +476,7 @@ export default function Home() {
                 href={post.href}
                 className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="bg-[#123A5E] h-3 group-hover:bg-[#006F9C] transition-colors" />
+                <div className="bg-[#00A8F0] h-3 group-hover:bg-[#006F9C] transition-colors" />
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="bg-[#EAF7FD] text-[#006F9C] text-xs font-bold px-3 py-1 rounded-full">{post.tag}</span>
