@@ -6,12 +6,12 @@ import Image from "next/image";
 // https://www.pexels.com/license/
 const lifestylePhotos = {
   hero: "https://images.pexels.com/photos/8806089/pexels-photo-8806089.jpeg",
-  welcome: "https://images.pexels.com/photos/7232037/pexels-photo-7232037.jpeg",
+  welcome: "https://images.pexels.com/photos/7232039/pexels-photo-7232039.jpeg",
   communities: "https://images.pexels.com/photos/20210675/pexels-photo-20210675.jpeg",
   planning: "https://images.pexels.com/photos/8815837/pexels-photo-8815837.jpeg",
   family: "https://images.pexels.com/photos/6148866/pexels-photo-6148866.jpeg",
-  journey: "https://images.pexels.com/photos/32842395/pexels-photo-32842395.jpeg",
-  community: "https://images.pexels.com/photos/36838819/pexels-photo-36838819.jpeg",
+  journey: "https://images.pexels.com/photos/7224926/pexels-photo-7224926.jpeg",
+  community: "https://images.pexels.com/photos/8154022/pexels-photo-8154022.jpeg",
   closing: "https://images.pexels.com/photos/8139243/pexels-photo-8139243.jpeg",
 };
 
@@ -316,7 +316,7 @@ export default function Home() {
           </div>
           <div className="grid lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] gap-8 lg:gap-12 items-center">
             <div className="relative min-h-[430px] lg:min-h-[590px] rounded-[2rem] overflow-hidden shadow-md">
-              <Image src={lifestylePhotos.journey} alt="Family sharing a relaxed, cheerful moment at home" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
+              <Image src={lifestylePhotos.journey} alt="Older adult and younger companion walking together with warmth and support" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
               <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-[#123A5E]/85 via-[#123A5E]/40 to-transparent">
                 <p className="text-white text-xl font-semibold">We guide you. You set the pace.</p>
               </div>
