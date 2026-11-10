@@ -168,29 +168,29 @@ export default function Home() {
     <div>
 
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative min-h-[85vh] flex items-center justify-center text-white overflow-hidden">
+      <section className="relative min-h-[390px] sm:min-h-[440px] lg:min-h-[500px] flex items-center justify-center bg-[#123A5E] text-white overflow-hidden">
         {/* Background photo */}
         <Image
           src={lifestylePhotos.hero}
           alt="Older couple enjoying time together outside their home"
           fill
           priority
-          className="object-cover object-center"
+          className="object-contain object-center"
           sizes="100vw"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#123A5E]/90 via-[#123A5E]/75 to-[#123A5E]/60" />
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center py-24">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center py-12 sm:py-16 lg:py-20">
           <h1 className="font-bold mb-6 leading-tight">
-            <span className="block text-lg sm:text-2xl md:text-3xl font-semibold tracking-wide mb-3">
+            <span className="block text-base sm:text-xl lg:text-2xl font-semibold tracking-wide mb-3">
               Serving the 55+ Community with
             </span>
-            <span className="block whitespace-nowrap text-[clamp(1.4rem,5.9vw,3.75rem)] tracking-tight text-[#00A8F0]">
+            <span className="block whitespace-nowrap text-[clamp(1.15rem,5.15vw,3rem)] tracking-tight text-[#00A8F0]">
               Care, Clarity &amp; Confidence
             </span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-10">
+          <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8">
             Helping older adults and their families plan meaningful moves,
             find the right next home, and enjoy what comes next.
           </p>
@@ -212,7 +212,7 @@ export default function Home() {
       </section>
 
       {/* ── STAT STRIP ───────────────────────────────────────────── */}
-      <section className="bg-[#F1F3F5] text-[#123A5E] py-8 px-4">
+      <section className="bg-[#F1F3F5] text-[#123A5E] py-6 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
           {[
             { stat: "55+", label: "Specialized Market" },
@@ -221,7 +221,7 @@ export default function Home() {
             { stat: "100%", label: "Education-First Approach" },
           ].map((item) => (
             <div key={item.label}>
-              <p className="text-3xl sm:text-4xl font-bold">{item.stat}</p>
+              <p className="text-2xl sm:text-3xl font-bold">{item.stat}</p>
               <p className="text-sm font-semibold opacity-90 mt-1 tracking-wide">{item.label}</p>
             </div>
           ))}
@@ -229,8 +229,8 @@ export default function Home() {
       </section>
 
       {/* ── INTRO / ABOUT ────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <section className="py-12 sm:py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <p className="text-[#006F9C] font-bold tracking-widest text-sm mb-3 uppercase">Welcome to Milestone Moves</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E] mb-6 leading-tight">
@@ -253,29 +253,27 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative">
-            <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg">
-              <Image src={lifestylePhotos.welcome} alt="Older couple sitting together on the steps of their home beside moving boxes and a sold sign" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+          <div className="w-full max-w-[620px] mx-auto">
+            <div className="relative w-full aspect-[1266/1032] overflow-hidden rounded-2xl bg-[#F1F3F5] shadow-md">
+              <Image src={lifestylePhotos.welcome} alt="Older couple sitting together on the steps of their home beside moving boxes and a sold sign" fill sizes="(max-width: 767px) 92vw, 46vw" className="object-contain" />
             </div>
-            <div className="absolute -bottom-4 left-4 sm:left-8 right-4 sm:right-8 bg-white/95 shadow-lg rounded-xl p-5 border-l-4 border-[#00A8F0]">
-              <p className="text-[#123A5E] font-semibold text-lg">Your plans. Your pace. Your next chapter.</p>
-            </div>
+            <p className="text-[#123A5E] text-base sm:text-lg font-semibold mt-3">Your plans. Your pace. Your next chapter.</p>
           </div>
         </div>
       </section>
 
             {/* ── SERVICES ─────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 px-4 bg-[#F1F3F5]">
+      <section className="py-12 sm:py-16 px-4 bg-[#F1F3F5]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-[#006F9C] font-bold tracking-widest text-sm mb-3 uppercase">What We Offer</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">How We Can Help You</h2>
             <p className="text-[#3d3d3d] mt-3 max-w-2xl mx-auto">Practical help for the decisions, details, and possibilities ahead.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.slice(0, 3).map((service, i) => (
               <Link key={service.title} href={service.href} className="group block">
-                <div className="relative h-64 sm:h-72 overflow-hidden rounded-2xl mb-5 shadow-sm">
+                <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl mb-4 bg-white shadow-sm">
                   <Image
                     src={[lifestylePhotos.communities, lifestylePhotos.packing, lifestylePhotos.family][i]}
                     alt={[
@@ -284,8 +282,8 @@ export default function Home() {
                       "Older couple and family member spending time together",
                     ][i]}
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 33vw"
+                    className="object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                   />
                 </div>
                 <h3 className="font-bold text-[#123A5E] text-xl mb-2 group-hover:text-[#006F9C]">{service.title}</h3>
@@ -294,7 +292,7 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <div className="grid md:grid-cols-3 gap-4 mt-10 pt-8 border-t border-[#CBD5E1]">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 pt-6 border-t border-[#CBD5E1]">
             {services.slice(3).map((service) => (
               <Link key={service.title} href={service.href} className="group flex items-start gap-3 p-3 rounded-xl hover:bg-white/75 transition-colors">
                 <span className="text-[#006F9C] mt-1 flex-shrink-0">{service.icon}</span>
@@ -309,7 +307,7 @@ export default function Home() {
       </section>
 
             {/* ── HOW IT WORKS ─────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 px-4 bg-white text-[#123A5E]">
+      <section className="py-12 sm:py-16 px-4 bg-white text-[#123A5E]">
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
             <p className="text-[#006F9C] font-bold tracking-widest text-sm mb-3 uppercase">The Process</p>
@@ -317,11 +315,11 @@ export default function Home() {
             <p className="text-[#3d3d3d] mt-4 max-w-2xl">A clear plan, thoughtful coordination, and a helping hand through each stage.</p>
           </div>
           <div className="grid lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] gap-8 lg:gap-12 items-center">
-            <div className="relative min-h-[430px] lg:min-h-[590px] rounded-[2rem] overflow-hidden shadow-md">
-              <Image src={lifestylePhotos.journey} alt="Older adult and younger companion walking together with warmth and support" fill sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover" />
-              <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-[#123A5E]/85 via-[#123A5E]/40 to-transparent">
-                <p className="text-white text-xl font-semibold">We guide you. You set the pace.</p>
+            <div className="w-full max-w-[600px] lg:max-w-none mx-auto">
+              <div className="relative w-full aspect-[3/2] rounded-2xl overflow-hidden bg-[#F1F3F5] shadow-md">
+                <Image src={lifestylePhotos.journey} alt="Older adult and younger companion walking together with warmth and support" fill sizes="(max-width: 1024px) 92vw, 40vw" className="object-contain" />
               </div>
+              <p className="text-[#123A5E] font-semibold text-lg mt-3">We guide you. You set the pace.</p>
             </div>
             <div className="grid sm:grid-cols-2 gap-x-7 gap-y-6">
               {steps.map((step, i) => (
@@ -344,16 +342,16 @@ export default function Home() {
       </section>
 
             {/* ── MEET FREDA ───────────────────────────────────────────── */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <section className="py-12 sm:py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Photo */}
-          <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-xl">
+          <div className="relative w-full max-w-[430px] mx-auto rounded-2xl overflow-hidden aspect-square bg-[#F1F3F5] shadow-lg">
             <Image
               src="/images/home/freda-headshot.jpg"
               alt="Freda Hamlett — Milestone Moves Realty Group"
               fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-contain"
+              sizes="(max-width: 768px) 92vw, 430px"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#123A5E]/90 to-transparent p-6">
               <p className="text-white font-bold text-xl">Freda Hamlett</p>
@@ -404,10 +402,10 @@ export default function Home() {
       </section>
 
       {/* ── HUMAN MOMENT / EMPOWERED AGING ─────────────────────── */}
-      <section className="bg-[#F1F3F5] px-4 py-14 sm:py-20">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-14 items-center">
-          <div className="relative h-[340px] sm:h-[420px] overflow-hidden rounded-[2rem] shadow-md">
-            <Image src={lifestylePhotos.community} alt="Four older friends laughing together around a coffee table" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+      <section className="bg-[#F1F3F5] px-4 py-12 sm:py-16">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="relative w-full max-w-[680px] mx-auto aspect-[3/2] overflow-hidden rounded-2xl bg-white shadow-md">
+            <Image src={lifestylePhotos.community} alt="Four older friends laughing together around a coffee table" fill sizes="(max-width: 1024px) 92vw, 50vw" className="object-contain" />
           </div>
           <div>
             <p className="text-[#006F9C] font-bold tracking-widest text-sm uppercase mb-3">Empowered Aging</p>
@@ -424,13 +422,13 @@ export default function Home() {
       </section>
 
       {/* ── TESTIMONIALS ─────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 px-4 bg-white">
+      <section className="py-12 sm:py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-[#006F9C] font-bold tracking-widest text-sm mb-3 uppercase">Client Stories</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">What Our Clients Say</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((t) => (
               <blockquote key={t.name} className="border-t-4 border-[#00A8F0] pt-6 flex flex-col">
                 <p className="text-[#3d3d3d] leading-relaxed italic flex-1">&ldquo;{t.quote}&rdquo;</p>
@@ -490,7 +488,7 @@ export default function Home() {
               VIEW ALL POSTS →
             </Link>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogPosts.map((post) => (
               <Link
                 key={post.title}
@@ -516,16 +514,18 @@ export default function Home() {
       </section>
 
       {/* ── FINAL CTA ────────────────────────────────────────────── */}
-      <section className="relative py-24 px-4 text-white overflow-hidden">
-        <Image
-          src={lifestylePhotos.closing}
-          alt=""
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-[#123A5E]/78" />
-        <div className="relative z-10 max-w-3xl mx-auto text-center">
+      <section className="bg-[#123A5E] py-12 sm:py-16 px-4 text-white overflow-hidden">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="relative w-full max-w-[680px] mx-auto aspect-[3/2] overflow-hidden rounded-2xl bg-[#0D2942] shadow-md">
+            <Image
+              src={lifestylePhotos.closing}
+              alt="Older couple enjoying time together on a bicycle ride"
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 92vw, 50vw"
+            />
+          </div>
+          <div className="text-center md:text-left">
           <p className="text-[#5DCCF8] font-bold tracking-widest text-sm mb-4 uppercase">Let&apos;s Get Started</p>
           <h2 className="text-3xl sm:text-4xl font-bold mb-5">
             Your Next Chapter Starts<br />with a Conversation
@@ -546,6 +546,7 @@ export default function Home() {
             >
               MEET THE TEAM
             </Link>
+          </div>
           </div>
         </div>
       </section>
