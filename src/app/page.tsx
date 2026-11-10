@@ -6,13 +6,13 @@ import Image from "next/image";
 // https://www.pexels.com/license/
 const lifestylePhotos = {
   hero: "https://images.pexels.com/photos/8806089/pexels-photo-8806089.jpeg",
-  welcome: "https://images.pexels.com/photos/7232039/pexels-photo-7232039.jpeg",
-  communities: "https://images.pexels.com/photos/20210675/pexels-photo-20210675.jpeg",
-  planning: "https://images.pexels.com/photos/8815837/pexels-photo-8815837.jpeg",
+  welcome: "/images/home/porch-couple.jpg",
+  communities: "/images/home/garden-couple.jpg",
+  packing: "/images/home/packing-couple.jpg",
   family: "https://images.pexels.com/photos/6148866/pexels-photo-6148866.jpeg",
   journey: "https://images.pexels.com/photos/7224926/pexels-photo-7224926.jpeg",
-  community: "https://images.pexels.com/photos/8154022/pexels-photo-8154022.jpeg",
-  closing: "https://images.pexels.com/photos/8139243/pexels-photo-8139243.jpeg",
+  community: "/images/home/coffee-friends.jpg",
+  closing: "/images/home/cycling-couple.jpg",
 };
 
 const cities = [
@@ -253,7 +253,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lg">
-              <Image src={lifestylePhotos.welcome} alt="Older woman and adult family member sharing a joyful moment together" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+              <Image src={lifestylePhotos.welcome} alt="Older couple sitting together on the steps of their home beside moving boxes and a sold sign" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
             </div>
             <div className="absolute -bottom-4 left-4 sm:left-8 right-4 sm:right-8 bg-white/95 shadow-lg rounded-xl p-5 border-l-4 border-[#00A8F0]">
               <p className="text-[#123A5E] font-semibold text-lg">Your plans. Your pace. Your next chapter.</p>
@@ -275,10 +275,10 @@ export default function Home() {
               <Link key={service.title} href={service.href} className="group block">
                 <div className="relative h-64 sm:h-72 overflow-hidden rounded-2xl mb-5 shadow-sm">
                   <Image
-                    src={[lifestylePhotos.communities, lifestylePhotos.planning, lifestylePhotos.family][i]}
+                    src={[lifestylePhotos.communities, lifestylePhotos.packing, lifestylePhotos.family][i]}
                     alt={[
-                      "Older adult enjoying life in a comfortable home",
-                      "Older adult discussing plans with a professional",
+                      "Older couple enjoying a sunny afternoon together on their deck",
+                      "Older couple packing dishes together in their kitchen",
                       "Older couple and family member spending time together",
                     ][i]}
                     fill
@@ -347,7 +347,7 @@ export default function Home() {
           {/* Photo */}
           <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-xl">
             <Image
-              src="/images/freda-about.jpg"
+              src="/images/home/freda-headshot.jpg"
               alt="Freda Hamlett — Milestone Moves Realty Group"
               fill
               className="object-cover"
@@ -405,7 +405,7 @@ export default function Home() {
       <section className="bg-[#F1F3F5] px-4 py-14 sm:py-20">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-14 items-center">
           <div className="relative h-[340px] sm:h-[420px] overflow-hidden rounded-[2rem] shadow-md">
-            <Image src={lifestylePhotos.community} alt="Older friends sharing laughter and companionship" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+            <Image src={lifestylePhotos.community} alt="Four older friends laughing together around a coffee table" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
           </div>
           <div>
             <p className="text-[#006F9C] font-bold tracking-widest text-sm uppercase mb-3">Empowered Aging</p>
