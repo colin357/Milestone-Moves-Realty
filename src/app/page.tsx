@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-// Distinct Pexels lifestyle photographs, used under the Pexels License.
-// Stock subjects are illustrative and are not presented as Milestone Moves clients.
+// User-supplied Dreamstime lifestyle photographs are stored in /public/images/home/.
+// Freda confirmed she has permission to use these images on the website.
+// Remaining external Pexels photographs are subject to the Pexels License:
 // https://www.pexels.com/license/
+// Stock subjects are illustrative, not representations of Milestone Moves clients.
 const lifestylePhotos = {
   hero: "https://images.pexels.com/photos/8806089/pexels-photo-8806089.jpeg",
   welcome: "/images/home/porch-couple.jpg",
