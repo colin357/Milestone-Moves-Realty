@@ -70,6 +70,12 @@ export default function Footer() {
         <div className="border-t border-blue-900 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-400">
           <p>&copy; {new Date().getFullYear()} Milestone Moves Realty Group. All rights reserved.</p>
           <p>Serving the Triangle, NC</p>
+          <p>
+            Designed by{" "}
+            <a href="https://ownitsocial.com" target="_blank" rel="noopener" className="hover:text-[#5DCCF8] transition-colors">
+              Own It Social
+            </a>
+          </p>
         </div>
       </div>
     </footer>
