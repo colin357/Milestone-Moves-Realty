@@ -23,7 +23,7 @@ export default function Seminars() {
           <div className="text-center mb-12">
             <p className="text-[#0A7387] font-bold tracking-widest text-sm mb-3 uppercase">On the Calendar</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#123A5E]">Upcoming Senior Center Classes</h2>
-            <p className="text-[#3d3d3d] mt-4 max-w-xl mx-auto">Pick a month below to see Freda&apos;s remaining 2026 classes in Raleigh, Cary, Apex, Fuquay-Varina, and Holly Springs.</p>
+            <p className="text-[#3d3d3d] mt-4 max-w-xl mx-auto">Explore Empowered Aging classes through May 2027. Pick a month below for topics, dates, times, locations, and registration details in Raleigh, Cary, Apex, Fuquay-Varina, and Holly Springs.</p>
           </div>
           <MonthlyClasses />
         </div>
