@@ -39,8 +39,8 @@ export default function ContactUs() {
               </div>
               <div>
                 <p className="font-bold text-[#123A5E]">Email</p>
-                <a href="mailto:info@milestonemovesrealty.com" className="text-[#0A7387] hover:underline">
-                  info@milestonemovesrealty.com
+                <a href="mailto:freda@milestonemoves.com" className="text-[#0A7387] hover:underline">
+                  freda@milestonemoves.com
                 </a>
               </div>
             </div>
@@ -52,21 +52,8 @@ export default function ContactUs() {
                 </svg>
               </div>
               <div>
-                <p className="font-bold text-[#123A5E]">Call or Text Our Team</p>
-                <ul className="text-[#3d3d3d] space-y-1 mt-1">
-                  <li>
-                    Freda Hamlett ·{" "}
-                    <a href="tel:+19198109551" className="text-[#0A7387] font-semibold hover:underline">919-810-9551</a>
-                  </li>
-                  <li>
-                    Robin ·{" "}
-                    <a href="tel:+19197463604" className="text-[#0A7387] font-semibold hover:underline">919-746-3604</a>
-                  </li>
-                  <li>
-                    Heather ·{" "}
-                    <a href="tel:+19196555424" className="text-[#0A7387] font-semibold hover:underline">919-655-5424</a>
-                  </li>
-                </ul>
+                <p className="font-bold text-[#123A5E]">Call or Text Freda Hamlett</p>
+                <a href="tel:+19198109551" className="text-[#0A7387] font-semibold hover:underline">919-810-9551</a>
               </div>
             </div>
           </div>
