@@ -179,12 +179,12 @@ export default function MonthlyClasses() {
             <div className="p-4 sm:p-5">
               <span className="mb-2 inline-block rounded-full bg-[#f0fafd] px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#0A7387]">{active.name} Class</span>
               <h3 className="mb-3 text-2xl font-bold leading-snug text-[#123A5E] sm:text-3xl">{session.title}</h3>
-              <dl className="mb-4 grid gap-3 sm:grid-cols-3">
-                <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Date</dt><dd className="text-sm font-semibold text-[#123A5E]">{session.date}</dd></div>
+              <dl className="grid gap-3 sm:grid-cols-3">
+                <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Date</dt><dd className="text-sm font-semibold text-[#123A5E]">{session.date}</dd><dd className="mt-2"><a href={session.registerUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#0A7387] px-4 py-2 text-center text-sm font-bold tracking-wider text-white transition-colors hover:bg-[#086475]">REGISTRATION DETAILS</a></dd></div>
                 <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Time</dt><dd className="text-sm text-[#3d3d3d]">{session.time}</dd></div>
                 <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Location</dt><dd><a href={session.locationUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#0A7387] hover:underline">{session.location}</a></dd></div>
               </dl>
-              <a href={session.registerUrl} target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-[#0A7387] px-8 py-3 text-center text-sm font-bold tracking-wider text-white transition-colors hover:bg-[#086475]">REGISTRATION DETAILS</a>
+              
             </div>
           </article>
         ))}
