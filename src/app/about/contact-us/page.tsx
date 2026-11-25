@@ -70,11 +70,12 @@ export default function ContactUs() {
         {/* Contact Form */}
         <div>
           <h2 className="text-2xl font-bold text-[#123A5E] mb-6">Send a Message</h2>
-          <form className="space-y-4">
+          <form className="space-y-4" action="mailto:freda@milestonemoves.com?subject=Milestone%20Moves%20website%20inquiry" method="post" encType="text/plain">
+            <p className="text-sm text-[#3d3d3d]">Complete the form to open an email to Freda. Review your message and press Send in your email app. You can also call or text 919-810-9551.</p>
             <div>
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">Full Name *</label>
               <input
-                type="text"
+                type="text" name="Full name" required
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]"
                 placeholder="Your name"
               />
@@ -82,7 +83,7 @@ export default function ContactUs() {
             <div>
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">Email Address *</label>
               <input
-                type="email"
+                type="email" name="Email" required
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]"
                 placeholder="your@email.com"
               />
@@ -90,14 +91,14 @@ export default function ContactUs() {
             <div>
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">Phone Number</label>
               <input
-                type="tel"
+                type="tel" name="Phone"
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]"
                 placeholder="(555) 000-0000"
               />
             </div>
             <div>
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">How Can We Help?</label>
-              <select className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]">
+              <select name="Topic" className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]">
                 <option value="">Select a topic...</option>
                 <option>Buying a Home</option>
                 <option>Selling My Home</option>
@@ -108,7 +109,7 @@ export default function ContactUs() {
             </div>
             <div>
               <label className="block text-sm font-semibold text-[#3d3d3d] mb-1">Message *</label>
-              <textarea
+              <textarea name="Message" required
                 rows={5}
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 text-[#3d3d3d] focus:outline-none focus:border-[#0A7387] focus:ring-1 focus:ring-[#0A7387]"
                 placeholder="Tell us a bit about your situation..."
@@ -118,7 +119,7 @@ export default function ContactUs() {
               type="submit"
               className="w-full bg-[#0A7387] hover:bg-[#086475] text-white font-bold py-4 rounded-full transition-colors text-sm tracking-wider"
             >
-              SEND MESSAGE
+              OPEN EMAIL TO FREDA
             </button>
           </form>
         </div>
