@@ -165,8 +165,8 @@ export default function MonthlyClasses() {
       </div>
 
       {!active && <p className="mb-10 text-center text-[#123A5E]">New class dates are being finalized. Contact Freda for upcoming workshops and registration details.</p>}
-      {active && <div key={selected} className="grid gap-6 animate-dropdown">
-        <section className="rounded-2xl border border-[#d7a900] bg-[#fffaf0] p-6 shadow-sm sm:p-8" aria-labelledby={`topic-${active.name.toLowerCase()}`}>
+      {active && <div key={selected} className="grid gap-4 animate-dropdown">
+        <section className="rounded-2xl border border-[#d7a900] bg-[#fffaf0] p-4 shadow-sm sm:p-5" aria-labelledby={`topic-${active.name.toLowerCase()}`}>
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[#8a6500]">{active.name} {active.year} class topic</p>
           <h3 id={`topic-${active.name.toLowerCase()}`} className="text-2xl font-bold leading-snug text-[#123A5E] sm:text-3xl">{active.topic}</h3>
           {active.subtitle && <p className="mt-2 text-lg font-semibold text-[#123A5E]">{active.subtitle}</p>}
@@ -175,10 +175,10 @@ export default function MonthlyClasses() {
 
         {active.sessions.map((session) => (
           <article key={`${session.date}-${session.location}`} className="overflow-hidden rounded-2xl border-t-4 border-[#0A7387] bg-gray-50 shadow-sm">
-            <div className="p-8 sm:p-10">
-              <span className="mb-4 inline-block rounded-full bg-[#f0fafd] px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#0A7387]">{active.name} Class</span>
-              <h3 className="mb-6 text-2xl font-bold leading-snug text-[#123A5E] sm:text-3xl">{session.title}</h3>
-              <dl className="mb-8 grid gap-5 sm:grid-cols-3">
+            <div className="p-4 sm:p-5">
+              <span className="mb-2 inline-block rounded-full bg-[#f0fafd] px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#0A7387]">{active.name} Class</span>
+              <h3 className="mb-3 text-2xl font-bold leading-snug text-[#123A5E] sm:text-3xl">{session.title}</h3>
+              <dl className="mb-4 grid gap-3 sm:grid-cols-3">
                 <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Date</dt><dd className="text-sm font-semibold text-[#123A5E]">{session.date}</dd></div>
                 <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Time</dt><dd className="text-sm text-[#3d3d3d]">{session.time}</dd></div>
                 <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Location</dt><dd><a href={session.locationUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#0A7387] hover:underline">{session.location}</a></dd></div>
@@ -196,10 +196,10 @@ export default function MonthlyClasses() {
               <div className="h-px flex-1 bg-gray-200" />
             </div>
             <article className="overflow-hidden rounded-2xl border-t-4 border-[#d7a900] bg-[#fffaf0] shadow-sm">
-              <div className="p-8 sm:p-10">
-                <span className="mb-4 inline-block rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#8a6500]">Special Cary Class</span>
-                <h3 className="mb-6 text-2xl font-bold leading-snug text-[#123A5E] sm:text-3xl">{active.followingMonthSession.title}</h3>
-                <dl className="mb-8 grid gap-5 sm:grid-cols-3">
+              <div className="p-4 sm:p-5">
+                <span className="mb-2 inline-block rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#8a6500]">Special Cary Class</span>
+                <h3 className="mb-3 text-2xl font-bold leading-snug text-[#123A5E] sm:text-3xl">{active.followingMonthSession.title}</h3>
+                <dl className="mb-4 grid gap-3 sm:grid-cols-3">
                   <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Date</dt><dd className="text-sm font-semibold text-[#123A5E]">{active.followingMonthSession.date}</dd></div>
                   <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Time</dt><dd className="text-sm text-[#3d3d3d]">{active.followingMonthSession.time}</dd></div>
                   <div><dt className="mb-0.5 text-xs font-bold uppercase tracking-wider text-[#0A7387]">Location</dt><dd><a href={active.followingMonthSession.locationUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#0A7387] hover:underline">{active.followingMonthSession.location}</a></dd></div>
